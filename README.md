@@ -474,6 +474,80 @@ const innerValue = outerScope();
 console.log(innerValue);
 ```
 
+### acronymSentence.js
+**Description:** Splits a sentence into words (useful for acronym generation or word extraction).
+```js
+function acronymSentence(str){
+    console.log(str.split(' '));
+}
+console.log("Line Of Control");
+```
+
+### firstNonRepeating.js
+**Description:** Finds the first non-repeating character in a string using two different methods.
+```js
+function firstNonRepeatingChar(str1) {
+	const str = str1.toLowerCase().split('');
+	let stringCount = {};
+	for (let i = 0; i < str.length; i++) {
+		stringCount[str[i]] = stringCount[str[i]] + 1 || 1;
+	}
+	for (let count of str) {
+		if (stringCount[count] === 1) {
+			return count
+		}
+	}
+}
+console.log(firstNonRepeatingChar("swiss"));
+//----------------using indexof and lastindexof--------------
+function nonRepeatingCharIndex(str) {
+	for (let i = 0; i < str.length; i++) {
+		if (str.indexOf(str[i]) === str.lastIndexOf(str[i])) {
+			return str[i];
+		}
+	}
+	return null;
+}
+console.log(nonRepeatingCharIndex("swiss"));
+```
+
+### getUniquechar.js
+**Description:** Extracts unique characters from a string using Set, filter, and reduce methods.
+```js
+function getUniqueCharacter(str) {
+    return [...new Set(str)].join('');
+}
+console.log(getUniqueCharacter("aabbbccdeeff")); //abcdef
+//-------------using filter ------------------
+function getUniqueUsingFilter(str) {
+    return str.split('').filter((ele, index, self) => self.indexOf(ele) === index).join('');
+}
+console.log(getUniqueUsingFilter("aabbbccdeeff"));
+//-------------------using reduce method---------
+function getUniqueCharacterReduce(str) {
+    return str.split('').reduce((acc, cur) => acc.includes(cur) ? acc : acc + cur);
+}
+console.log(getUniqueCharacterReduce("aabbbccdeeff"));
+//Difference between indexOf and index.
+//indexof pahli baar index return karta hai phir ager wahi element aata hai to nahi karta hai.
+//index har baar index return karta hai.
+```
+
+### titleCaseString.js
+**Description:** Converts a string to title case using both map and regex methods.
+```js
+function titleCaseString(str){
+    return(str.split(' ').map((ele)=>ele[0].toUpperCase()+ele.slice(1)).join(' '));
+}
+console.log(titleCaseString("hello world"));
+//----------------------------regerx---------------------------------------
+function toTitleCase(str) {
+  return str.toLowerCase()
+           .replace(/(?:^|\s)\w/g, match => match.toUpperCase());
+}
+console.log(toTitleCase("  hello  world  ")); // "  Hello  World  "
+```
+
 ---
 
 ## How to Use
