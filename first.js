@@ -40,4 +40,6 @@
 //31. factorial resurcive program
 //32. union array program
 //33. intersection program 
-//34 fibonacci series
+//34. fibonacci series
+//35. currying function
+//36. transpose matrix
