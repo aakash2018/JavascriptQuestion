@@ -9,3 +9,11 @@ function palindrome(name) {
 }
 
 console.log(palindrome("madam"));
+
+//using reduceRight
+function palindromeUsingReduce(name) {
+	const nameArray = name.split('');
+	const reverseString = (nameArray.reduceRight((acc, cur) => acc + cur));
+	console.log(reverseString === name);
+}
+palindromeUsingReduce("pop");

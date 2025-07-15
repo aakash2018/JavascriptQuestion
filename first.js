@@ -10,6 +10,7 @@
 //6. Reverse Words in a Sentence 
 
 //7. Check if Two Strings are Anagrams 
+
 //8. Find the Longest Substring Without Repeating Characters 
 //9. Convert a String to an Integer (atoi Implementation) 
 //10. Compress a String (Run-Length Encoding) 
@@ -26,7 +27,9 @@
 //21. Check if a String Contains Only Digits 
 //22. Find the Number of Words in a String 
 //23. Remove a Given Character from a String 
+
 //24. Find the Shortest Word in a String 
+
 //25. Find the Longest Palindromic Substring
 
 //26. closure function
@@ -35,3 +38,6 @@
 //29  Prime Number series program
 //30. Occurence Number program
 //31. factorial resurcive program
+//32. union array program
+//33. intersection program 
+//34 fibonacci series

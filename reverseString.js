@@ -9,3 +9,9 @@ function reverseString(name) {
 }
 
 reverseString("aakash");
+//------------reverse string reduceMap------------------------
+function reverseReduceRight(name){
+	return name.split('').reduceRight((acc,cur)=>acc+cur);
+}
+
+console.log(reverseReduceRight("payal"));
