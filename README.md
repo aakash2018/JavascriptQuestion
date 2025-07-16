@@ -64,6 +64,7 @@ This repository contains a collection of JavaScript programs that solve various 
 //48. let arr = [43,12,43,55,78,99,09,88,55,78,43,21,56,21]; :  remove duplicate
 //49: range of number rec(start = 1 , end = 6) / o/p : 1,2,3,4,5,6
 //50: sliding window k = 3 ;  [1,2,4,5,2,5,6,7]
+//51. print 1 to 10 every 1 sec. 
 ```
 
 ---
@@ -616,6 +617,61 @@ function transposeMatrixUsingMap(matrix) {
 }
 
 console.log(transposeMatrixUsingMap(matrix));
+```
+
+### print1to10.js
+**Description:** Prints numbers from 1 to 10, one every second, using setInterval and clearInterval.
+```js
+let count = 0;
+function printNumber() {
+	count =count+1;
+	console.log(count);
+	if (count >= 10) {
+		clearInterval(printInterval);
+	}
+
+}
+let printInterval = setInterval(printNumber, 1000);
+```
+
+### slidingWindow.js
+**Description:** Finds the maximum sum of any subarray of length k using the sliding window technique.
+```js
+//sliding window k = 3 ;  [1,2,4,5,2,5,6,7]
+
+//Initial Window: Calculate sum of first k elements ([2,5,1] = 8)
+
+// Slide Window:
+
+// Move right: Remove leftmost element (2), add next right element (8) → new sum = 8-2+8=14
+
+// Next slide: Remove 5, add 2 → sum = 14-5+2=11
+
+// Next slide: Remove 1, add 9 → sum = 11-1+9=19 (new max)
+
+// Continue until end
+const key = 3;
+const arrayValues = [1, 2, 4, 5, 2, 5, 6, 7];
+
+function slidingWindow(itr, arr) {
+
+    let windowSum = 0;
+    let maxSum = -Infinity;
+
+    for (let i = 0; i < itr; i++) {
+        windowSum += arr[i];
+    }
+    maxSum = windowSum;
+
+    for (let i = itr; i < arr.length; i++) {
+        windowSum = windowSum - arr[i - itr] + arr[i]; // Subtract left, add right
+        maxSum = Math.max(maxSum, windowSum);
+    }
+
+    return maxSum;
+}
+
+console.log(slidingWindow(key, arrayValues));
 ```
 
 ---
