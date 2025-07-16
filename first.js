@@ -1,9 +1,7 @@
 //1.Get Unique Characters from a string
 //2. Check if a String is a Palindrome
 //3. Remove Duplicates from a String
-
 //4. Find the First Non-Repeating Character
-
 //5. Count the Occurrences of Each Character
 //6. Reverse Words in a Sentence
 //7. Check if Two Strings are Anagrams
