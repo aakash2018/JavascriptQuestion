@@ -486,10 +486,24 @@ console.log(innerValue);
 ### acronymSentence.js
 **Description:** Splits a sentence into words (useful for acronym generation or word extraction).
 ```js
-function acronymSentence(str){
-    console.log(str.split(' '));
+function acronymSentence(str) {
+	return str.split(' ').map((element, index) => {
+		let acronym = element.at(0).toUpperCase();
+		return acronym;
+	});
 }
-console.log("Line Of Control");
+console.log(acronymSentence("Line Of Control").join(''));
+//--------------using regex-----------------------------
+function acronymSentenceRegex(str) {
+	return str.match(/\b\w/g).join('').toUpperCase()
+}
+console.log(acronymSentenceRegex("Line Of Control"));
+//-------------toAcronym------------------------------
+function toAcronym(str){
+	return str.split('-').map((ele)=>ele[0].toUpperCase()).join('');
+}
+
+console.log(toAcronym("state-of-the-art"));
 ```
 
 ### firstNonRepeating.js
