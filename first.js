@@ -38,3 +38,17 @@
 //34. fibonacci series
 //35. currying function
 //36. transpose matrix 
+//37. input-change-output-question1
+//38. Longest word in string
+//39. i/p let str = "this tage hash tag"; - o/p #ThisTageHashTag
+//40. let str = 'mississippi' find count of i
+//41. find the char is upper case or not,
+//42. string start with arg: checks("hello worlds",'hello') / a.startsWith(b)
+//43. reverse string without using pre defined method
+//44. find mean of given array = [1,2,3,4,5] : o/p 3
+//45. fine mean madian from give array = [1,2,3,4,5,6] : means add/length , madian middle number
+//46. repeate('abc',5) : o/p 'abcabcabcabcabc sol : str.repeat(num)
+//47. create random color : console.log(Math.random(16).toString(16).substring(2,8))
+//48. let arr = [43,12,43,55,78,99,09,88,55,78,43,21,56,21]; :  remove duplicate
+//49: range of number rec(start = 1 , end = 6) / o/p : 1,2,3,4,5,6
+//50: sliding window k = 3 ;  [1,2,4,5,2,5,6,7]
