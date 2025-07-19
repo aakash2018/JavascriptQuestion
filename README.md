@@ -692,3 +692,433 @@ console.log(slidingWindow(key, arrayValues));
 ---
 
 Feel free to explore and modify the programs for your learning and practice!
+
+---
+
+## Node.js Interview Questions and Answers (English + Hindi)
+
+### 1. Explain the event loop in Node.js (imp)?
+- **English:** The event loop allows Node.js to handle many tasks at once without waiting. It checks for tasks, executes them, and waits for new tasks, making Node.js fast and non-blocking.
+- **Hindi:** Event loop Node.js ko ek samay par kai kaam bina ruke karne deta hai. Ye tasks ko check karta hai, unhe chalata hai, aur naye tasks ka intezaar karta hai. Isse Node.js tez aur non-blocking hota hai.
+
+### 2. Explain the internal architecture of Node.js?
+- **English:** Node.js uses the V8 engine to run JavaScript, has an event loop for async tasks, and uses libuv for handling I/O operations. It is single-threaded but can handle many connections at once.
+- **Hindi:** Node.js JavaScript chalane ke liye V8 engine ka use karta hai, async tasks ke liye event loop hota hai, aur I/O ke liye libuv ka use karta hai. Ye single-threaded hai, lekin ek saath kai connections sambhal sakta hai.
+
+### 3. What is npm and list out the uses of it.
+- **English:** npm (Node Package Manager) is a tool to install, update, and manage packages (libraries) in Node.js projects.
+- **Hindi:** npm (Node Package Manager) ek tool hai jo Node.js projects me packages (libraries) ko install, update, aur manage karta hai.
+
+### 4. What are the different phases of event loop (imp)?
+- **English:** The event loop has phases like timers, I/O callbacks, idle/prepare, poll, check, and close callbacks. Each phase handles specific types of tasks.
+- **Hindi:** Event loop ke phases hain: timers, I/O callbacks, idle/prepare, poll, check, aur close callbacks. Har phase alag-alag tasks ko handle karta hai.
+
+### 5. Explain the execution flow of Promise, async/await, setTimeout, setImmediate, process.nextTick() (imp)?
+- **English:**
+  - `process.nextTick()` runs first (microtask).
+  - Promises and async/await run after nextTick (microtask).
+  - `setTimeout` and `setImmediate` run later (macrotask), but setTimeout usually runs before setImmediate.
+- **Hindi:**
+  - `process.nextTick()` sabse pehle chalta hai (microtask).
+  - Promises aur async/await uske baad chalte hain (microtask).
+  - `setTimeout` aur `setImmediate` baad me chalte hain (macrotask), lekin aam taur par setTimeout pehle chalta hai.
+
+### 6. What is the purpose of package.json file in Node.js?
+- **English:** `package.json` keeps information about your project, like its name, version, dependencies, and scripts. It helps manage and share your project easily.
+- **Hindi:** `package.json` aapke project ki jankari rakhta hai, jaise naam, version, dependencies, aur scripts. Isse project ko manage aur share karna aasan hota hai.
+
+### 7. What is http module and create a server using it?
+- **English:** The `http` module lets you create a web server in Node.js.
+```js
+const http = require('http');
+const server = http.createServer((req, res) => {
+  res.end('Hello, World!');
+});
+server.listen(3000);
+```
+- **Hindi:** `http` module Node.js me web server banane ke liye use hota hai.
+```js
+const http = require('http');
+const server = http.createServer((req, res) => {
+  res.end('Hello, World!');
+});
+server.listen(3000);
+```
+
+### 8. How do you create secure server setup using express and https?
+- **English:** Use the `https` module with Express and provide SSL certificate and key.
+```js
+const https = require('https');
+const express = require('express');
+const fs = require('fs');
+const app = express();
+const options = {
+  key: fs.readFileSync('key.pem'),
+  cert: fs.readFileSync('cert.pem')
+};
+https.createServer(options, app).listen(3000);
+```
+- **Hindi:** Express aur https module ke saath SSL certificate aur key dekar secure server banate hain.
+```js
+const https = require('https');
+const express = require('express');
+const fs = require('fs');
+const app = express();
+const options = {
+  key: fs.readFileSync('key.pem'),
+  cert: fs.readFileSync('cert.pem')
+};
+https.createServer(options, app).listen(3000);
+```
+
+### 9. How will you update any npm existing packages?
+- **English:** Run `npm update <package-name>` to update a package.
+- **Hindi:** Package update karne ke liye `npm update <package-name>` command chalayein.
+
+### 10. List out some of the global objects in Node.js
+- **English:** Some global objects: `__dirname`, `__filename`, `global`, `process`, `Buffer`, `setTimeout`, `setInterval`.
+- **Hindi:** Kuch global objects hain: `__dirname`, `__filename`, `global`, `process`, `Buffer`, `setTimeout`, `setInterval`.
+
+### 11. Explain stream and buffer and their difference
+- **English:** A buffer is a temporary storage for data. A stream is a way to read or write data piece by piece. Streams use buffers internally.
+- **Hindi:** Buffer data ko temporary store karta hai. Stream data ko tukdo me read ya write karta hai. Streams ke andar buffer ka use hota hai.
+
+### 12. What is microtask and macrotask in Node.js (imp)?
+- **English:** Microtasks (like Promises, process.nextTick) run before macrotasks (like setTimeout, setImmediate). Microtasks are handled first after the current operation.
+- **Hindi:** Microtasks (jaise Promises, process.nextTick) pehle chalte hain, macrotasks (jaise setTimeout, setImmediate) baad me. Microtasks current operation ke baad turant chalte hain.
+
+### 13. Explain piping the data between streams
+- **English:** Piping connects one stream’s output to another stream’s input, like reading a file and writing it somewhere else.
+- **Hindi:** Piping ek stream ka output doosri stream ke input se jodta hai, jaise file read karke kahin aur likhna.
+
+### 14. What are the features of express js
+- **English:** Express is fast, simple, supports middleware, routing, templates, and error handling.
+- **Hindi:** Express tezi se kaam karta hai, simple hai, middleware, routing, templates, aur error handling support karta hai.
+
+### 15. What happens, if we pass parameter to next function inside middleware
+- **English:** If you pass an argument to `next()`, Express treats it as an error and skips to the error-handling middleware.
+- **Hindi:** Agar aap `next()` me argument dete hain, to Express ise error samajhkar error-handling middleware par chala jata hai.
+
+### 16. How we can jump from one middleware to another skipping some?
+- **English:** You can call `next('route')` to skip to the next route handler, or use conditions in your middleware to decide when to call `next()`.
+- **Hindi:** Aap `next('route')` ka use karke agle route handler par ja sakte hain, ya middleware me condition laga kar decide kar sakte hain ki kab `next()` bulana hai.
+
+### 17. What is difference between PATCH and PUT API (imp)?
+- **English:** PUT replaces the whole resource. PATCH updates only the specified fields.
+- **Hindi:** PUT poore resource ko replace karta hai. PATCH sirf diye gaye fields ko update karta hai.
+
+### 18. Explain the middleware concept in Node.js (imp)?
+- **English:** Middleware are functions that run during the request-response cycle. They can modify request, response, or end the cycle.
+- **Hindi:** Middleware aise functions hain jo request-response cycle ke dauraan chalte hain. Ye request, response ko badal sakte hain ya cycle ko khatam kar sakte hain.
+
+### 19. How to create optional path API endpoints in express js
+- **English:** Use `?` in the route path. Example: `/user/:id?` makes `id` optional.
+- **Hindi:** Route path me `?` lagayein. Jaise: `/user/:id?` se `id` optional ho jata hai.
+
+### 20. Explain error handling concept in Express js (imp)?
+- **English:** Error-handling middleware has four arguments: (err, req, res, next). Use it to catch and respond to errors.
+- **Hindi:** Error-handling middleware me chaar arguments hote hain: (err, req, res, next). Isse errors ko pakad kar response bhejte hain.
+
+### 21. What is JWT and explain the structure of JWT token (imp)?
+- **English:** JWT (JSON Web Token) is used for secure data transfer. It has three parts: header, payload, and signature.
+- **Hindi:** JWT (JSON Web Token) surakshit data transfer ke liye use hota hai. Isme teen parts hote hain: header, payload, aur signature.
+
+### 22. How can we modify the signature of JWT? (imp)
+- **English:** You cannot modify the signature directly. If you change the payload or header, you must re-sign with the secret key.
+- **Hindi:** Signature ko seedha nahi badal sakte. Agar payload ya header badalte hain, to secret key se dobara sign karna padta hai.
+
+### 23. What is the authentication and authorization concept? (imp)
+- **English:** Authentication checks who you are. Authorization checks what you can do.
+- **Hindi:** Authentication dekhta hai ki aap kaun hain. Authorization dekhta hai ki aap kya kar sakte hain.
+
+### 24. How do you implement role-based and permission-based access control in express js?
+- **English:** Check user roles/permissions in middleware before allowing access to routes.
+- **Hindi:** Route par access dene se pehle middleware me user ke role/permission check karte hain.
+
+### 25. Explain in detail best practice of API
+- **English:** Use clear endpoints, proper HTTP methods, validation, error handling, and secure data.
+- **Hindi:** Saaf endpoints, sahi HTTP methods, validation, error handling, aur data security ka dhyan rakhein.
+
+### 26. Explain input validation and data sanitization concept in express js
+- **English:** Input validation checks if data is correct. Sanitization cleans data to prevent attacks.
+- **Hindi:** Input validation data ko sahi hone ki jaanch hai. Sanitization data ko saaf karta hai taaki attack na ho.
+
+### 27. Explain the concept rate limiting in express js
+- **English:** Rate limiting restricts how many requests a user can make in a time period to prevent abuse.
+- **Hindi:** Rate limiting ek user ko ek samay me kitni requests bhej sakta hai, is par rok lagata hai, taki misuse na ho.
+
+### 28. Explain the concept of logging and monitoring in node js application
+- **English:** Logging records events and errors. Monitoring checks app health and performance.
+- **Hindi:** Logging events aur errors ko record karta hai. Monitoring app ki health aur performance ko check karta hai.
+
+### 29. What is difference between stateless and stateful API?
+- **English:** Stateless API does not remember previous requests. Stateful API remembers previous interactions.
+- **Hindi:** Stateless API pichle requests ko yaad nahi rakhta. Stateful API pichle interactions ko yaad rakhta hai.
+
+### 30. How can we achieve state management in node js application?
+- **English:** Use sessions, cookies, databases, or in-memory stores (like Redis) to manage state.
+- **Hindi:** State manage karne ke liye sessions, cookies, database, ya in-memory store (jaise Redis) ka use karte hain.
+
+### 31. How do you scale node js application using cluster module?
+- **English:** The cluster module lets you run multiple Node.js processes to use all CPU cores and handle more requests.
+- **Hindi:** Cluster module se aap ek hi server par kai Node.js processes chala sakte hain, taki sabhi CPU cores ka use ho aur zyada requests handle ho sakein.
+
+### 32. What is a worker thread? How does it handle CPU-intensive tasks?
+- **English:** Worker threads run code in parallel threads, so CPU-heavy tasks don’t block the main thread.
+- **Hindi:** Worker threads alag thread me code chalate hain, isse bhari (CPU-intensive) kaam main thread ko block nahi karte.
+
+### 33. Explain the working with concurrency and parallelism for async task
+- **English:** Concurrency means handling multiple tasks at the same time (not necessarily together). Parallelism means running tasks at the exact same time, usually on different CPU cores.
+- **Hindi:** Concurrency ka matlab hai ek samay par kai kaam sambhalna (saath me nahi bhi ho sakte). Parallelism ka matlab hai ek hi samay par kai kaam chalana, aam taur par alag CPU cores par.
+
+### 34. How can you optimise database queries?
+- **English:** Use indexes, select only needed fields, avoid N+1 queries, and use caching.
+- **Hindi:** Indexes ka use karein, sirf zaroori fields select karein, N+1 queries se bachein, aur caching ka use karein.
+
+### 35. What is the redis database? Explain the uses of it
+- **English:** Redis is a fast, in-memory key-value store. It’s used for caching, sessions, queues, and real-time data.
+- **Hindi:** Redis ek tez, in-memory key-value store hai. Ye caching, sessions, queues, aur real-time data ke liye use hota hai.
+
+### 36. How we can increase the performance of node js application
+- **English:** Use async code, clustering, caching, optimize queries, and use a CDN for static files.
+- **Hindi:** Async code, clustering, caching, query optimization, aur static files ke liye CDN ka use karein.
+
+### 37. What is the profiling concept in nodejs
+- **English:** Profiling means checking where your code spends time and resources, to find and fix slow parts.
+- **Hindi:** Profiling ka matlab hai dekhna ki code sabse zyada samay aur resources kahan use karta hai, taki slow jagah sudhari ja sake.
+
+### 38. What is connection pooling concept for database
+- **English:** Connection pooling keeps a set of database connections ready to use, so new connections don’t need to be created every time.
+- **Hindi:** Connection pooling database connections ko pehle se ready rakhta hai, taki har baar nayi connection banani na pade.
+
+### 39. Write a middleware for role-based access control (RBAC) in Node.js
+- **English:** A middleware checks user’s role before allowing access.
+```js
+function checkRole(role) {
+  return (req, res, next) => {
+    if (req.user && req.user.role === role) {
+      next();
+    } else {
+      res.status(403).send('Forbidden');
+    }
+  };
+}
+```
+- **Hindi:** Ek middleware user ka role check karta hai, tabhi access deta hai.
+```js
+function checkRole(role) {
+  return (req, res, next) => {
+    if (req.user && req.user.role === role) {
+      next();
+    } else {
+      res.status(403).send('Forbidden');
+    }
+  };
+}
+```
+
+### 40. Demonstrate the integration of OAuth2.0 for third-party authentication in a Node.js app.
+- **English:** Use passport.js with a strategy like Google or Facebook for OAuth2.0.
+- **Hindi:** OAuth2.0 ke liye passport.js aur Google ya Facebook strategy ka use karein.
+
+### 41. Implement a refresh token mechanism for JWT authentication in Node.js.
+- **English:** Store a refresh token in the database. When the access token expires, use the refresh token to get a new access token.
+- **Hindi:** Refresh token ko database me store karein. Jab access token expire ho jaye, refresh token se naya access token lein.
+
+### 42. What is role of indexes in performance optimization (imp)
+- **English:** Indexes make data search faster in databases.
+- **Hindi:** Indexes database me data khojne ko bahut tez bana dete hain.
+
+### 43. What is the aggregation pipeline in mongoDB? Explain in detail (imp)
+- **English:** Aggregation pipeline processes data in stages (like filter, group, sort) to get results from MongoDB.
+- **Hindi:** Aggregation pipeline data ko stages me (jaise filter, group, sort) process karta hai, taki MongoDB se result mil sake.
+
+### 44. What are transactions? How can we achieve it in mongoDB
+- **English:** Transactions let you do multiple operations together, and all succeed or all fail. In MongoDB, use `session.startTransaction()`.
+- **Hindi:** Transactions se aap kai operations ek saath kar sakte hain, ya to sab honge ya koi nahi. MongoDB me `session.startTransaction()` ka use hota hai.
+
+### 45. How transaction helps in rollback in case of failure
+- **English:** If any operation fails, transaction rolls back all changes, so data stays safe.
+- **Hindi:** Agar koi operation fail ho jaye, to transaction sab changes wapas le leta hai, taki data safe rahe.
+
+### 46. What is difference between hashing, encryption and encoding concept
+- **English:** Hashing is one-way, for checking data. Encryption is two-way, for hiding data. Encoding is for changing data format.
+- **Hindi:** Hashing ek-tarfa hai, data check karne ke liye. Encryption do-tarfa hai, data chhupane ke liye. Encoding data ka format badalne ke liye hai.
+
+### 47. How do you identify slow queries
+- **English:** Use database logs, explain plans, or profiling tools to find slow queries.
+- **Hindi:** Database logs, explain plan, ya profiling tools se slow queries pata chalti hain.
+
+### 48. What is replica sets and sharding mechanism in mongodb
+- **English:** Replica sets copy data to multiple servers for safety. Sharding splits data across servers for scaling.
+- **Hindi:** Replica sets data ko kai servers par copy karte hain, taki data safe rahe. Sharding data ko alag servers par baant kar scale karta hai.
+
+### 49. How do you configure failover and disaster recovery in mongodb
+- **English:** Use replica sets for automatic failover. Regularly backup data for disaster recovery.
+- **Hindi:** Automatic failover ke liye replica sets ka use karein. Disaster recovery ke liye data ka regular backup lein.
+
+### 50. What is load balancer and how to implement in nodejs
+- **English:** A load balancer distributes traffic to multiple servers. Use Nginx, HAProxy, or Node.js cluster for load balancing.
+- **Hindi:** Load balancer traffic ko kai servers me baant deta hai. Nginx, HAProxy, ya Node.js cluster ka use karein.
+
+### 51. How to avoid schema pitfalls
+- **English:** Define clear schema, use validation, and avoid unnecessary fields.
+- **Hindi:** Schema ko saaf define karein, validation lagayein, aur bekaar fields na rakhein.
+
+### 52. Measure care taken to write efficient queries
+- **English:** Write queries with indexes, select only needed data, and avoid loops in queries.
+- **Hindi:** Indexes ke saath queries likhein, sirf zaroori data select karein, aur queries me loops se bachein.
+
+### 53. How to implement health checks in mongodb
+- **English:** Use MongoDB’s `db.admin().ping()` or monitoring tools to check if the database is healthy.
+- **Hindi:** MongoDB ka `db.admin().ping()` ya monitoring tools se database ki health check karein.
+
+### 54. What are the solid principles for software development (imp)?
+- **English:** SOLID stands for:  S - Single Responsibility, O - Open/Closed, L - Liskov Substitution, I - Interface Segregation, D - Dependency Inversion
+- **Hindi:** SOLID ka matlab hai: S - Single Responsibility, O - Open/Closed, L - Liskov Substitution, I - Interface Segregation, D - Dependency Inversion
+
+### 55. What is kafka? Explain the use cases of kafka
+- **English:** Kafka is a tool for handling real-time data streams. It’s used for messaging, logging, and data pipelines.
+- **Hindi:** Kafka real-time data streams ko handle karta hai. Ye messaging, logging, aur data pipelines ke liye use hota hai.
+
+### 56. How can we minimize middleware overhead
+- **English:** Use only needed middleware, keep them simple, and avoid heavy processing in middleware.
+- **Hindi:** Sirf zaroori middleware ka use karein, unhe simple rakhein, aur heavy processing middleware me na karein.
+
+---
+
+## Managerial/Tech Lead Questions
+
+### 1. How do you ensure your team delivers high quality code within deadlines (imp)?
+- **English:** Set clear goals, do code reviews, use testing, and help team members.
+- **Hindi:** Saaf goals set karein, code review karein, testing karein, aur team ki madad karein.
+
+### 2. Describe a situation where you had to mentor a junior developer. How did you handle it?
+- **English:** I explained concepts simply, gave examples, and encouraged questions.
+- **Hindi:** Maine concepts ko asaan tareeke se samjhaya, examples diye, aur sawaal poochne ke liye encourage kiya.
+
+### 3. Can you explain the SOLID principles and how you apply them in your designs (imp)?
+- **English:** SOLID helps make code easy to change and understand. I use these rules when designing classes and functions.
+- **Hindi:** SOLID se code badalna aur samajhna aasan hota hai. Main classes aur functions design karte waqt in rules ka use karta hoon.
+
+### 4. Explain the design pattern in javascript (imp)?
+- **English:** Design patterns are common solutions to problems. Examples: Singleton, Observer, Factory.
+- **Hindi:** Design pattern aam samasyaon ke hal hain. Jaise: Singleton, Observer, Factory.
+
+### 5. How do you decide which tech stack is suitable for a specific project?
+- **English:** I look at project needs, team skills, and future growth before choosing.
+- **Hindi:** Main project ki jarurat, team ki skills, aur future growth dekh kar tech stack chunata hoon.
+
+### 6. What is difference between development, FT, UAT, preprod and production environment (imp)?
+- **English:**
+  - Development: For coding
+  - FT (Functional Testing): For testing features
+  - UAT (User Acceptance Testing): For user testing
+  - Preprod: Like production, for final checks
+  - Production: Live for users
+- **Hindi:**
+  - Development: Coding ke liye
+  - FT: Features test karne ke liye
+  - UAT: User testing ke liye
+  - Preprod: Production jaise, final check ke liye
+  - Production: Users ke liye live
+
+### 7. How do you ensure 100% code coverage in your projects?
+- **English:** Write tests for all code, use coverage tools, and review reports.
+- **Hindi:** Har code ke liye test likho, coverage tools ka use karo, aur reports check karo.
+
+### 8. Can you explain the difference between unit testing, integration testing, and functional testing (imp)?
+- **English:**
+  - Unit: Test small parts
+  - Integration: Test parts together
+  - Functional: Test whole features
+- **Hindi:**
+  - Unit: Chhote parts test karte hain
+  - Integration: Parts ko saath me test karte hain
+  - Functional: Puri feature test karte hain
+
+### 9. How do you secure sensitive data in a MERN stack application?
+- **English:** Use encryption, environment variables, and never expose secrets in code.
+- **Hindi:** Encryption, environment variables ka use karo, aur secrets code me mat rakho.
+
+### 10. Describe your experience working in an Agile/Scrum environment
+- **English:** I work in sprints, attend daily standups, and deliver features in small steps.
+- **Hindi:** Main sprints me kaam karta hoon, daily standup attend karta hoon, aur features chhote steps me deliver karta hoon.
+
+### 11. Explain the meetings like sprint planning, daily standup, backlog, sprint review, sprint retrospective (imp)?
+- **English:**
+  - Sprint planning: Plan work
+  - Daily standup: Share progress
+  - Backlog: List of tasks
+  - Sprint review: Show work done
+  - Retrospective: Discuss improvements
+- **Hindi:**
+  - Sprint planning: Kaam ki planning
+  - Daily standup: Progress batana
+  - Backlog: Tasks ki list
+  - Sprint review: Kya kiya dikhana
+  - Retrospective: Sudhar par baat
+
+### 12. How do you document your code and project architecture for your team?
+- **English:** Write comments, use README files, and make diagrams.
+- **Hindi:** Comments likhta hoon, README banata hoon, aur diagrams banata hoon.
+
+### 13. How do you onboard new developers to your team and projects?
+- **English:** Give them documentation, explain the code, and help them set up the project.
+- **Hindi:** Unhe documentation do, code samjhao, aur project setup me madad karo.
+
+### 14. What tools do you use to track project progress and manage tasks (imp)?
+- **English:** Jira, Trello, Asana, or GitHub Issues.
+- **Hindi:** Jira, Trello, Asana, ya GitHub Issues ka use karta hoon.
+
+### 15. What are the key considerations when designing RESTful APIs?
+- **English:** Use clear endpoints, proper HTTP methods, and return correct status codes.
+- **Hindi:** Saaf endpoints, sahi HTTP methods, aur sahi status codes ka use karo.
+
+### 16. What is your approach to deploying and scaling a MERN stack application?
+- **English:** Use cloud services, Docker, and load balancers for deployment and scaling.
+- **Hindi:** Cloud services, Docker, aur load balancer ka use karo.
+
+### 17. How would you handle a situation where the application is experiencing a memory leak (imp)?
+- **English:** Use profiling tools to find the leak, fix the code, and restart the app.
+- **Hindi:** Profiling tools se leak dhoondo, code sudharo, aur app restart karo.
+
+### 18. A feature you implemented in React is causing performance issues. How would you debug it?
+- **English:** Use React DevTools, check for unnecessary renders, and optimize components.
+- **Hindi:** React DevTools ka use karo, bekaar renders check karo, aur components optimize karo.
+
+### 19. What steps would you take if your database suddenly becomes a bottleneck in your application?
+- **English:** Optimize queries, add indexes, use caching, and scale the database.
+- **Hindi:** Queries optimize karo, indexes lagao, caching use karo, aur database scale karo.
+
+### 20. If your team is stuck on a critical bug, how would you guide them to a solution?
+- **English:** Stay calm, break the problem, discuss as a team, and try solutions step by step.
+- **Hindi:** Shaant raho, problem ko tod do, team me discuss karo, aur step by step solution try karo.
+
+### 21. What is your approach to conducting code reviews (imp)?
+- **English:** Check for code quality, readability, and security. Give helpful feedback.
+- **Hindi:** Code quality, readability, aur security check karo. Achha feedback do.
+
+### 22. How do you optimize MongoDB queries for better performance?
+- **English:** Use indexes, avoid large documents, and use aggregation pipeline wisely.
+- **Hindi:** Indexes lagao, bade documents se bacho, aur aggregation pipeline sahi se use karo.
+
+### 23. How do you manage error handling in an Express.js application?
+- **English:** Use error-handling middleware and try-catch blocks.
+- **Hindi:** Error-handling middleware aur try-catch ka use karo.
+
+### 24. Explain how you would secure an Express.js API.
+- **English:** Use authentication, validation, HTTPS, and limit requests.
+- **Hindi:** Authentication, validation, HTTPS, aur request limit lagao.
+
+### 25. How do you optimize React applications for performance?
+- **English:** Use memoization, code splitting, and avoid unnecessary renders.
+- **Hindi:** Memoization, code splitting, aur bekaar renders se bacho.
+
+### 26. How do you secure a Node.js application?
+- **English:** Validate input, use HTTPS, keep dependencies updated, and handle errors.
+- **Hindi:** Input validate karo, HTTPS use karo, dependencies update rakho, aur errors handle karo.
+
+### 27. How would you handle database sharding and replication in MongoDB (imp)?
+- **English:** Use sharding to split data and replication for backups and failover.
+- **Hindi:** Sharding se data baanto, replication se backup aur failover pao.

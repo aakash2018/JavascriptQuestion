@@ -1,0 +1,1 @@
+console.log(Math.random(16).toString(16).substring(2,8));

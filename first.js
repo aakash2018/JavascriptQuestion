@@ -52,4 +52,5 @@
 //48. let arr = [43,12,43,55,78,99,09,88,55,78,43,21,56,21]; :  remove duplicate
 //49: range of number rec(start = 1 , end = 6) / o/p : 1,2,3,4,5,6
 //50: sliding window k = 3 ;  [1,2,4,5,2,5,6,7]
-//51. print 1 to 10 every 1 sec. 
+//51. print 1 to 10 every 1 sec.  
+
