@@ -1,0 +1,169 @@
+# AWS Services for Microservices - Simple Explanation (Hindi & English)
+
+## EC2 - Virtual Computer (कंप्यूटर की मशीन)
+
+**English**:  
+- Like renting a computer in the cloud  
+- Can run your Node.js apps  
+- Pay only for what you use  
+- Easy to make more copies when busy  
+
+**Hindi**:  
+- जैसे क्लाउड में कंप्यूटर किराए पर लेना  
+- अपने Node.js ऐप्स चला सकते हैं  
+- जितना इस्तेमाल करो, उतना भुगतान करो  
+- जब ट्रैफिक ज्यादा हो तो आसानी से और कॉपी बना सकते हैं  
+
+## SQS - Message Box (संदेश का डिब्बा)
+
+**English**:  
+- Helps different services talk to each other  
+- Stores messages when one service is busy  
+- Ensures no messages get lost  
+- Works like a WhatsApp group for your apps  
+
+**Hindi**:  
+- अलग-अलग सर्विसेज को आपस में बात करने में मदद करता है  
+- मैसेज को सेव करके रखता है जब कोई सर्विस बिजी हो  
+- कोई मैसेज खोता नहीं है  
+- आपके ऐप्स के लिए WhatsApp ग्रुप की तरह काम करता है  
+
+## RDS - Database Service (डेटाबेस सेवा)
+
+**English**:  
+- Ready-to-use database in cloud  
+- Takes care of backups automatically  
+- Grows when your data grows  
+- Works well with Node.js apps  
+
+**Hindi**:  
+- क्लाउड में तैयार डेटाबेस  
+- अपने आप बैकअप लेता रहता है  
+- जैसे-जैसे डेटा बढ़ता है, वैसे-वैसे बढ़ता है  
+- Node.js ऐप्स के साथ अच्छे से काम करता है  
+
+## Other Helpful Services (दूसरी मददगार सेवाएं)
+
+### API Gateway (API का दरवाजा)
+**English**:  
+- Front door for your microservices  
+- Checks who's knocking (authentication)  
+- Decides who goes where (routing)  
+
+**Hindi**:  
+- आपकी माइक्रोसर्विसेज का मुख्य दरवाजा  
+- चेक करता है कौन आया है (प्रमाणीकरण)  
+- तय करता है किसको कहाँ जाना है (रूटिंग)  
+
+### Lambda (बिना सर्वर के कोड)
+**English**:  
+- Run code without managing servers  
+- Only runs when needed  
+- Pay per second of usage  
+
+**Hindi**:  
+- सर्वर मैनेज किए बिना कोड चलाएं  
+- सिर्फ जरूरत पड़ने पर चलता है  
+- इस्तेमाल के हर सेकंड का भुगतान  
+
+### ECS/EKS (कंटेनर मैनेजर)
+**English**:  
+- Helps manage many small apps (containers)  
+- Automatically spreads the load  
+- Like a traffic police for your apps  
+
+**Hindi**:  
+- छोटे-छोटे ऐप्स (कंटेनर्स) को मैनेज करने में मदद  
+- अपने आप लोड बाँट देता है  
+- आपके ऐप्स के लिए ट्रैफिक पुलिस की तरह  
+
+### CloudWatch (निगरानी सेवा)
+**English**:  
+- Keeps eye on your apps 24x7  
+- Sends alerts when something's wrong  
+- Like a doctor monitoring health  
+
+**Hindi**:  
+- आपके ऐप्स पर 24x7 नजर रखता है  
+- कुछ गड़बड़ होने पर अलर्ट भेजता है  
+- जैसे डॉक्टर सेहत पर नजर रखता है  
+
+**Simple Example (आसान उदाहरण):**  
+मान लो आपने एक फूड डिलीवरी ऐप बनाया:  
+- EC2 = रसोई (जहाँ ऑर्डर तैयार होते हैं)  
+- SQS = वेटर (ऑर्डर लेकर किचन तक पहुँचाता है)  
+- RDS = रजिस्टर (सभी ऑर्डर और ग्राहक की जानकारी)  
+- API Gateway = रिसेप्शनिस्ट (ग्राहक को सही जगह भेजता है)
+
+
+# AWS Lambda - सरल समझ (Simple Explanation)
+
+## Lambda - बिना सर्वर वाला कोड (Serverless Code)
+
+**English**:  
+- Like a magic worker that appears only when needed  
+- You just give your Node.js code - AWS runs it automatically  
+- No need to worry about servers or maintenance  
+- Pay only for the milliseconds your code runs  
+- Perfect for small tasks in microservices  
+
+**Hindi**:  
+- जादू का मजदूर जो सिर्फ जरूरत पड़ने पर आता है  
+- आप सिर्फ अपना Node.js कोड दें - AWS इसे अपने आप चलाएगा  
+- सर्वर या मेंटेनेंस की चिंता नहीं  
+- सिर्फ उतने मिलीसेकंड का पैसा दो जितनी देर आपका कोड चले  
+- माइक्रोसर्विसेज में छोटे-छोटे कामों के लिए बिल्कुल सही  
+
+## Lambda के उपयोग (Use Cases)
+
+**English with Hindi Examples**:  
+1. **Image Processing** (छवि संसाधन)  
+   - जब user फोटो अपलोड करे, Lambda उसे resize कर दे  
+
+2. **Data Processing** (डेटा प्रोसेसिंग)  
+   - जैसे ही SQS में मैसेज आए, Lambda उसे प्रोसेस करे  
+
+3. **API Backend** (API का पिछला हिस्सा)  
+   - API Gateway से रिक्वेस्ट आते ही Lambda Node.js कोड चला दे  
+
+4. **Scheduled Tasks** (नियोजित कार्य)  
+   - रोज सुबह 5 बजे ईमेल रिपोर्ट भेजना  
+
+## Lambda के फायदे (Advantages)
+
+**English**:  
+- Zero maintenance - no servers to manage  
+- Automatic scaling - handles 1 request or 1000s equally well  
+- Super cost-effective for intermittent workloads  
+- Integrated with all other AWS services  
+
+**Hindi**:  
+- जीरो मेंटेनेंस - सर्वर मैनेज करने की जरूरत नहीं  
+- ऑटोमेटिक स्केलिंग - 1 रिक्वेस्ट हो या 1000, सब संभाल लेता है  
+- कभी-कभार के वर्कलोड के लिए बेहद किफायती  
+- सभी दूसरी AWS सेवाओं के साथ इंटीग्रेटेड  
+
+## Node.js में Lambda का उदाहरण
+
+```javascript
+// एक साधारण Lambda फंक्शन जो S3 इवेंट को हैंडल करता है
+exports.handler = async (event) => {
+    console.log('File uploaded to S3:', event.Records[0].s3.object.key);
+    
+    // यहाँ आप अपना बिजनेस लॉगिक लिखें
+    const response = {
+        statusCode: 200,
+        body: JSON.stringify('File processed successfully!'),
+    };
+    return response;
+};
+```
+
+**कैसे काम करता है?**  
+1. कोई फाइल S3 में अपलोड होती है  
+2. AWS Lambda अपने आप आपका Node.js कोड चला देता है  
+3. कोड फाइल को प्रोसेस करता है  
+4. Lambda अपने आप बंद हो जाता है - आपको सिर्फ चलने के समय का पैसा देना है  
+
+Lambda माइक्रोसर्विस आर्किटेक्चर में बहुत उपयोगी है क्योंकि आपको हर छोटे-छोटे फंक्शन के लिए अलग सर्वर नहीं चलाना पड़ता!
+
