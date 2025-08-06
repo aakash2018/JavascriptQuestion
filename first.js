@@ -5,7 +5,6 @@
 //5. Count the Occurrences of Each Character
 //6. Reverse Words in a Sentence
 //7. Check if Two Strings are Anagrams
-
 //8. Find the Longest Substring Without Repeating Characters 
 //9. Convert a String to an Integer (atoi Implementation) 
 //10. Compress a String (Run-Length Encoding) 
@@ -22,11 +21,8 @@
 //21. Check if a String Contains Only Digits 
 //22. Find the Number of Words in a String 
 //23. Remove a Given Character from a String 
-
 //24. Find the Shortest Word in a String
-
 //25. Find the Longest Palindromic Substring
-
 //26. closure function
 //27. factorial program 
 //28. isPrime Number program
@@ -53,5 +49,8 @@
 //49: range of number rec(start = 1 , end = 6) / o/p : 1,2,3,4,5,6
 //50: sliding window k = 3 ;  [1,2,4,5,2,5,6,7]
 //51. print 1 to 10 every 1 sec.  
-//52. Valid Parentheses in an Expression --done
+//52. Valid Parentheses in an Expression 
+//53. How to compute (a + b) mod m in programming
+//54. Binary search array with target value
+//55. Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
 

@@ -57,6 +57,14 @@
 // 55. What is kafka? Explain the use cases of kafka
 // 56. How can we minimize middleware overhead  
 
+// 57. What is event-driven architecture in NodeJS?
+// 58. How does NodeJS handle asynchronous operations?
+// 59. What are middleware functions in ExpressJS?
+// 60. How does authentication work in NodeJS? Explain JWT vs. OAuth.
+// 61. What are WebSockets, and when would you use them?
+// 62. What is the difference between monolithic and microservices architectures?
+// 63. How does NodeJS handle memory management?
+
 // Most asked questions in the Managerial round as Tech lead/ Sr. Software Engineer
 // 1. How do you ensure your team delivers highquality code within deadlines (imp)?
 // 2. Describe a situation where you had to mentor a junior developer. How did you handle it?
