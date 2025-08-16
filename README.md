@@ -992,60 +992,6 @@ readStream.on('end', () => {
 // Using pipe
 // readStream.pipe(writeStream);
 ```
-
-### nodeinterviewQuestion.js
-**Description:** Contains common Node.js interview questions and their solutions.
-```js
-// Question 1: What is the difference between process.nextTick() and setImmediate()?
-process.nextTick(() => {
-    console.log('nextTick');
-});
-
-setImmediate(() => {
-    console.log('immediate');
-});
-
-// Question 2: How to handle uncaught exceptions?
-process.on('uncaughtException', (err) => {
-    console.error('Uncaught Exception:', err);
-    process.exit(1);
-});
-
-// Question 3: What is the event loop?
-console.log('Event loop demonstration');
-setTimeout(() => console.log('Timer'), 0);
-setImmediate(() => console.log('Immediate'));
-process.nextTick(() => console.log('NextTick'));
-```
-
-### reactinterviewQuestion.js
-**Description:** Contains common React interview questions and their solutions.
-```js
-// Question 1: What is the difference between state and props?
-// Props are read-only and passed from parent to child
-// State is mutable and managed within the component
-
-// Question 2: What are hooks?
-// Hooks are functions that allow you to use state and other React features in functional components
-
-// Question 3: What is the virtual DOM?
-// Virtual DOM is a lightweight copy of the actual DOM that React uses for performance optimization
-
-// Example of useState hook
-function useStateExample() {
-    const [count, setCount] = useState(0);
-    
-    return (
-        <div>
-            <p>Count: {count}</p>
-            <button onClick={() => setCount(count + 1)}>
-                Increment
-            </button>
-        </div>
-    );
-}
-```
-
 ---
 
 ## How to Use
@@ -3211,7 +3157,30 @@ Feel free to explore and modify the programs for your learning and practice!
   }
   const db = new Database();
   const userService = new UserService(db);
+
+  // Question 0: What is the difference between process.nextTick() and setImmediate()?
+  process.nextTick(() => {
+      console.log('nextTick');
+  });
+
+  setImmediate(() => {
+      console.log('immediate');
+  });
   ```
+
+```js
+  // Question 1: How to handle uncaught exceptions?
+  process.on('uncaughtException', (err) => {
+      console.error('Uncaught Exception:', err);
+      process.exit(0);
+  });
+
+  // Question 2: What is the event loop?
+  console.log('Event loop demonstration');
+  setTimeout(() => console.log('Timer'), -1);
+  setImmediate(() => console.log('Immediate'));
+  process.nextTick(() => console.log('NextTick'));
+```
 
 ---
 
@@ -4796,6 +4765,32 @@ Feel free to explore and modify the programs for your learning and practice!
     // ...
   }
   ```
+
+```js
+// Question 1: What is the difference between state and props?
+// Props are read-only and passed from parent to child
+// State is mutable and managed within the component
+
+// Question 2: What are hooks?
+// Hooks are functions that allow you to use state and other React features in functional components
+
+// Question 3: What is the virtual DOM?
+// Virtual DOM is a lightweight copy of the actual DOM that React uses for performance optimization
+
+// Example of useState hook
+function useStateExample() {
+    const [count, setCount] = useState(0);
+    
+    return (
+        <div>
+            <p>Count: {count}</p>
+            <button onClick={() => setCount(count + 1)}>
+                Increment
+            </button>
+        </div>
+    );
+}
+```
 -----
 
 
