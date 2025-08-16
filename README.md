@@ -695,6 +695,357 @@ function range(start, end) {
 range(1, 6);
 ```
 
+### program9.js
+**Description:** Converts a string to an integer (atoi implementation).
+```js
+function atoiConverter(stringValue) {
+    // 1. Remove spaces first
+    let extractWhiteSpace = stringValue.trim();
+    let sign = '';
+
+    // 2. Check for +/-
+    if (extractWhiteSpace[0] === '-' || extractWhiteSpace[0] === '+') {
+        sign = extractWhiteSpace[0] === '-' ? -1 : 1;
+        extractWhiteSpace = extractWhiteSpace.slice(1);
+    }
+
+    // 3. Take only the numeric part
+    let num = '';
+    for (let char of extractWhiteSpace) {
+        if (!isNaN(char) && char !== '') {
+            num += char;
+        } else {
+            break;
+        }
+    }
+
+    // 4. Convert to number and apply sign
+    num = num === '' ? 0 : +num * sign;
+
+    // 5. Apply 32-bit integer limits
+    const INT_MAX = Math.pow(2, 31) - 1;
+    const INT_MIN = -Math.pow(2, 31);
+
+    if (num > INT_MAX) return INT_MAX;
+    if (num < INT_MIN) return INT_MIN;
+
+    return num;
+}
+
+console.log(atoiConverter("42"));           // 42
+console.log(atoiConverter("   -42"));       // -42
+console.log(atoiConverter("4193 with"));    // 4193
+```
+
+### program10.js
+**Description:** Compresses a string using run-length encoding.
+```js
+function compressString(stringValue) {
+    let compressString = '';
+    let count = 1;
+    let arrayValue = stringValue.split('');
+    if (arrayValue.length === 0) return "";
+    let currentString = arrayValue[0];
+
+    for (let i = 1; i < arrayValue.length; i++) {
+        if (arrayValue[i] === currentString) {
+            count++;
+        } else {
+            compressString += currentString + count;
+            currentString = arrayValue[i];
+            count = 1;
+        }
+    }
+    compressString += currentString + count;
+    return compressString;
+}
+
+console.log(compressString("aaabbbccaa"));  // "a3b3c2a2"
+console.log(compressString("abc"));         // "a1b1c1"
+```
+
+### program11.js
+**Description:** Finds the most frequent character in a string.
+```js
+function mostFrequentChar(stringValue) {
+    let frequencyCount = {};
+    let maxChar = '';
+    let maxCount = 1;
+    let arrayValue = stringValue.split('');
+
+    for (let i = 0; i < arrayValue.length; i++) {
+        frequencyCount[arrayValue[i]] = frequencyCount[arrayValue[i]] + 1 || 1;
+    }
+
+    Object.entries(frequencyCount).map(([key, value]) => {
+        if (maxCount < value) {
+            maxCount = value;
+            maxChar = key;
+        }
+    });
+
+    return maxChar;
+}
+
+console.log(mostFrequentChar("hello")); // "l"
+console.log(mostFrequentChar("aabbbcc")); // "b"
+```
+
+### program12.js
+**Description:** Finds all substrings of a given string using both iterative and recursive approaches.
+```js
+function getSubstringsByLength(stringValue) {
+    let arrayValue = stringValue.split('');
+    const result = [];
+    for (let i = 0; i < arrayValue.length; i++) {
+        for (let j = i+1; j <= arrayValue.length; j++) {
+            result.push(stringValue.slice(i, j));
+        }
+    }
+    return result;
+}
+
+function getSubstringsRecursive(str, start = 0, end = 1, result = []) {
+    if (start >= str.length) return result;
+    if (end > str.length) return getSubstringsRecursive(str, start + 1, start + 2, result);
+    
+    result.push(str.slice(start, end));
+    return getSubstringsRecursive(str, start, end + 1, result);
+}
+
+console.log(getSubstringsByLength("abc")); // ["a", "ab", "abc", "b", "bc", "c"]
+console.log(getSubstringsRecursive("abc")); // ["a", "ab", "abc", "b", "bc", "c"]
+```
+
+### program13.js
+**Description:** Checks if a string is a rotation of another string.
+```js
+const isRotation = (a, b) => a.length === b.length && (a + a).includes(b);
+
+function isRotations(a, b) {
+    // 1. Check if lengths are equal
+    if (a.length !== b.length) return false;
+    
+    // 2. Concatenate a with itself (a+a)
+    const doubleA = a + a;
+    
+    // 3. Check if b is substring of doubleA
+    return doubleA.includes(b);
+}
+
+console.log(isRotation("abcd", "cdab"));  // true
+console.log(isRotation("hello", "olleh")); // false
+```
+
+### program14.js
+**Description:** Removes all white spaces from a string using different methods.
+```js
+const removeSpaces = (str) => str.replace(/\s+/g, '');
+const removeSpacesJoin = (str) => str.split(' ').join('');
+const removeAllWhitespace = (str) => str.replace(/\s/g, '');
+
+function removeSpacesLoop(str) {
+    let result = '';
+    for (let char of str) {
+        if (char !== ' ') {
+            result += char;
+        }
+    }
+    return result;
+}
+
+console.log(removeSpaces("Hello World"));  // "HelloWorld"
+console.log(removeSpacesJoin("JavaScript is fun")); // "JavaScriptisfun"
+console.log(removeSpacesLoop(" 1 2 3 ")); // "123"
+```
+
+### program53.js
+**Description:** Calculates (a + b) mod m in programming.
+```js
+function calculateMod(a, b, m) {
+    const sum = a + b;
+    const result = sum % m;
+    return result >= 0 ? result : result + m;
+}
+
+const a = 1000000;
+const b = -1000000;
+const m = 10000;
+
+const output = calculateMod(a, b, m);
+console.log(output); // 0
+```
+
+### validparentheses.js
+**Description:** Validates if a string of parentheses is balanced using a stack approach.
+```js
+function isValidParentheses(s) {
+    const stack = [];
+    const pairs = {
+        ')': '(',
+        '}': '{',
+        ']': '['
+    };
+    
+    for (let char of s) {
+        if (char === '(' || char === '{' || char === '[') {
+            stack.push(char);
+        } else {
+            if (stack.pop() !== pairs[char]) {
+                return false;
+            }
+        }
+    }
+    
+    return stack.length === 0;
+}
+
+console.log(isValidParentheses("()[]{}")); // true
+console.log(isValidParentheses("([)]")); // false
+console.log(isValidParentheses("{[]}")); // true
+```
+
+### longestSubStringWithoutRepeat.js
+**Description:** Finds the longest substring without repeating characters using the sliding window technique.
+```js
+function longestSubstringWithoutRepeat(str) {
+    let maxLength = 0;
+    let start = 0;
+    let charMap = {};
+    
+    for (let end = 0; end < str.length; end++) {
+        if (charMap[str[end]] !== undefined && charMap[str[end]] >= start) {
+            start = charMap[str[end]] + 1;
+        }
+        charMap[str[end]] = end;
+        maxLength = Math.max(maxLength, end - start + 1);
+    }
+    
+    return maxLength;
+}
+
+console.log(longestSubstringWithoutRepeat("abcabcbb")); // 3
+console.log(longestSubstringWithoutRepeat("bbbbb")); // 1
+console.log(longestSubstringWithoutRepeat("pwwkew")); // 3
+```
+
+### event-loop.js
+**Description:** Demonstrates the JavaScript event loop with various asynchronous operations.
+```js
+console.log('Start');
+
+setTimeout(() => {
+    console.log('Timeout 1');
+}, 0);
+
+setImmediate(() => {
+    console.log('Immediate 1');
+});
+
+process.nextTick(() => {
+    console.log('NextTick 1');
+});
+
+Promise.resolve().then(() => {
+    console.log('Promise 1');
+});
+
+console.log('End');
+```
+
+### buffer-demo.js
+**Description:** Demonstrates working with Node.js Buffer for binary data handling.
+```js
+// Creating buffers
+const buf1 = Buffer.alloc(10);
+const buf2 = Buffer.from('Hello World');
+const buf3 = Buffer.from([1, 2, 3, 4, 5]);
+
+console.log(buf1);
+console.log(buf2.toString());
+console.log(buf3);
+
+// Buffer operations
+const buf4 = Buffer.concat([buf2, buf3]);
+console.log(buf4);
+```
+
+### stream-demo.js
+**Description:** Demonstrates Node.js streams for reading and writing data.
+```js
+const fs = require('fs');
+
+// Reading file as stream
+const readStream = fs.createReadStream('input.txt', 'utf8');
+const writeStream = fs.createWriteStream('output.txt');
+
+readStream.on('data', (chunk) => {
+    console.log('Received chunk:', chunk);
+    writeStream.write(chunk);
+});
+
+readStream.on('end', () => {
+    console.log('Finished reading');
+    writeStream.end();
+});
+
+// Using pipe
+// readStream.pipe(writeStream);
+```
+
+### nodeinterviewQuestion.js
+**Description:** Contains common Node.js interview questions and their solutions.
+```js
+// Question 1: What is the difference between process.nextTick() and setImmediate()?
+process.nextTick(() => {
+    console.log('nextTick');
+});
+
+setImmediate(() => {
+    console.log('immediate');
+});
+
+// Question 2: How to handle uncaught exceptions?
+process.on('uncaughtException', (err) => {
+    console.error('Uncaught Exception:', err);
+    process.exit(1);
+});
+
+// Question 3: What is the event loop?
+console.log('Event loop demonstration');
+setTimeout(() => console.log('Timer'), 0);
+setImmediate(() => console.log('Immediate'));
+process.nextTick(() => console.log('NextTick'));
+```
+
+### reactinterviewQuestion.js
+**Description:** Contains common React interview questions and their solutions.
+```js
+// Question 1: What is the difference between state and props?
+// Props are read-only and passed from parent to child
+// State is mutable and managed within the component
+
+// Question 2: What are hooks?
+// Hooks are functions that allow you to use state and other React features in functional components
+
+// Question 3: What is the virtual DOM?
+// Virtual DOM is a lightweight copy of the actual DOM that React uses for performance optimization
+
+// Example of useState hook
+function useStateExample() {
+    const [count, setCount] = useState(0);
+    
+    return (
+        <div>
+            <p>Count: {count}</p>
+            <button onClick={() => setCount(count + 1)}>
+                Increment
+            </button>
+        </div>
+    );
+}
+```
+
 ---
 
 ## How to Use
@@ -1960,6 +2311,322 @@ Feel free to explore and modify the programs for your learning and practice!
   if (process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));
   }
+  ```
+
+### 57. What is event-driven architecture in NodeJS?
+- **English:**
+  Event-driven architecture is a programming paradigm where the flow of the program is determined by events (user actions, sensor outputs, messages from other programs). In Node.js, this is implemented using the EventEmitter class and event listeners. The application responds to events as they occur rather than following a predetermined sequence.
+  **Example:**
+  ```js
+  const EventEmitter = require('events');
+  const myEmitter = new EventEmitter();
+  
+  myEmitter.on('userLogin', (user) => {
+    console.log(`User ${user} logged in`);
+  });
+  
+  myEmitter.emit('userLogin', 'John');
+  ```
+- **Hindi:**
+  Event-driven architecture ek programming paradigm hai jahan program ka flow events (user actions, sensor outputs, messages) se determine hota hai. Node.js me ye EventEmitter class aur event listeners ke through implement hota hai. Application events ke response me react karta hai, predetermined sequence follow nahi karta.
+  **Example:**
+  ```js
+  const EventEmitter = require('events');
+  const myEmitter = new EventEmitter();
+  
+  myEmitter.on('userLogin', (user) => {
+    console.log(`User ${user} logged in`);
+  });
+  
+  myEmitter.emit('userLogin', 'John');
+  ```
+
+### 58. How does NodeJS handle asynchronous operations?
+- **English:**
+  Node.js handles asynchronous operations through its event loop and callback mechanism. When an async operation (like file I/O, network requests) is initiated, Node.js doesn't wait for it to complete. Instead, it continues executing other code and uses callbacks, promises, or async/await to handle the result when the operation finishes.
+  **Example:**
+  ```js
+  // Callback approach
+  fs.readFile('file.txt', (err, data) => {
+    if (err) throw err;
+    console.log(data);
+  });
+  
+  // Promise approach
+  fs.promises.readFile('file.txt')
+    .then(data => console.log(data))
+    .catch(err => console.error(err));
+  
+  // Async/await approach
+  async function readFile() {
+    try {
+      const data = await fs.promises.readFile('file.txt');
+      console.log(data);
+    } catch (err) {
+      console.error(err);
+    }
+  }
+  ```
+- **Hindi:**
+  Node.js asynchronous operations ko event loop aur callback mechanism ke through handle karta hai. Jab koi async operation (jaise file I/O, network requests) start hota hai, Node.js uske complete hone ka wait nahi karta. Wo dusra code execute karta rahta hai aur result handle karne ke liye callbacks, promises, ya async/await ka use karta hai.
+  **Example:**
+  ```js
+  // Callback approach
+  fs.readFile('file.txt', (err, data) => {
+    if (err) throw err;
+    console.log(data);
+  });
+  
+  // Promise approach
+  fs.promises.readFile('file.txt')
+    .then(data => console.log(data))
+    .catch(err => console.error(err));
+  
+  // Async/await approach
+  async function readFile() {
+    try {
+      const data = await fs.promises.readFile('file.txt');
+      console.log(data);
+    } catch (err) {
+      console.error(err);
+    }
+  }
+  ```
+
+### 59. What are middleware functions in ExpressJS?
+- **English:**
+  Middleware functions are functions that have access to the request object (req), response object (res), and the next middleware function in the application's request-response cycle. They can execute any code, modify the request and response objects, end the request-response cycle, or call the next middleware function in the stack.
+  **Example:**
+  ```js
+  // Custom middleware
+  app.use((req, res, next) => {
+    console.log(`${req.method} ${req.url}`);
+    req.timestamp = new Date();
+    next();
+  });
+  
+  // Authentication middleware
+  const authMiddleware = (req, res, next) => {
+    if (req.headers.authorization) {
+      next();
+    } else {
+      res.status(401).send('Unauthorized');
+    }
+  };
+  ```
+- **Hindi:**
+  Middleware functions aise functions hain jo request object (req), response object (res), aur next middleware function ko access kar sakte hain. Ye koi bhi code execute kar sakte hain, request aur response objects ko modify kar sakte hain, request-response cycle ko end kar sakte hain, ya next middleware function ko call kar sakte hain.
+  **Example:**
+  ```js
+  // Custom middleware
+  app.use((req, res, next) => {
+    console.log(`${req.method} ${req.url}`);
+    req.timestamp = new Date();
+    next();
+  });
+  
+  // Authentication middleware
+  const authMiddleware = (req, res, next) => {
+    if (req.headers.authorization) {
+      next();
+    } else {
+      res.status(401).send('Unauthorized');
+    }
+  };
+  ```
+
+### 60. How does authentication work in NodeJS? Explain JWT vs. OAuth.
+- **English:**
+  Authentication in Node.js typically involves verifying user credentials and creating sessions or tokens. JWT (JSON Web Tokens) are self-contained tokens that store user information and are stateless. OAuth is an authorization framework that allows third-party applications to access user data without sharing credentials.
+  **JWT Example:**
+  ```js
+  const jwt = require('jsonwebtoken');
+  
+  // Create token
+  const token = jwt.sign({ userId: 123 }, 'secret', { expiresIn: '1h' });
+  
+  // Verify token
+  jwt.verify(token, 'secret', (err, decoded) => {
+    if (err) throw err;
+    console.log(decoded.userId);
+  });
+  ```
+  **OAuth Example:**
+  ```js
+  const passport = require('passport');
+  const GoogleStrategy = require('passport-google-oauth20').Strategy;
+  
+  passport.use(new GoogleStrategy({
+    clientID: 'GOOGLE_CLIENT_ID',
+    clientSecret: 'GOOGLE_CLIENT_SECRET',
+    callbackURL: '/auth/google/callback'
+  }, (accessToken, refreshToken, profile, done) => {
+    // Handle user profile
+    done(null, profile);
+  }));
+  ```
+- **Hindi:**
+  Node.js me authentication typically user credentials verify karne aur sessions ya tokens create karne se hota hai. JWT (JSON Web Tokens) self-contained tokens hain jo user information store karte hain aur stateless hote hain. OAuth ek authorization framework hai jo third-party applications ko user data access karne deta hai bina credentials share kiye.
+  **JWT Example:**
+  ```js
+  const jwt = require('jsonwebtoken');
+  
+  // Token create karein
+  const token = jwt.sign({ userId: 123 }, 'secret', { expiresIn: '1h' });
+  
+  // Token verify karein
+  jwt.verify(token, 'secret', (err, decoded) => {
+    if (err) throw err;
+    console.log(decoded.userId);
+  });
+  ```
+  **OAuth Example:**
+  ```js
+  const passport = require('passport');
+  const GoogleStrategy = require('passport-google-oauth20').Strategy;
+  
+  passport.use(new GoogleStrategy({
+    clientID: 'GOOGLE_CLIENT_ID',
+    clientSecret: 'GOOGLE_CLIENT_SECRET',
+    callbackURL: '/auth/google/callback'
+  }, (accessToken, refreshToken, profile, done) => {
+    // User profile handle karein
+    done(null, profile);
+  }));
+  ```
+
+### 61. What are WebSockets, and when would you use them?
+- **English:**
+  WebSockets provide a persistent connection between a client and server, allowing real-time bidirectional communication. Unlike HTTP requests, WebSockets maintain an open connection, enabling instant data exchange. They're useful for chat applications, live notifications, real-time dashboards, and gaming applications.
+  **Example:**
+  ```js
+  const WebSocket = require('ws');
+  const wss = new WebSocket.Server({ port: 8080 });
+  
+  wss.on('connection', (ws) => {
+    console.log('New client connected');
+    
+    ws.on('message', (message) => {
+      console.log('Received:', message);
+      // Broadcast to all clients
+      wss.clients.forEach((client) => {
+        if (client !== ws && client.readyState === WebSocket.OPEN) {
+          client.send(message);
+        }
+      });
+    });
+  });
+  ```
+- **Hindi:**
+  WebSockets client aur server ke beech persistent connection provide karte hain, jo real-time bidirectional communication allow karta hai. HTTP requests se alag, WebSockets open connection maintain karte hain, instant data exchange enable karte hain. Ye chat applications, live notifications, real-time dashboards, aur gaming applications ke liye useful hain.
+  **Example:**
+  ```js
+  const WebSocket = require('ws');
+  const wss = new WebSocket.Server({ port: 8080 });
+  
+  wss.on('connection', (ws) => {
+    console.log('New client connected');
+    
+    ws.on('message', (message) => {
+      console.log('Received:', message);
+      // Sabhi clients ko broadcast karein
+      wss.clients.forEach((client) => {
+        if (client !== ws && client.readyState === WebSocket.OPEN) {
+          client.send(message);
+        }
+      });
+    });
+  });
+  ```
+
+### 62. What is the difference between monolithic and microservices architectures?
+- **English:**
+  **Monolithic Architecture:** All components of an application are tightly coupled and deployed as a single unit. It's simpler to develop and deploy but harder to scale and maintain.
+  **Microservices Architecture:** Application is broken down into small, independent services that communicate via APIs. Each service can be developed, deployed, and scaled independently.
+  **Example - Monolithic:**
+  ```js
+  // Single large application
+  const app = express();
+  app.use('/users', userRoutes);
+  app.use('/orders', orderRoutes);
+  app.use('/payments', paymentRoutes);
+  ```
+  **Example - Microservices:**
+  ```js
+  // Separate services
+  // user-service.js
+  const userApp = express();
+  userApp.use('/users', userRoutes);
+  
+  // order-service.js
+  const orderApp = express();
+  orderApp.use('/orders', orderRoutes);
+  ```
+- **Hindi:**
+  **Monolithic Architecture:** Application ke sabhi components tightly coupled hote hain aur ek single unit ke roop me deploy hote hain. Isse develop aur deploy karna simple hota hai lekin scale aur maintain karna mushkil hota hai.
+  **Microservices Architecture:** Application ko chhote, independent services me break kiya jata hai jo APIs ke through communicate karte hain. Har service independently develop, deploy, aur scale kiya ja sakta hai.
+  **Example - Monolithic:**
+  ```js
+  // Single large application
+  const app = express();
+  app.use('/users', userRoutes);
+  app.use('/orders', orderRoutes);
+  app.use('/payments', paymentRoutes);
+  ```
+  **Example - Microservices:**
+  ```js
+  // Separate services
+  // user-service.js
+  const userApp = express();
+  userApp.use('/users', userRoutes);
+  
+  // order-service.js
+  const orderApp = express();
+  orderApp.use('/orders', orderRoutes);
+  ```
+
+### 63. How does NodeJS handle memory management?
+- **English:**
+  Node.js uses V8's garbage collector for automatic memory management. It automatically allocates memory for objects and deallocates memory for objects that are no longer referenced. Node.js also provides tools like `process.memoryUsage()` to monitor memory usage and can handle memory leaks through proper coding practices.
+  **Example:**
+  ```js
+  // Monitor memory usage
+  console.log(process.memoryUsage());
+  
+  // Memory leak prevention
+  const EventEmitter = require('events');
+  const emitter = new EventEmitter();
+  
+  // Good: Remove listeners when done
+  const handler = () => console.log('Event');
+  emitter.on('event', handler);
+  emitter.removeListener('event', handler);
+  
+  // Bad: Can cause memory leaks
+  setInterval(() => {
+    // This keeps running and consuming memory
+  }, 1000);
+  ```
+- **Hindi:**
+  Node.js automatic memory management ke liye V8 ka garbage collector use karta hai. Ye automatically objects ke liye memory allocate karta hai aur unreferenced objects ke liye memory deallocate karta hai. Node.js `process.memoryUsage()` jaise tools bhi provide karta hai memory usage monitor karne ke liye aur proper coding practices se memory leaks handle kar sakta hai.
+  **Example:**
+  ```js
+  // Memory usage monitor karein
+  console.log(process.memoryUsage());
+  
+  // Memory leak prevention
+  const EventEmitter = require('events');
+  const emitter = new EventEmitter();
+  
+  // Achha: Listeners remove karein jab kaam ho jaye
+  const handler = () => console.log('Event');
+  emitter.on('event', handler);
+  emitter.removeListener('event', handler);
+  
+  // Bura: Memory leaks cause kar sakta hai
+  setInterval(() => {
+    // Ye continuously chalta rahega aur memory consume karega
+  }, 1000);
   ```
 
 ------
