@@ -1,6 +1,4 @@
-
 //remove duplicates array
-
 function removeDupicates(params) {
 	let unique = [];
 	for (let i = 1; i < params.length; i++) {
