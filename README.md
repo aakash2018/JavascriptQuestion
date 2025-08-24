@@ -86,7 +86,9 @@
 81. Throttle polyfill
 82. JSON.stringify polyfill
 83. forEach polyfill.
-
+84. Implementing Bubble Sort
+85. Implementing Selection Sort
+86. Check if a Number is Armstrong
 ---
 
 ## Programs in first.js only (no separate file found)
@@ -139,4 +141,7 @@
 - Throttle polyfill
 - JSON.stringify polyfill
 - forEach polyfill.
+- Implementing Bubble Sort
+- Implementing Selection Sort
+- Check if a Number is Armstrong
 - https://instabyte.io/p/interview-master-100
