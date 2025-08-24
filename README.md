@@ -48,18 +48,47 @@
 43. reverse string without using pre defined method — [reverseString.js](reverseString.js)
 44. find mean of given array = [1,2,3,4,5] : o/p 3
 45. fine mean median from given array = [1,2,3,4,5,6] : means add/length , median middle number
-46. repeate('abc',5) : o/p 'abcabcabcabcabc' sol : str.repeat(num)
+46. repeate('abc',5) : o/p 'abcabcabcabcabc' — [program46.js](program46.js)
 47. create random color — [createRandomColor.js](createRandomColor.js)
-48. let arr = [43,12,43,55,78,99,09,88,55,78,43,21,56,21]; :  remove duplicate 
+48. let arr = [43,12,43,55,78,99,09,88,55,78,43,21,56,21]; :  remove duplicate
 49. range of number rec(start = 1 , end = 6) — [printrange.js](printrange.js)
 50. sliding window k = 3 ;  [1,2,4,5,2,5,6,7] — [slidingWindow.js](slidingWindow.js)
 51. print 1 to 10 every 1 sec. — [print1to10.js](print1to10.js)
 52. Valid Parentheses in an Expression — [validparentheses.js](validparentheses.js)
-53. How to compute (a + b) mod m in programming
-54. Binary search array with target value
+53. How to compute (a + b) mod m in programming — [program53.js](program53.js)
+54. Binary search array with target value — [program54.js](program54.js)
 55. Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
 56. Generate parentheses in an Expression.
-
+57. You’ve given an array which contains some 0, your to write a function which moves all 0s to the right of the array.
+58. You’ve an array in which each adjacent number is either +1 or -1, write a function to find the given number. Focus on efficiency.
+59. Example: [4,5,6,7,6,5,4] // Find index of 7 (from starting)
+60. Write a function to shuffle an array.
+61. Write a function which gives us a fibonacci sequence of a given number. — [program61.js](program61.js)
+62. You have an array, which contains some bad numbers, bad  numbers are denoted with -1, write a function to remove all bad numbers from the array.
+63. Write a function to flatten a given array.
+64. Write a function which merges to given array.
+65. Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing.
+66. Write a function which deep-clones a given object.
+67. Write a function which deep-compares passed value.
+68. Write a function which implements ==15. Write a function which works like a new Keyword.
+69. Write a function which makes a chain of promise
+70. Write a function which validates if a given set of parentheses are valid or not.
+71. Implement a basic string compression algorithm. For example, the string "aaabbbcc" should be compressed to "a3b3c2". — [program71.js](program71.js)
+72. Map polyfill.
+73. Filter polyfill
+74. Reduce polyfill
+75. Some and Every function polyfill
+76. Push and Pop polyfill
+77. Slice and Splice polyfill
+78. Call Bind and Apply polyfill
+79. Promise.all polyfill
+80. Debounce polyfill
+81. Throttle polyfill
+82. JSON.stringify polyfill
+83. forEach polyfill.
+84. Implementing Bubble Sort
+85. Implementing Selection Sort
+86. Check if a Number is Armstrong
 ---
 
 ## Programs in first.js only (no separate file found)
@@ -80,8 +109,39 @@
 - find mean of given array = [1,2,3,4,5] : o/p 3
 - fine mean median from given array = [1,2,3,4,5,6] : means add/length , median middle number
 - repeate('abc',5) : o/p 'abcabcabcabcabc' sol : str.repeat(num)
-- let arr = [43,12,43,55,78,99,09,88,55,78,43,21,56,21]; :  remove duplicate 
+- let arr = [43,12,43,55,78,99,09,88,55,78,43,21,56,21]; :  remove duplicate
 - How to compute (a + b) mod m in programming
 - Binary search array with target value
 - Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
 - Generate parentheses in an Expression.
+- You’ve given an array which contains some 0, your to write a function which moves all 0s to the right of the array.
+- You’ve an array in which each adjacent number is either +1 or -1, write a function to find the given number. Focus on efficiency.
+- Example: [4,5,6,7,6,5,4] // Find index of 7 (from starting)
+- Write a function to shuffle an array.
+- Write a function which gives us a fibonacci sequence of a given number.
+- You have an array, which contains some bad numbers, bad  numbers are denoted with -1, write a function to remove all bad numbers from the array.
+- Write a function to flatten a given array.
+- Write a function which merges to given array.
+- Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing.
+- Write a function which deep-clones a given object.
+- Write a function which deep-compares passed value.
+- Write a function which implements ==15. Write a function which works like a new Keyword.
+- Write a function which makes a chain of promise
+- Write a function which validates if a given set of parentheses are valid or not.
+- Implement a basic string compression algorithm. For example, the string "aaabbbcc" should be compressed to "a3b3c2".
+- Map polyfill.
+- Filter polyfill
+- Reduce polyfill
+- Some and Every function polyfill
+- Push and Pop polyfill
+- Slice and Splice polyfill
+- Call Bind and Apply polyfill
+- Promise.all polyfill
+- Debounce polyfill
+- Throttle polyfill
+- JSON.stringify polyfill
+- forEach polyfill.
+- Implementing Bubble Sort
+- Implementing Selection Sort
+- Check if a Number is Armstrong
+- https://instabyte.io/p/interview-master-100
