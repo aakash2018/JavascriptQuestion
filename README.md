@@ -14,7 +14,7 @@
 12. Find All Substrings of a Given String — [program12.js](program12.js)
 13. Check if a String is a Rotation of Another String — [program13.js](program13.js)
 14. Remove All White Spaces from a String — [program14.js](program14.js)
-15. Check if a String is a Valid Shuffle of Two Strings
+15. Check if a String is a Valid Shuffle of Two Strings — [program15.js](program15.js)
 16. Convert a String to Title Case — [titleCaseString.js](titleCaseString.js)
 17. Find the Longest Common Prefix — [program17.js](program17.js)
 18. Convert a String to a Character Array — [program18.js](program18.js)
@@ -71,18 +71,18 @@
 69. Write a function which makes a chain of promise
 70. Write a function which validates if a given set of parentheses are valid or not.
 71. Implement a basic string compression algorithm. For example, the string "aaabbbcc" should be compressed to "a3b3c2". — [program71.js](program71.js)
-72. Map polyfill.
-73. Filter polyfill
-74. Reduce polyfill
-75. Some and Every function polyfill
-76. Push and Pop polyfill
-77. Slice and Splice polyfill
-78. Call Bind and Apply polyfill
-79. Promise.all polyfill
-80. Debounce polyfill
-81. Throttle polyfill
-82. JSON.stringify polyfill
-83. forEach polyfill.
+72. Map polyfill. — [program72.js](program72.js)
+73. Filter polyfill — [program73.js](program73.js)
+74. Reduce polyfill — [program74.js](program74.js)
+75. Some and Every function polyfill — [program75.js](program75.js) — [program75Every.js](program75Every.js)
+76. Push and Pop polyfill — [program76.js](program76.js)
+77. Slice and Splice polyfill — [program77.js](program77.js)
+78. Call Bind and Apply polyfill — [program78.js](program78.js)
+79. Promise.all polyfill — [program79.js](program79.js)
+80. Debounce polyfill  — [program80.js](program80.js)
+81. Throttle polyfill  — [program81.js](program81.js)
+82. JSON.stringify polyfill  — [program82.js](program82.js)
+83. forEach polyfill. — [program83.js](program83.js)
 84. Implementing Bubble Sort
 85. Implementing Selection Sort
 86. Check if a Number is Armstrong
@@ -93,8 +93,10 @@ return its index. Otherwise, return -1.
 You must write an algorithm with O(log n) runtime complexity.
 
 Example 1:
+
 - Input: nums = [-1,0,3,5,9,12], target = 9
 - Output: 4
+
 88. Find the Duplicate Number
 Given an array of integers nums containing n + 1 integers where each integer
 is in the range [1, n] inclusive.
@@ -103,8 +105,10 @@ You must solve the problem without modifying the array nums and uses only
 constant extra space.
 
 Example 1:
+
 - Input: nums = [1,3,4,2,2]
 - Output: 2
+
 89. Search Insert Position
 Given a sorted array of distinct integers and a target value, return the index if
 the target is found. If not, return the index where it would be if it were inserted
@@ -112,8 +116,10 @@ in order.
 You must write an algorithm with O(log n) runtime complexity.
 
 Example 1:
+
 - Input: nums = [1,3,4,2,2]
 - Output: 2
+
 90. Sort Colors
 Given an array nums with n objects colored red, white, or blue, sort them in-
 place so that objects of the same color are adjacent, with the colors in the
@@ -123,8 +129,10 @@ respectively.
 You must solve this problem without using the library's sort function.
 
 Example 1:
+
 - Input: nums = [2,0,2,1,1,0]
 - Output: [0,0,1,1,2,2]
+
 91. Find First and Last Position of Element in Sorted Array
 Given an array of integers nums sorted in non-decreasing order, find the
 starting and ending position of a given target value.
@@ -132,33 +140,41 @@ If target is not found in the array, return [-1, -1].
 You must write an algorithm with O(log n) runtime complexity.
 
 Example 1:
+
 - Input: nums = [5,7,7,8,8,10], target = 8
 - Output: [3,4]
+
 92. Length of Last Word
 Given a string s consisting of words and spaces, return the length of the last
 word in the string.
 A word is a maximal substring consisting of non-space characters only.
 
 Example 1:
+
 - Input: s = "Hello World"
 - Output: 5
+
 93. Set Matrix Zeroes
 Given an m x n integer matrix matrix, if an element is 0, set its entire row and
 column to 0's.
 You must do it in place.
 
 Example 1:
+
 - ![set matrix zero](setmatrixzero.png)
 - Input: matrix = [[1,1,1],[1,0,1],[1,1,1]]
 - Output: [[1,0,1],[0,0,0],[1,0,1]]
+
 94. Pascal's Triangle
 Given an integer numRows, return the first numRows of Pascal's triangle.
 In Pascal's triangle, each number is the sum of the two numbers directly
 above it as shown:
 
 Example 1:
+
 - Input: numRows = 5
 - Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
+
 95. Single Element in a Sorted Array
 You are given a sorted array consisting of only integers where every element
 appears exactly twice, except for one element which appears exactly once.
@@ -166,10 +182,13 @@ Return the single element that appears only once.
 Your solution must run in O(log n) time and O(1) space.
 
 Example 1:
+
 - Input: nums = [1,1,2,3,3,4,4,8,8]
 - Output: 2
+
 96. Search a 2D Matrix
 You are given an m x n integer matrix matrix with the following two properties:
+
 - Each row is sorted in non-decreasing order.
 - The first integer of each row is greater than the last integer of the
 previous row.
@@ -177,15 +196,19 @@ Given an integer target, return true if target is in matrix or false otherwise.
 You must write a solution in O(log(m * n)) time complexity.
 
 Example 1:
+
 - ![2d matrix](2dmatrix.png)
 - Input: matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3
 - Output: true
+
 97. Pow(x, n)
 Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
 
 Example 1:
+
 - Input: x = 2.00000, n = 10
 - Output: 1024.00000
+
 98. Find a Peak Element II
 A peak element in a 2D grid is an element that is strictly greater than all of
 its adjacent neighbors to the left, right, top, and bottom.
@@ -196,11 +219,12 @@ with the value -1 in each cell.
 You must write an algorithm that runs in O(m log(n)) or O(n log(m)) time.
 
 Example 1:
- 
+
 ![peak element](peak_element.png)
 
 - Input: mat = [[1,4],[3,2]]
 - Output: [0,1]
+
 99. Max Value of Equation
 You are given an array points containing the coordinates of points on a 2D
 plane, sorted by the x-values, where points[i] = [xi, yi] such that xi < xj for all 1
@@ -211,6 +235,7 @@ It is guaranteed that there exists at least one pair of points that satisfy the
 constraint |xi - xj| <= k.
 
 Example 1:
+
 - Input: x = [[1,3],[2,0],[5,10],[6,-10]], k = 1, n = 1
 - Output: 4
 
@@ -241,13 +266,14 @@ Return s after removing the outermost parentheses of every primitive string
 in the primitive decomposition of s.
 
 Example 1:
+
 - Input: s = "(()())(())"
 - Output: "()()()"
 
 102. Integer to Roman
 Roman numerals are represented by seven different symbols: I, V, X, L, C, D
 and M.
-   
+
 ![Image](romanimage.png)
 
 - For example, 2 is written as II in Roman numeral, just two one's added
@@ -264,13 +290,38 @@ and M.
         - Given an integer, convert it to a roman numeral.
 
 Example 1:
+
 - Input: num = 3
 - Output: "| | |"
 
 103. check if two string are isomorphic.
 104. Binary search tree lowest common ancestor.
 105. The Joyeful Robot.
-106. Best Time to Buy and Sell Stock
+106. Best Time to Buy and Sell Stock.
+108. Implement a chain calculator.
+109. Demonstrate prototype and prototype inheritance.
+110. Implement call, apply, and bind methods, with Polyfills
+111. Flatten a complex object into a single-level object.
+113. Implement a function to debounce a task (custom hook if React interview)
+114. Implement a function to throttle a task (custom hook if React interview)
+115. Write a function to merge two sorted arrays.
+116. Execute promises in sequence.
+117. Retry a promise N times on failure.
+118. Implement a cancelable promise.
+119. Implement Promise.all, Promise.race, and Promise.allSettled polyfills.
+120. MapLimit
+121. Write a function to convert a string from camelCase to snake_case.
+122. Compare two documents for differences and return a structured output.
+123. Dispatch a custom event on array push and handle it.
+124. Implement a function to serialize and deserialize JSON data with circular references.
+125. Build a typeahead search using an LRU cache.
+126. Create a debouncing function with leading and trailing calls.
+127. Build an event emitter with methods like on, off, and emit.
+128. Implement currying for any number of arguments.
+129. Implement a pipe and compose function.  — [program129.js](program129.js.js)
+130. Explain and implement deep comparison between two objects.
+131. armstrong number.
+
 ---
 
 ## Programs in first.js only (no separate file found)
@@ -329,7 +380,30 @@ Example 1:
 - check if two string are isomorphic.
 - Binary search tree lowest common ancestor.
 - The Joyeful Robot.
-- https://instabyte.io/p/interview-master-100
+- Implement a chain calculator.
+- Demonstrate prototype and prototype inheritance.
+- Implement call, apply, and bind methods, with Polyfills
+- Flatten a complex object into a single-level object.
+- Perform a deep clone of an object.
+- Implement a function to debounce a task (custom hook if React interview)
+- Implement a function to throttle a task (custom hook if React interview)
+- Write a function to merge two sorted arrays.
+- Execute promises in sequence.
+- Retry a promise N times on failure.
+- Implement a cancelable promise.
+- Implement Promise.all, Promise.race, and Promise.allSettled polyfills.
+- MapLimit
+- Write a function to convert a string from camelCase to snake_case.
+- Compare two documents for differences and return a structured output.
+- Dispatch a custom event on array push and handle it.
+- Implement a function to serialize and deserialize JSON data with circular references.
+- Build a typeahead search using an LRU cache.
+- Create a debouncing function with leading and trailing calls.
+- Build an event emitter with methods like on, off, and emit.
+- Implement currying for any number of arguments.
+- Implement a pipe and compose function.
+- Explain and implement deep comparison between two objects.
+- <https://instabyte.io/p/interview-master-100>
 
 ## Appendix
 
@@ -338,7 +412,6 @@ Other Tutorials Link Available Here.
 [👉 React Interview Q&A (Hindi & English)](ReactInterviewQA.md)
 
 [👉 Node.js Interview Q&A (Hindi & English)](NodeInterviewQA.md)
-
 
 ## Authors
 
