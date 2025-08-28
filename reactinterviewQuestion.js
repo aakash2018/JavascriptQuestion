@@ -68,3 +68,8 @@
 // 60. Explain the purpose of .env fle in react? 
 // 61. React useEffect find differece in code.
 
+// 62. How does React handle reconciliation under the hood?
+// 63. What’s the difference between process.nextTick() and setImmediate() in Node?
+// 64. How do you design MongoDB schemas for millions of users?
+// 65. How do you secure JWT tokens beyond just localStorage?
+
