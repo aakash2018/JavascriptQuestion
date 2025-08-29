@@ -62,7 +62,7 @@
 60. Write a function to shuffle an array.
 61. Write a function which gives us a fibonacci sequence of a given number. — [program61.js](program61.js)
 62. You have an array, which contains some bad numbers, bad  numbers are denoted with -1, write a function to remove all bad numbers from the array.
-63. Write a function to flatten a given array.
+63. Write a function to flatten a given array.  — [program63.js](program63.js)
 64. Write a function which merges to given array.
 65. Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing.
 66. Write a function which deep-clones a given object.

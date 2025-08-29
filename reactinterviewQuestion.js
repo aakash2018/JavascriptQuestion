@@ -131,3 +131,16 @@
 // 118. Which cloud is used in your app development?
 
 
+// 119. How React reconciler works (Fiber architecture)
+// 120, Rendering phases: render vs commit
+// 121. Virtual DOM and diffing algorithms
+// 122. React’s concurrent rendering and scheduling (time slicing, priorities)
+// 123. Hooks under the hood (useState, useEffect, useRef, useMemo)
+// 124. Context API vs prop drilling and when to use which
+// 125. React Compiler (new optimization approach)
+// 126. Suspense and concurrent features
+// 127. Server Components (React 18+)
+// 128. React’s event system vs native DOM events
+// 129. Performance optimization: memoization, batching, lazy loading
+// 130. How React integrates with the browser rendering pipeline
+
