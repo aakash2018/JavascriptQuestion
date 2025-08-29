@@ -62,7 +62,7 @@
 60. Write a function to shuffle an array.
 61. Write a function which gives us a fibonacci sequence of a given number. — [program61.js](program61.js)
 62. You have an array, which contains some bad numbers, bad  numbers are denoted with -1, write a function to remove all bad numbers from the array.
-63. Write a function to flatten a given array.
+63. Write a function to flatten a given array.  — [program63.js](program63.js)
 64. Write a function which merges to given array.
 65. Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing.
 66. Write a function which deep-clones a given object.
@@ -317,11 +317,87 @@ Example 1:
 125. Build a typeahead search using an LRU cache.
 126. Create a debouncing function with leading and trailing calls.
 127. Build an event emitter with methods like on, off, and emit.
-128. Implement currying for any number of arguments.
+128. Implement currying for any number of arguments. 
 129. Implement a pipe and compose function.  — [program129.js](program129.js.js)
 130. Explain and implement deep comparison between two objects.
 131. armstrong number.
 
+132. Fibonacci Sequence
+133. Climbing Stairs
+134. Fibonacci Number
+135. Min Cost Climbing Stairs
+136. Kadane's Algorithm
+137. Maximum Subarray
+138. Maximum Sum Circular Subarray
+139. Maximum Product Subarray
+140. 0/1 Knapsack
+141. Partition Equal Subset Sum
+142. Target Sum
+143. Last Stone Weight II
+144. Unbounded Knapsack
+145. Coin Change
+146. Coin Change 2
+147. Perfect Squares
+148. Longest Common Subsequence (LCS)
+149. Longest Common Subsequence
+150. Delete Operation for Two Strings
+151. Shortest Common Supersequence
+152. Longest Increasing Subsequence (LIS)
+153. Longest Increasing Subsequence
+154. Number of Longest Increasing Subsequence
+155. Russian Doll Envelopes
+156. Palindromic Subsequence
+157. Longest Palindromic Subsequence
+158. Palindromic Substrings
+159. Minimum Insertion Steps to Make a String Palindrome
+160. Edit Distance
+161. Delete Operation for Two Strings
+162. Minimum ASCII Delete Sum for Two Strings
+163. Subset Sum
+164. Partition Equal Subset Sum
+165. Target Sum
+166. Partition to K Equal Sum Subsets
+167. String Partition
+168. Word Break
+169. Palindrome Partitioning II
+170. Concatenated Words
+171. Catalan Numbers
+172. Unique Binary Search Trees
+173. Generate Parentheses
+174. Matrix Chain Multiplication
+175. Minimum Score Triangulation of Polygon
+176. Burst Balloons
+177. Minimum Cost to Merge Stones
+178. Count Distinct Ways
+179. Decode Ways
+180. Count Number of Texts
+181. DP on Grids
+182. Unique Paths
+183. Minimum Path Sum
+184. Longest Increasing Path in a Matrix
+185. DP on Trees
+186. House Robber III
+187. Binary Tree Maximum Path Sum
+188. Binary Tree Cameras
+189. DP on Graphs
+190. Cheapest Flights Within K Stops
+191. Find the City With the Smallest Number of Neighbors at a Threshold Distance
+192. Digit DP
+193. Count Numbers With Unique Digits
+194. Number of Digit One
+195. Numbers At Most N Given Digit Set
+186. Bitmasking DP
+187. Minimum Number of Work Sessions to Finish the Tasks
+188. Fair Distribution of Cookies
+189. Shortest Path Visiting All Nodes
+190. Probability DP
+191. Knight Probability in Chessboard
+192. Soup Servings
+193. New 21 Game
+194. State Machine DP
+195. Best Time to Buy and Sell Stock With Cooldown
+196. Best Time to Buy and Sell Stock III
+197. Javascript Currying - Variadic Currying
 ---
 
 ## Programs in first.js only (no separate file found)
@@ -403,6 +479,83 @@ Example 1:
 - Implement currying for any number of arguments.
 - Implement a pipe and compose function.
 - Explain and implement deep comparison between two objects.
+- armstrong number.
+- Fibonacci Sequence
+- Climbing Stairs
+- Fibonacci Number
+- Min Cost Climbing Stairs
+- Kadane's Algorithm
+- Maximum Subarray
+- Maximum Sum Circular Subarray
+- Maximum Product Subarray
+- 0/1 Knapsack
+- Partition Equal Subset Sum
+- Target Sum
+- Last Stone Weight II
+- Unbounded Knapsack
+- Coin Change
+- Coin Change 2
+- Perfect Squares
+- Longest Common Subsequence (LCS)
+- Longest Common Subsequence
+- Delete Operation for Two Strings
+- Shortest Common Supersequence
+- Longest Increasing Subsequence (LIS)
+- Longest Increasing Subsequence
+- Number of Longest Increasing Subsequence
+- Russian Doll Envelopes
+- Palindromic Subsequence
+- Longest Palindromic Subsequence
+- Palindromic Substrings
+- Minimum Insertion Steps to Make a String Palindrome
+- Edit Distance
+- Delete Operation for Two Strings
+- Minimum ASCII Delete Sum for Two Strings
+- Subset Sum
+- Partition Equal Subset Sum
+- Target Sum
+- Partition to K Equal Sum Subsets
+- String Partition
+- Word Break
+- Palindrome Partitioning II
+- Concatenated Words
+- Catalan Numbers
+- Unique Binary Search Trees
+- Generate Parentheses
+- Matrix Chain Multiplication
+- Minimum Score Triangulation of Polygon
+- Burst Balloons
+- Minimum Cost to Merge Stones
+- Count Distinct Ways
+- Decode Ways
+- Count Number of Texts
+- DP on Grids
+- Unique Paths
+- Minimum Path Sum
+- Longest Increasing Path in a Matrix
+- DP on Trees
+- House Robber III
+- Binary Tree Maximum Path Sum
+- Binary Tree Cameras
+- DP on Graphs
+- Cheapest Flights Within K Stops
+- Find the City With the Smallest Number of Neighbors at a Threshold Distance
+- Digit DP
+- Count Numbers With Unique Digits
+- Number of Digit One
+- Numbers At Most N Given Digit Set
+- Bitmasking DP
+- Minimum Number of Work Sessions to Finish the Tasks
+- Fair Distribution of Cookies
+- Shortest Path Visiting All Nodes
+- Probability DP
+- Knight Probability in Chessboard
+- Soup Servings
+- New 21 Game
+- State Machine DP
+- Best Time to Buy and Sell Stock With Cooldown
+- Best Time to Buy and Sell Stock III
+- Javascript Currying - Variadic Currying
 - <https://instabyte.io/p/interview-master-100>
 
 ## Appendix
