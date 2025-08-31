@@ -143,4 +143,6 @@
 // 128. React’s event system vs native DOM events
 // 129. Performance optimization: memoization, batching, lazy loading
 // 130. How React integrates with the browser rendering pipeline
+// 131. Implement a function to debounce a task (custom hook if React interview)
+// 132. Implement a function to throttle a task (custom hook if React interview)
 
