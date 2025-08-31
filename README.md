@@ -21,7 +21,7 @@
 19. Replace Spaces with %20 (URL Encoding) — [program19.js](program19.js)
 20. Convert a Sentence into an Acronym — [acronymSentence.js](acronymSentence.js)
 21. Check if a String Contains Only Digits  — [program21.js](program21.js)
-22. Find the Number of Words in a String
+22. Find the Number of Words in a String   — [program22.js](program22.js)
 23. Remove a Given Character from a String
 24. Find the Shortest Word in a String — [shortestWordString.js](shortestWordString.js)
 25. Find the Longest Palindromic Substring
