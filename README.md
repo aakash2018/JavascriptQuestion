@@ -20,11 +20,11 @@
 18. Convert a String to a Character Array — [program18.js](program18.js)
 19. Replace Spaces with %20 (URL Encoding) — [program19.js](program19.js)
 20. Convert a Sentence into an Acronym — [acronymSentence.js](acronymSentence.js)
-21. Check if a String Contains Only Digits
-22. Find the Number of Words in a String
-23. Remove a Given Character from a String
+21. Check if a String Contains Only Digits  — [program21.js](program21.js)
+22. Find the Number of Words in a String   — [program22.js](program22.js)
+23. Remove a Given Character from a String — [program23.js](program23.js)
 24. Find the Shortest Word in a String — [shortestWordString.js](shortestWordString.js)
-25. Find the Longest Palindromic Substring
+25. Find the Longest Palindromic Substring  — [program25.js](program25.js)
 26. closure function — [closurefn.js](closurefn.js)
 27. factorial program — [factorial.js](factorial.js)
 28. isPrime Number program — [isPrime.js](isPrime.js)
@@ -72,7 +72,7 @@
 70. Write a function which validates if a given set of parentheses are valid or not.
 71. Implement a basic string compression algorithm. For example, the string "aaabbbcc" should be compressed to "a3b3c2". — [program71.js](program71.js)
 72. Map polyfill. — [program72.js](program72.js)
-73. Filter polyfill — [program73.js](program73.js)
+73. Filter polyfill — [program73.js](progr am73.js)
 74. Reduce polyfill — [program74.js](program74.js)
 75. Some and Every function polyfill — [program75.js](program75.js) — [program75Every.js](program75Every.js)
 76. Push and Pop polyfill — [program76.js](program76.js)
@@ -302,8 +302,8 @@ Example 1:
 109. Demonstrate prototype and prototype inheritance.
 110. Implement call, apply, and bind methods, with Polyfills
 111. Flatten a complex object into a single-level object.
-113. Implement a function to debounce a task (custom hook if React interview)
-114. Implement a function to throttle a task (custom hook if React interview)
+113. Implement a function to debounce a task. 
+114. Implement a function to throttle a task.
 115. Write a function to merge two sorted arrays.
 116. Execute promises in sequence.
 117. Retry a promise N times on failure.
@@ -398,6 +398,12 @@ Example 1:
 195. Best Time to Buy and Sell Stock With Cooldown
 196. Best Time to Buy and Sell Stock III
 197. Javascript Currying - Variadic Currying
+198. Implementation insertion sort
+199. Implementation quick sort
+200. Implementation heap sort
+201. Implementation merge sort
+202. Implementation shell sort
+203. implementation linear search
 ---
 
 ## Programs in first.js only (no separate file found)
