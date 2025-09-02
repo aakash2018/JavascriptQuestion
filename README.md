@@ -72,7 +72,7 @@
 70. Write a function which validates if a given set of parentheses are valid or not.
 71. Implement a basic string compression algorithm. For example, the string "aaabbbcc" should be compressed to "a3b3c2". — [program71.js](program71.js)
 72. Map polyfill. — [program72.js](program72.js)
-73. Filter polyfill — [program73.js](progr am73.js)
+73. Filter polyfill — [program73.js](program73.js)
 74. Reduce polyfill — [program74.js](program74.js)
 75. Some and Every function polyfill — [program75.js](program75.js) — [program75Every.js](program75Every.js)
 76. Push and Pop polyfill — [program76.js](program76.js)
