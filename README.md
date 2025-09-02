@@ -22,9 +22,9 @@
 20. Convert a Sentence into an Acronym — [acronymSentence.js](acronymSentence.js)
 21. Check if a String Contains Only Digits  — [program21.js](program21.js)
 22. Find the Number of Words in a String   — [program22.js](program22.js)
-23. Remove a Given Character from a String
+23. Remove a Given Character from a String — [program23.js](program23.js)
 24. Find the Shortest Word in a String — [shortestWordString.js](shortestWordString.js)
-25. Find the Longest Palindromic Substring
+25. Find the Longest Palindromic Substring  — [program25.js](program25.js)
 26. closure function — [closurefn.js](closurefn.js)
 27. factorial program — [factorial.js](factorial.js)
 28. isPrime Number program — [isPrime.js](isPrime.js)
