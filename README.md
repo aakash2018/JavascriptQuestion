@@ -298,112 +298,112 @@ Example 1:
 104. Binary search tree lowest common ancestor.
 105. The Joyeful Robot.
 106. Best Time to Buy and Sell Stock.
-108. Implement a chain calculator.
-109. Demonstrate prototype and prototype inheritance.
-110. Implement call, apply, and bind methods, with Polyfills
-111. Flatten a complex object into a single-level object.
-113. Implement a function to debounce a task. 
-114. Implement a function to throttle a task.
-115. Write a function to merge two sorted arrays.
-116. Execute promises in sequence.
-117. Retry a promise N times on failure.
-118. Implement a cancelable promise.
-119. Implement Promise.all, Promise.race, and Promise.allSettled polyfills.
-120. MapLimit
-121. Write a function to convert a string from camelCase to snake_case.
-122. Compare two documents for differences and return a structured output.
-123. Dispatch a custom event on array push and handle it.
-124. Implement a function to serialize and deserialize JSON data with circular references.
-125. Build a typeahead search using an LRU cache.
-126. Create a debouncing function with leading and trailing calls.
-127. Build an event emitter with methods like on, off, and emit.
-128. Implement currying for any number of arguments. 
-129. Implement a pipe and compose function.  — [program129.js](program129.js.js)
-130. Explain and implement deep comparison between two objects.
-131. armstrong number.
+107. Implement a chain calculator.
+108. Demonstrate prototype and prototype inheritance.
+109. Implement call, apply, and bind methods, with Polyfills
+110. Flatten a complex object into a single-level object.
+111. Implement a function to debounce a task. 
+112. Implement a function to throttle a task.
+113. Write a function to merge two sorted arrays.
+114. Execute promises in sequence.
+115. Retry a promise N times on failure.
+116. Implement a cancelable promise.
+117. Implement Promise.all, Promise.race, and Promise.allSettled polyfills.
+118. MapLimit
+119. Write a function to convert a string from camelCase to snake_case.
+120. Compare two documents for differences and return a structured output.
+121. Dispatch a custom event on array push and handle it.
+122. Implement a function to serialize and deserialize JSON data with circular references.
+123. Build a typeahead search using an LRU cache.
+124. Create a debouncing function with leading and trailing calls.
+125. Build an event emitter with methods like on, off, and emit.
+126. Implement currying for any number of arguments. 
+127. Implement a pipe and compose function.  — [program127.js](program127.js)
+128. Explain and implement deep comparison between two objects.
+129. armstrong number.
 
-132. Fibonacci Sequence
-133. Climbing Stairs
-134. Fibonacci Number
-135. Min Cost Climbing Stairs
-136. Kadane's Algorithm
-137. Maximum Subarray
-138. Maximum Sum Circular Subarray
-139. Maximum Product Subarray
-140. 0/1 Knapsack
-141. Partition Equal Subset Sum
-142. Target Sum
-143. Last Stone Weight II
-144. Unbounded Knapsack
-145. Coin Change
-146. Coin Change 2
-147. Perfect Squares
-148. Longest Common Subsequence (LCS)
-149. Longest Common Subsequence
-150. Delete Operation for Two Strings
-151. Shortest Common Supersequence
-152. Longest Increasing Subsequence (LIS)
-153. Longest Increasing Subsequence
-154. Number of Longest Increasing Subsequence
-155. Russian Doll Envelopes
-156. Palindromic Subsequence
-157. Longest Palindromic Subsequence
-158. Palindromic Substrings
-159. Minimum Insertion Steps to Make a String Palindrome
-160. Edit Distance
-161. Delete Operation for Two Strings
-162. Minimum ASCII Delete Sum for Two Strings
-163. Subset Sum
-164. Partition Equal Subset Sum
-165. Target Sum
-166. Partition to K Equal Sum Subsets
-167. String Partition
-168. Word Break
-169. Palindrome Partitioning II
-170. Concatenated Words
-171. Catalan Numbers
-172. Unique Binary Search Trees
-173. Generate Parentheses
-174. Matrix Chain Multiplication
-175. Minimum Score Triangulation of Polygon
-176. Burst Balloons
-177. Minimum Cost to Merge Stones
-178. Count Distinct Ways
-179. Decode Ways
-180. Count Number of Texts
-181. DP on Grids
-182. Unique Paths
-183. Minimum Path Sum
-184. Longest Increasing Path in a Matrix
-185. DP on Trees
-186. House Robber III
-187. Binary Tree Maximum Path Sum
-188. Binary Tree Cameras
-189. DP on Graphs
-190. Cheapest Flights Within K Stops
-191. Find the City With the Smallest Number of Neighbors at a Threshold Distance
-192. Digit DP
-193. Count Numbers With Unique Digits
-194. Number of Digit One
-195. Numbers At Most N Given Digit Set
-186. Bitmasking DP
-187. Minimum Number of Work Sessions to Finish the Tasks
-188. Fair Distribution of Cookies
-189. Shortest Path Visiting All Nodes
-190. Probability DP
-191. Knight Probability in Chessboard
-192. Soup Servings
-193. New 21 Game
-194. State Machine DP
-195. Best Time to Buy and Sell Stock With Cooldown
-196. Best Time to Buy and Sell Stock III
-197. Javascript Currying - Variadic Currying
-198. Implementation insertion sort
-199. Implementation quick sort
-200. Implementation heap sort
-201. Implementation merge sort
-202. Implementation shell sort
-203. implementation linear search
+130. Fibonacci Sequence
+131. Climbing Stairs
+132. Fibonacci Number
+133. Min Cost Climbing Stairs
+134. Kadane's Algorithm
+135. Maximum Subarray
+136. Maximum Sum Circular Subarray
+137. Maximum Product Subarray
+138. 0/1 Knapsack
+139. Partition Equal Subset Sum
+140. Target Sum
+141. Last Stone Weight II
+142. Unbounded Knapsack
+143. Coin Change
+144. Coin Change 2
+145. Perfect Squares
+146. Longest Common Subsequence (LCS)
+147. Longest Common Subsequence
+148. Delete Operation for Two Strings
+149. Shortest Common Supersequence
+150. Longest Increasing Subsequence (LIS)
+151. Longest Increasing Subsequence
+152. Number of Longest Increasing Subsequence
+153. Russian Doll Envelopes
+154. Palindromic Subsequence
+155. Longest Palindromic Subsequence
+156. Palindromic Substrings
+157. Minimum Insertion Steps to Make a String Palindrome
+158. Edit Distance
+159. Delete Operation for Two Strings
+160. Minimum ASCII Delete Sum for Two Strings
+161. Subset Sum
+162. Partition Equal Subset Sum
+163. Target Sum
+164. Partition to K Equal Sum Subsets
+165. String Partition
+166. Word Break
+167. Palindrome Partitioning II
+168. Concatenated Words
+169. Catalan Numbers
+170. Unique Binary Search Trees
+171. Generate Parentheses
+172. Matrix Chain Multiplication
+173. Minimum Score Triangulation of Polygon
+174. Burst Balloons
+175. Minimum Cost to Merge Stones
+176. Count Distinct Ways
+177. Decode Ways
+178. Count Number of Texts
+179. DP on Grids
+180. Unique Paths
+181. Minimum Path Sum
+182. Longest Increasing Path in a Matrix
+183. DP on Trees
+184. House Robber III
+185. Binary Tree Maximum Path Sum
+186. Binary Tree Cameras
+187. DP on Graphs
+188. Cheapest Flights Within K Stops
+189. Find the City With the Smallest Number of Neighbors at a Threshold Distance
+190. Digit DP
+191. Count Numbers With Unique Digits
+192. Number of Digit One
+193. Numbers At Most N Given Digit Set
+194. Bitmasking DP
+195. Minimum Number of Work Sessions to Finish the Tasks
+196. Fair Distribution of Cookies
+197. Shortest Path Visiting All Nodes
+198. Probability DP
+199. Knight Probability in Chessboard
+200. Soup Servings
+201. New 21 Game
+202. State Machine DP
+203. Best Time to Buy and Sell Stock With Cooldown
+204. Best Time to Buy and Sell Stock III
+205. Javascript Currying - Variadic Currying  — [program205.js](program205.js)
+206. Implementation insertion sort
+207. Implementation quick sort
+208. Implementation heap sort
+209. Implementation merge sort
+210. Implementation shell sort
+211. implementation linear search
 ---
 
 ## Programs in first.js only (no separate file found)
