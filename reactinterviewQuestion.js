@@ -69,8 +69,8 @@
 // 61. React useEffect find differece in code.
 
 // 62. How does React handle reconciliation under the hood?
-// 63. What’s the difference between process.nextTick() and setImmediate() in Node?
-// 64. How do you design MongoDB schemas for millions of users?
+// 63. Implement a function to debounce a task (custom hook if React interview)
+// 64. Implement a function to throttle a task (custom hook if React interview)
 // 65. How do you secure JWT tokens beyond just localStorage?
 
 // 66. How to display dynamic html data in react ?
@@ -143,6 +143,5 @@
 // 128. React’s event system vs native DOM events
 // 129. Performance optimization: memoization, batching, lazy loading
 // 130. How React integrates with the browser rendering pipeline
-// 131. Implement a function to debounce a task (custom hook if React interview)
-// 132. Implement a function to throttle a task (custom hook if React interview)
+
 
