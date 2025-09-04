@@ -64,6 +64,7 @@
 // 61. What are WebSockets, and when would you use them?
 // 62. What is the difference between monolithic and microservices architectures?
 // 63. How does NodeJS handle memory management?
+
 // 64. What’s the difference between process.nextTick() and setImmediate() in Node?
 // 65. How do you design MongoDB schemas for millions of users?
 // 66. You must send 5 API requests, but the server will only let 2 run at once. How would you structure your Promises to stay under that limit and still finish fast?
