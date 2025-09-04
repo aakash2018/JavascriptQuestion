@@ -82,33 +82,33 @@
 // 72. How to display data entered by the user in another textbox ?
 // 73. How to loop array/array of objects in react ?
 // 74. How to conditionally render an element or text in react ?
-// 75.How to change styles based on condition in react ?
-// 76.How to dhow and hide data based on condition in react ?
-// 77.Bind array/array of objects to radio button in react ?
-// 78.Display radio button data selected by user in another textbox ?
-// 79.How to call a method when component is rendered for the first time in react ?
-// 80.Display keys and values of objects in a loop in react?
-// 81.How to rerender a component on value change in react ?
-// 82.How to call a method on every rerender of a component ?
-// 83.How to add data into useState array in functional component in react ?
-// 84.Create a search textbox filter ?
-// 85.Create a counter component using useState ?
-// 86.Create a counter component using useReducer ?
-// 87.Change focus/enable/disable textbox in child component based on parent component button click ? 
-// 88.How to perform debouncing ?
-// 89.Create a component to fetch data from api ?
-// 90.Force a component to rerender with out using useState in react ?
-// 91.How to call a method immediately after state is updated or 
+// 75. How to change styles based on condition in react ?
+// 76. How to dhow and hide data based on condition in react ?
+// 77. Bind array/array of objects to radio button in react ?
+// 78. Display radio button data selected by user in another textbox ?
+// 79. How to call a method when component is rendered for the first time in react ?
+// 80. Display keys and values of objects in a loop in react?
+// 81. How to rerender a component on value change in react ?
+// 82. How to call a method on every rerender of a component ?
+// 83. How to add data into useState array in functional component in react ?
+// 84. Create a search textbox filter ?
+// 85. Create a counter component using useState ?
+// 86. Create a counter component using useReducer ?
+// 87. Change focus/enable/disable textbox in child component based on parent component button click ? 
+// 88. How to perform debouncing ?
+// 89. Create a component to fetch data from api ?
+// 90. Force a component to rerender with out using useState in react ?
+// 91. How to call a method immediately after state is updated or 
 // after component is rerendered ?
-// 92.How to display number of characters remaining functionality for textarea using react useRef?
-// 93.Given two dropdowns, select 2nd dropdown options based on value selected in one dropdown ?
+// 92. How to display number of characters remaining functionality for textarea using react useRef?
+// 93. Given two dropdowns, select 2nd dropdown options based on value selected in one dropdown ?
 // (Load states based on country selected)
-// 94.Perform type checking using prop-types ?
-// 95.Share data between components using context api ?
-// 96.Give an emaple of optimization using useMemo ?
-// 97.Give an example of optimization using usecallbacks in react ?
-// 98.Create an error boundary component in react ?
-// 99.How to display dropdown value selected by user in another textbox ?
+// 94. Perform type checking using prop-types ?
+// 95. Share data between components using context api ?
+// 96. Give an emaple of optimization using useMemo ?
+// 97. Give an example of optimization using usecallbacks in react ?
+// 98. Create an error boundary component in react ?
+// 99. How to display dropdown value selected by user in another textbox ?
 // 100.Create a pure component ?
 // 101.Create a controlled and uncontrolled component in react ?
 // 102.Create a custom hook using ?
@@ -117,31 +117,32 @@
 // 105.Create a pagination component ?
 // 106.How do you safeguard your application ?
 
-// 107. What security features should be taken while designing API's?
-// 108. What is API throttling?
-// 109. How to improve the performance in React Application?
-// 110. What is debouncing in React?
-// 111. What if in a react app we need to develop a feature of auto save the inputs of a form?
-// 112. Which react library is used to represent JSON data into charts, graphs, etc for better visualization and performance?
-// 113. If you have to inform the backend developers about some API's are failing how will you do that?
-// 114. Which tool is used to improve code standards in react application to show warnings for developers?
-// 115. What are the unit testing tools used in React Application?
-// 116. How do you handle API test case scenarios in React Application?
-// 117. Give me a estimation of completing a auto save functionality with unit testing including?
-// 118. Which cloud is used in your app development?
+// 107.What security features should be taken while designing API's?
+// 108.What is API throttling?
+// 109.How to improve the performance in React Application?
+// 110.What is debouncing in React?
+// 111.What if in a react app we need to develop a feature of auto save the inputs of a form?
+// 112.Which react library is used to represent JSON data into charts, graphs, etc for better visualization and performance?
+// 113.If you have to inform the backend developers about some API's are failing how will you do that?
+// 114.Which tool is used to improve code standards in react application to show warnings for developers?
+// 115.What are the unit testing tools used in React Application?
+// 116.How do you handle API test case scenarios in React Application?
+// 117.Give me a estimation of completing a auto save functionality with unit testing including?
+// 118.Which cloud is used in your app development?
 
 
-// 119. How React reconciler works (Fiber architecture)
-// 120, Rendering phases: render vs commit
-// 121. Virtual DOM and diffing algorithms
-// 122. React’s concurrent rendering and scheduling (time slicing, priorities)
-// 123. Hooks under the hood (useState, useEffect, useRef, useMemo)
-// 124. Context API vs prop drilling and when to use which
-// 125. React Compiler (new optimization approach)
-// 126. Suspense and concurrent features
-// 127. Server Components (React 18+)
-// 128. React’s event system vs native DOM events
-// 129. Performance optimization: memoization, batching, lazy loading
-// 130. How React integrates with the browser rendering pipeline
+// 119.How React reconciler works (Fiber architecture)
+// 120.Rendering phases: render vs commit
+// 121.Virtual DOM and diffing algorithms
+// 122.React’s concurrent rendering and scheduling (time slicing, priorities)
+// 123.Hooks under the hood (useState, useEffect, useRef, useMemo)
+// 124.Context API vs prop drilling and when to use which
+// 125.React Compiler (new optimization approach)
+// 126.Suspense and concurrent features
+// 127.Server Components (React 18+)
+// 128.React’s event system vs native DOM events
+// 129.Performance optimization: memoization, batching, lazy loading
+// 130.How React integrates with the browser rendering pipeline
+// 131.Build a To-Do List (Vanilla JS/React) → optimize re-renders
 
 

@@ -403,7 +403,17 @@ Example 1:
 208. Implementation heap sort
 209. Implementation merge sort
 210. Implementation shell sort
-211. implementation linear search
+211. Implementation linear search.
+212. Variadic curry function pollyfill create.
+213. Find first repeating character (e.g., "success" → "c").
+214. Deep Copy vs Shallow Copy — behavior & how to achieve it.
+215. Stopwatch Implementation (Start, Stop, Reset + live timer).
+216. Currying for Infinite Sum
+👉 sum(10)(20)(30)() → 60
+👉 sum(10)(20)(30)(40)(50)(60)() → 210
+217. Promise & Async/Await output puzzle.
+218. Find sum of numbers without a for loop (Hint: reduce() / recursion)
+219. Input-change-output-question-2 — [program219.js](program219.js)
 ---
 
 ## Programs in first.js only (no separate file found)
