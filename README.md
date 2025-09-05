@@ -403,9 +403,6 @@ Example 1:
 208. Implementation heap sort
 209. Implementation merge sort
 210. Implementation shell sort
-<<<<<<< Updated upstream
-211. implementation linear search
-=======
 211. Implementation linear search.
 212. Variadic curry function pollyfill create.
 213. Find first repeating character (e.g., "success" → "c").— [program213.js](program213.js)
@@ -431,7 +428,6 @@ Example 1:
 231. Knapsack DP
 232. Rod Cutting
 233. Trie Insertion, Deletion
->>>>>>> Stashed changes
 ---
 
 ## Programs in first.js only (no separate file found)
