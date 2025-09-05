@@ -193,6 +193,7 @@ Yes, you can use Node.js for machine learning, although it is not as common as u
 
 **सीमाएँ:** Node.js भारी गणनाओं (heavy computation) के लिए Python जितना उपयुक्त नहीं है, लेकिन हल्के, रियल-टाइम या वेब-इंटीग्रेटेड ML टास्क के लिए Node.js एक अच्छा विकल्प है। 
 ---
+
 **4. What would you consider when developing a Node.js application for IoT devices? (Answer in English and Hindi)**
 
 **Answer (English):**
