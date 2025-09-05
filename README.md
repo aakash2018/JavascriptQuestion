@@ -405,15 +405,29 @@ Example 1:
 210. Implementation shell sort
 211. Implementation linear search.
 212. Variadic curry function pollyfill create.
-213. Find first repeating character (e.g., "success" → "c").
+213. Find first repeating character (e.g., "success" → "c").— [program213.js](program213.js)
 214. Deep Copy vs Shallow Copy — behavior & how to achieve it.
 215. Stopwatch Implementation (Start, Stop, Reset + live timer).
 216. Currying for Infinite Sum
 👉 sum(10)(20)(30)() → 60
-👉 sum(10)(20)(30)(40)(50)(60)() → 210
+👉 sum(10)(20)(30)(40)(50)(60)() → 210   — [program216.js](program216.js)
 217. Promise & Async/Await output puzzle.
-218. Find sum of numbers without a for loop (Hint: reduce() / recursion)
+218. Find sum of numbers without a for loop (Hint: reduce() / recursion) — [program218.js](program218.js)
 219. Input-change-output-question-2 — [program219.js](program219.js)
+220. Trapping Rain Water
+221. Inversion of Array
+222. Majority Element
+223. Delete a Node in Linked List in O(1)
+224. Median of Two Sorted Arrays
+225. Aggressive Cows
+226. LRU Cache & LFU Cache
+227. Check for Child Sum Property
+228. BFS & DFS
+229. Topological Sort
+230. Dijkstra’s Algorithm
+231. Knapsack DP
+232. Rod Cutting
+233. Trie Insertion, Deletion
 ---
 
 ## Programs in first.js only (no separate file found)
