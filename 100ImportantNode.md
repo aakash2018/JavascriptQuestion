@@ -692,3 +692,6 @@ By following these practices, your Node.js app will be portable, scalable, and m
 98. Describe the event-driven programming in Node.js.
 99. How does Node.js handle child threads?
 100. What is Node.js and why is it used?
+101. how to get data from csv file using node js
+102. worker
+103. memory leakage in node js and grabage collection  in node js.
