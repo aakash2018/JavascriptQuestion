@@ -37,10 +37,10 @@
 35. currying function — [curryingfn.js](curryingfn.js)
 36. transpose matrix — [transposeMatrix.js](transposeMatrix.js)
 37. input-change-output-question1 — [inputchangeoutput1.js](inputchangeoutput1.js)
-38. Longest word in string
-39. i/p let str = "this tage hash tag"; - o/p #ThisTageHashTag
-40. let str = 'mississippi' find count of i
-41. find the char is upper case or not
+38. Longest word in string — [program38.js](program38.js)
+39. i/p let str = "this tage hash tag"; - o/p #ThisTageHashTag — [program39.js](program39.js)
+40. let str = 'mississippi' find count of i — [program40.js](program40.js)
+41. find the char is upper case or not — [program41.js](program41.js)
 42. string start with arg: checks("hello worlds",'hello') / a.startsWith(b)
 43. reverse string without using pre defined method — [reverseString.js](reverseString.js)
 44. find mean of given array = [1,2,3,4,5] : o/p 3
@@ -55,7 +55,7 @@
 53. How to compute (a + b) mod m in programming — [program53.js](program53.js)
 54. Binary search array with target value — [program54.js](program54.js)
 55. Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
-56. Generate parentheses in an Expression.
+56. Generate parentheses in an Expression. — [program56.js](program56.js)
 57. You’ve given an array which contains some 0, your to write a function which moves all 0s to the right of the array.
 58. You’ve an array in which each adjacent number is either +1 or -1, write a function to find the given number. Focus on efficiency.
 59. Example: [4,5,6,7,6,5,4] // Find index of 7 (from starting)
@@ -69,7 +69,7 @@
 67. Write a function which deep-compares passed value.
 68. Write a function which implements ==15. Write a function which works like a new Keyword.
 69. Write a function which makes a chain of promise
-70. Write a function which validates if a given set of parentheses are valid or not.
+70. Write a function which validates if a given set of parentheses are valid or not.— [validparentheses.js](validparentheses.js)
 71. Implement a basic string compression algorithm. For example, the string "aaabbbcc" should be compressed to "a3b3c2". — [program71.js](program71.js)
 72. Map polyfill. — [program72.js](program72.js)
 73. Filter polyfill — [program73.js](program73.js)
@@ -428,6 +428,7 @@ Example 1:
 231. Knapsack DP
 232. Rod Cutting
 233. Trie Insertion, Deletion
+234. stale closure — [program234.js](program234.js)
 ---
 
 ## Programs in first.js only (no separate file found)
