@@ -37,10 +37,10 @@
 35. currying function — [curryingfn.js](curryingfn.js)
 36. transpose matrix — [transposeMatrix.js](transposeMatrix.js)
 37. input-change-output-question1 — [inputchangeoutput1.js](inputchangeoutput1.js)
-38. Longest word in string
-39. i/p let str = "this tage hash tag"; - o/p #ThisTageHashTag
-40. let str = 'mississippi' find count of i
-41. find the char is upper case or not
+38. Longest word in string — [program38.js](program38.js)
+39. i/p let str = "this tage hash tag"; - o/p #ThisTageHashTag — [program39.js](program39.js)
+40. let str = 'mississippi' find count of i — [program40.js](program40.js)
+41. find the char is upper case or not — [program41.js](program41.js)
 42. string start with arg: checks("hello worlds",'hello') / a.startsWith(b)
 43. reverse string without using pre defined method — [reverseString.js](reverseString.js)
 44. find mean of given array = [1,2,3,4,5] : o/p 3
