@@ -1,0 +1,527 @@
+// Trapping Rain Water
+// Inversion of Array
+// Majority Element
+// Delete a Node in Linked List in O(1)
+// Median of Two Sorted Arrays
+// Aggressive Cows
+// LRU Cache & LFU Cache
+// Check for Child Sum Property
+// BFS & DFS
+// Topological Sort
+// Dijkstra’s Algorithm
+// Knapsack DP
+// Rod Cutting
+// Trie Insertion, Deletion
+
+
+//github link. Important  topics ->https://github.com/bittu1040/JavaScript-Coding-and-Notes/blob/master/JS-Topics/web-worker.js
+//Recently, I gave multiple interviews for Senior React.js & Tech Lead roles — here are the Top 10 most common questions I was asked.
+//  These are basic-level but frequently asked in interviews 👇
+
+// 1️⃣ Call, Apply, and Bind
+//  Difference between them + write a polyfill.
+
+// 2️⃣ Flatten Array (No Array.flat)
+//  Input : [1,2,3,[4,5,6,[7,8,[10,11]]],9] 
+//  Output: [1,2,3,4,5,6,7,8,10,11,9]
+
+// 3️⃣ Inline 5 divs in a row without flex/margin/padding
+//  (Hint: display: inline-block)
+
+// 4️⃣ Find sum of numbers without for loop
+//  Input: [1,2,3,4,5] — (Hint: reduce() or recursion)
+
+// 5️⃣ Deep Copy vs Shallow Copy (How to achieve this)
+//  const a = { ab: { cd: { ef: true } } };
+//  const b = a; const c = { ...a };
+//  console.log(a === b); console.log(a === c);
+//  a.ab.cd.ef = false;
+//  console.log(b.ab.cd.ef); console.log(c.ab.cd.ef); 
+
+// 6️⃣ Promise & Async/Await Output (More questions I will be posting later) 
+//  async function chart(v){ 
+//  console.log("start", v); 
+//  await console.log("middle", v); 
+//  console.log("end", v);
+//  }
+//  chart("first"); 
+//  chart("second");
+
+// 7️⃣ Find first repeating character
+//  Example: "success" → c
+
+// 8️⃣ Implement a Stopwatch
+//  Start, Stop, Reset + live display.
+
+// 9️⃣ Build a To-Do List (Vanilla JS or React)
+//  Follow-up: How would you optimize re-renders?
+
+// 🔟 Currying Function for Infinite Sum.
+//  sum(10)(20)(30)() Output => 60
+//  sum(10)(20)(30)(40)(50)(60)() Output => 210
+
+// 💡 I’ll be posting more such questions soon. 
+// Link for next post (More questions): https://lnkd.in/gVfm5yqa
+
+// hashtag#ReactJS hashtag#JavaScript hashtag#WebDevelopment hashtag#InterviewPrep hashtag#CareerGrowth2025
+
+// In a Javascript L1 & L2 round the following questions can be asked from interviewer.
+
+// 1. What is the difference between 'Pass by Value' and 'Pass by Reference'?
+// 2. What is the difference between map and filter ?
+// 3. What is the difference between map() and forEach() 
+// 4. What is the difference between Pure and Impure functions?
+// 5. What is the difference between for-in and for-of ?
+// 6. What are the differences between call(), apply() and bind() ?
+// 7. List out some key features of ES6 ?
+// 8. What’s the spread operator in javascript ?
+// 9. What is rest operator in javascript ?
+// 10. What are DRY, KISS, YAGNI, SOLID Principles ?
+// 11. What is temporal dead zone ?
+// 12. Different ways to create object in javascript ?
+// 13. Whats the difference between Object.keys,values and entries
+// 14. Whats the difference between Object.freeze() vs Object.seal()
+// 15. What is a polyfill in javascript ?
+// 16. What is generator function in javascript ?
+// 17. What is prototype in javascript ?
+// 18. What is IIFE ?
+// 19. What is CORS ?
+// 20. What are the different datatypes in javascript ?
+// 21. What are the difference between typescript and javascript ?
+// 22. What is authentication vs authorization ?
+// 23. Difference between null and undefined ?
+// 24. What is the output of 3+2+”7” ?
+// 25. Slice vs Splice in javascript ?
+// 26. What is destructuring ?
+// 27. What is setTimeOut in javascript ?
+// 28. What is setInterval in javascript ?
+// 29. What are Promises in javascript ?
+// 30. What is a callstack in javascript ?
+// 31. What is a closure ?
+// 32. What are callbacks in javascript ?
+// 33. What are Higher Order Functions in javascript ?
+// 34. What is the difference between == and === in javascript ?
+// 35. Is javascript a dynamically typed language or a statically typed language 
+// 36. What is the difference between Indexeddb and sessionstorage ?
+// 37. What are Interceptors ?
+// 38. What is Hoisting ?
+// 39. What are the differences let, var and const ?
+// 41. Differences between Promise.all, allSettled, any, race ?
+// 42. What are limitations of arrow functions?
+// 43. What is difference between find vs findIndex ?
+// 44. What is tree shaking in javascript ?
+// 45. What is the main difference between Local Storage and Session storage
+// 46. What is eval()
+// 47. What is the difference between Shallow copy and deep copy
+// 48. What are the difference between undeclared and undefined variables
+// 49. What is event bubbling
+// 50. What is event capturing
+// 51. What are cookies
+// 52. typeOf operator
+// 53. What is this in javascript and How it behaves in various scenarios 
+// 54. How do you optimize the performance of application
+// 55. What is meant by debouncing and throttling
+
+
+
+// 1. You’ve given an array which contains some 0, your to write a
+// function which moves all 0s to the right of the array.
+// 2. You’ve an array in which each adjacent number is either +1
+// or -1, write a function to find the given number. Focus on
+// efficiency.
+// Example: [4,5,6,7,6,5,4] // Find index of 7 (from starting)
+// 3. Write a function to shuffle an array.
+// 4. Write a function which gives us a fibonacci sequence of a
+// given number.
+// 5. You have an array, which contains some bad numbers, bad
+// numbers are denoted with -1, write a function to remove all
+// bad numbers from the array.
+// 6. Write a function to flatten a given array.
+// 7. You have a string separated by a . (dot), write a function
+// which converts it into an object. Last character will be added
+// as a value
+// Example: a.b.c.d.e output => {a : b: { c: { d: e} } }
+// 8. Write a function which merges to given array.
+// 9. Write a function which removes duplicates from array.
+// 10. Write a function which converts a given function into curry
+// version of it.
+// Example function sum(a,b) {} I should be able to call it like
+// this: sum(2)(2).
+// 11. Given an array containing n distinct numbers taken from
+// 0, 1, 2, ..., n, find the one that is missing.
+// 12. Write a function which deep-clones a given object.
+// 13. Write a function which deep-compares passed value.
+// 14. Write a function which implements ==15. Write a function which works like a new Keyword.
+// 16. Write a function which makes a chain of promise
+// 17. Write a function which validates if a given set of
+// parentheses are valid or not.
+// 18. Implement a basic string compression algorithm. For
+// example, the string "aaabbbcc" should be compressed to
+// "a3b3c2".
+
+
+// 1. forEach polyfill.
+// 2. Map polyfill.
+// 3. Filter polyfill
+// 4. Reduce polyfill
+// 5. Some and Every function polyfill
+// 6. Push and Pop polyfill
+// 7. Slice and Splice polyfill
+// 8. Call Bind and Apply polyfill
+// 9. Promise.all polyfill
+// 10. Debounce polyfill
+// 11. Throttle polyfill
+// 12. JSON.stringify polyfill
+
+
+
+//node js
+
+// 🚀 Struggling with Node.js interviews?
+
+// After interviewing with 10+ companies, I realized most Node.js rounds focus on core concepts + real-world scenarios — not just textbook definitions.
+// So I curated this 40-question Node.js interview list to help you crack your next round:
+
+// ✅ Core Fundamentals
+
+// What is Node.js?
+
+// Is Node.js single-threaded?
+
+// What kind of API function is supported by Node.js?
+
+// How does Node.js handle concurrency despite being single-threaded?
+
+// What do you mean by the event loop in Node.js?
+
+// What is REPL in Node.js?
+
+// What is a module in Node.js?
+
+// ⚙️ Ecosystem & Tools
+// 8. What is npm and its advantages?
+// 9. What is package.json in Node.js?
+// 10. What is middleware?
+// 11. What are promises in Node.js?
+// 12. What is callback hell & how to avoid it?
+// 13. Explain body-parser in Node.js.
+// 14. What is CORS in Node.js?
+
+// 🔥 Advanced Concepts
+// 15. What is the difference between setImmediate() vs process.nextTick()?
+// 16. What is spawn() vs fork()?
+// 17. What is a cluster in Node.js?
+// 18. What are streams in Node.js & their types?
+// 19. Explain the tls & crypto modules.
+// 20. How to handle authentication & authorization in Node.js?
+// 21. How to manage sessions?
+
+// 🧑‍💻 Real-World Scenarios
+// 22. How do you handle database connections in Node.js?
+// 23. How to read command line arguments?
+// 24. What packages are used for file uploads?
+// 25. How do you implement retry logic or graceful shutdown?
+// 26. How to scale Node.js apps in production?
+
+// 💡 Pro Tip:
+// Interviewers love when you connect theory to practice. Instead of just defining “event loop”, explain with an example like handling async DB queries + API calls in parallel.
+
+
+// 1. Implement a chain calculator.
+// 2. Demonstrate prototype and prototype inheritance.
+// 3. Implement call, apply, and bind methods, with Polyfills
+// 4. Create custom array polyfills for map, filter, and reduce.
+// 5. Flatten a nested array, using Recursion
+// 6. Flatten a complex object into a single-level object.
+// 7. Perform a deep clone of an object.
+// 8. Implement a function to debounce a task (custom hook if React interview)
+// 9. Implement a function to throttle a task (custom hook if React interview)
+// 10. Write a function to merge two sorted arrays.
+// 11. Execute promises in sequence.
+// 12. Retry a promise N times on failure.
+// 13. Implement a cancelable promise.
+// 14. Implement Promise.all, Promise.race, and Promise.allSettled polyfills.
+// 15. MapLimit
+// 16. Write a function to convert a string from camelCase to snake_case.
+// 17. Compare two documents for differences and return a structured output.
+// 18. Dispatch a custom event on array push and handle it.
+// 19. Implement a function to serialize and deserialize JSON data with circular references.
+// 20. Build a typeahead search using an LRU cache.
+// 21. Create a debouncing function with leading and trailing calls.
+// 22. Build an event emitter with methods like on, off, and emit.
+// 23. Implement currying for any number of arguments.
+// 24. Implement a pipe and compose function.
+// 25. Explain and implement deep comparison between two objects.
+
+// J𝗮𝘃𝗮𝗦𝗰𝗿𝗶𝗽𝘁 𝗙𝘂𝗻𝗱𝗮𝗺𝗲𝗻𝘁𝗮𝗹𝘀:
+// 1. Why do closures exist in JavaScript?
+// 2. How does the event loop actually work?
+// 3. What's the difference between null and undefined?
+// 4. Why does this behave differently in arrow functions?
+// 5. What happens when you compare objects with == vs ===?
+// 6. Why can you call a function before it's declared?
+// 7. What's the difference between call, apply, and bind?
+// 𝗥𝗲𝗮𝗰𝘁 𝗜𝗻𝘁𝗲𝗿𝗻𝗮𝗹𝘀:
+// 8. Why does React need a virtual DOM?
+// 9. When does React batch state updates?
+// 10. Why do we need keys in lists?
+// 11. What's the difference between useEffect and useLayoutEffect?
+// 12. How does React decide when to re-render?
+// 13. Why might useState not update immediately?
+// 14. What happens during React's reconciliation process?
+// 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗮𝗹 𝗗𝗲𝗰𝗶𝘀𝗶𝗼𝗻𝘀:
+// 15. Why did you choose Redux over Context API?
+// 16. When would you use a CDN vs hosting assets locally?
+// 17. Why implement lazy loading for images?
+// 18. What's the difference between SSR and CSR?
+// 19. Why choose TypeScript over vanilla JavaScript?
+// 20. How do you decide between REST and GraphQL?
+
+
+
+// Recently Asked Interview Questions for Senior ReactJS Developers (7+ Years Experience)
+// If you’re preparing for interviews, here are some 15 real-world questions that focus on JavaScript, React, Redux, HTML & CSS fundamentals 👇
+// 1️⃣ Explain the difference between event loop, microtask, and macrotask in JavaScript.
+//  2️⃣ What is the difference between deep copy vs shallow copy?
+//  3️⃣ How does this behave in arrow functions vs normal functions?
+//  4️⃣ Explain closures with a practical example.
+//  5️⃣ What’s the difference between useMemo, useCallback, and React.memo?
+//  6️⃣ How does React Fiber improve rendering performance?
+//  7️⃣ Controlled vs Uncontrolled components – when to use which?
+//  8️⃣ How do you handle error boundaries in React?
+//  9️⃣ Explain Redux Toolkit advantages over traditional Redux.
+//  🔟 What’s the role of middleware (Thunk vs Saga) in Redux?
+//  1️⃣1️⃣ How does CSS specificity work?
+//  1️⃣2️⃣ Difference between Flexbox vs Grid – which one do you prefer for layouts?
+//  1️⃣3️⃣ What are semantic HTML elements and why are they important?
+//  1️⃣4️⃣ How do you optimize a React app’s performance in production?
+//  1️⃣5️⃣ Explain lazy loading and code splitting in React.
+
+
+
+// These questions are the difference between ₹6 LPA and ₹20 LPA frontend offer.
+
+// 𝗛𝗧𝗠𝗟
+// 1. What is the difference between `id` and `class` attributes?
+// 2. How does the `doctype` declaration affect a webpage?
+// 3. Explain semantic HTML and its importance.
+// 4. What are `meta` tags, and why are they used?
+// 5. What is the difference between `span` and `div` tags?
+// 6. How does the `defer` attribute in a script tag work?
+// 7. What is the difference between inline, block, and inline-block elements?
+// 8. How do you optimize images for web performance in HTML?
+// 9. What are custom data attributes, and how are they used?
+// 10. How would you create an accessible custom tooltip using only HTML?
+
+// 𝗝𝗔𝗩𝗔𝗦𝗖𝗥𝗜𝗣𝗧
+// 1. What are closures, and how are they used?
+// 2. Explain the difference between `var`, `let`, and `const`.
+// 3. What is the event loop in JavaScript?
+// 4. How does prototypal inheritance work?
+// 5. What are promises, and how do they compare to async/await?
+// 6. What is the difference between `==` and `===`?
+// 7. Explain the concept of "hoisting" in JavaScript.
+// 8. How do you handle errors in JavaScript?
+// 9. What is debouncing and throttling in JavaScript?
+// 10. How would you implement a deep clone of an object without using libraries?
+
+// 𝗥𝗘𝗔𝗖𝗧
+// 1. What is the virtual DOM, and how does it work?
+// 2. How do React functional components differ from class components?
+// 3. What are React hooks, and why are they used?
+// 4. Explain the concept of lifting state up in React.
+// 5. What is the purpose of `useEffect` and how is it used?
+// 6. How does context API work in React?
+// 7. What is the difference between controlled and uncontrolled components?
+// 8. How do you optimize a React application’s performance?
+// 9. What are React portals, and how are they useful?
+// 10. How would you implement a custom hook to debounce user input in a React application?
+
+
+
+// During my 2-month job hunt, I interviewed with a remote-first product company for a Senior React Developer role. The process was challenging, insightful, and full of learnings — even though the final verdict was rejected.
+
+// Here’s how it went:
+
+// 🎯 Round 1 (JavaScript + Problem Solving)
+// 👉 Next.js Page Router basics
+// 👉 Implemented a once function (runs only once)
+// 👉 Wrote a curried sum function → sum(1)(2)(3)...()
+// 👉 Flattened a deeply nested object into key-value pairs
+
+// 🎯 Round 2 (System + Frontend Design)
+// 👉 Built a Redux clone from scratch
+// 👉 Designed a syntax highlighter (similar to regex101)
+// 👉 High-level design for Reddit comments
+
+// 🎯 Round 3 (Product/Behavioral)
+// 👉 Expected a product sense round, but it turned into a deep dive into my past projects
+// 👉 Shared my previous work, though I wasn’t entirely sure what the interviewer was trying to evaluate
+
+// 📌 Outcome: Rejected
+
+
+// 📌 JavaScript​:
+//  🔹What is the difference between var, let, and const in JavaScript? Example with scoping explain.
+//  🔹What is hoisting in JavaScript, and how does it work? 
+//  🔹What is Temporal Dead Zone?
+//  🔹What is a JavaScript promise, and how does it handle asynchronous code?
+//  🔹What is the difference between Promises and Async Await?
+//  🔹What is destructuring in JavaScript?
+
+// 📌 React:
+//  🔹Difference between class and functional components?
+//  🔹What is props drilling? & solution.
+//  🔹Redux vs Context API – when to use what?
+//  🔹Performance optimization techniques in React?
+//  🔹What is useReducer hook?
+//  🔹What are Ref’s in React?
+//  🔹How do you implement routing in React?
+ 
+// 📌Coding challenges:
+//  🔹Create a Program for increment/decrement counter?
+
+
+// Here are some of the key questions I faced:
+
+// 🔹 Core JavaScript
+//  Explain closures — where do they shine in real apps?
+//  How does the event loop & microtask queue (Promises vs setTimeout) work?
+//  Difference between call, apply, and bind.
+//  What’s the difference between var, let, and const in terms of scope & hoisting?
+
+// 🔹 Core React
+//  How does React Fiber (reconciliation) work?
+//  What’s the difference between controlled vs uncontrolled components?
+
+// 🔹 Hooks & State
+//  When would you choose useReducer instead of useState?
+//  How do you prevent unnecessary re-renders with hooks?
+
+// 🔹 Performance
+//  When should you use React.memo, useMemo, or useCallback?
+//  How do you optimize rendering for large lists (virtualization)?
+
+// 🔹 Data & Architecture
+//  How would you architect data fetching in a large SPA?
+//  When do you prefer Context vs Redux vs Zustand?
+
+// 🔹 Folder Structure & Project Organization
+//  How do you organize a large React codebase for scalability?
+//  Feature-based vs type-based folder structures — what’s your approach?
+
+// 🔹 TypeScript & Testing
+//  How do you type complex, generic component props in TS?
+//  How do you test a component that fetches async data (unit vs integration)?
+
+// 🔹 Team & Leadership
+//  How do you review React code for performance and readability?
+//  How do you design a reusable component library for multiple projects?
+
+
+// Q1: API call made, but nothing shows?
+// 👉 Check if you used setState(response.data) not just response.
+
+// Q2: API keeps calling again & again in useEffect?
+// 👉 Add empty dependency array [].
+
+// Q3: API takes time?
+// 👉 Show a loading spinner/skeleton while waiting.
+
+// Q4: API fails and app crashes?
+// 👉 Use try...catch + show error message in UI.
+
+// Q5: Need token in every request?
+// 👉 Use Axios interceptors to attach automatically.
+
+// Q6: API returns empty/null data?
+// 👉 Show “No records found” instead of blank.
+
+// Q7: Need multiple APIs together?
+// 👉 Use Promise.all([axios.get(...), axios.get(...)]).
+
+// Q8: POST request duplicates on double click?
+// 👉 Disable button while request is pending.
+
+// Q9: Cancel API call on unmount?
+// 👉 Use Axios CancelToken (or AbortController with fetch).
+
+// Q10: Fetch data only on button click?
+// 👉 Put API call inside onClick, not useEffect.
+
+
+// Frontend interviews often focus on real-world problems instead of theory.
+// Here are 10 simple but practical scenarios you should know 👇
+
+
+// ---
+
+// 🔹 Q1. A button is clicked twice and it makes duplicate API calls. How do you fix it?
+// ✅ Disable button while request is running
+// ✅ Use debounce/throttle for clicks
+
+
+// ---
+
+// 🔹 Q2. Your app looks fine on desktop but breaks on mobile screens. What’s your fix?
+// ✅ Use responsive CSS (Flexbox/Grid, media queries)
+// ✅ Test with browser DevTools (mobile view)
+
+
+// ---
+
+// 🔹 Q3. A form has many inputs and state is messy. How do you handle it?
+// ✅ Use a form library like React Hook Form / Formik
+// ✅ Or manage with useReducer
+
+
+// ---
+
+// 🔹 Q4. A page loads slowly because of large images. How do you fix it?
+// ✅ Compress images
+// ✅ Use loading="lazy"
+// ✅ Serve WebP/AVIF
+
+
+// ---
+
+// 🔹 Q5. A user submits a form but API fails. What’s the best UX?
+// ✅ Show error message/toast
+// ✅ Keep input saved
+// ✅ Allow retry
+
+
+// ---
+
+// 🔹 Q6. You render a list and React throws a key warning. What’s the fix?
+// ✅ Use unique id as key
+// ✅ Avoid using index unless no other option
+
+
+// ---
+
+// 🔹 Q7. User uploads a profile pic but still sees the old image. Why?
+// ✅ Browser cache issue → Add timestamp in image URL
+// ✅ Update local state immediately
+
+
+// ---
+
+// 🔹 Q8. A modal popup opens, but clicking outside doesn’t close it. How do you fix it?
+// ✅ Add onClick outside handler
+// ✅ Provide visible close (X) button
+
+
+// ---
+
+// 🔹 Q9. A button inside a form is refreshing the page unexpectedly. How do you stop it?
+// ✅ Add event.preventDefault()
+// ✅ Or set button type to "button" instead of default "submit"
+
+
+// ---
+
+// 🔹 Q10. Your button text is too long and overflows on small screens. What’s your fix?
+// ✅ Use CSS text-overflow: ellipsis;
+// ✅ Add responsive styles
+// ✅ Use icons/short labels
