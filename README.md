@@ -83,8 +83,8 @@
 81. Throttle polyfill  — [program81.js](program81.js)
 82. JSON.stringify polyfill  — [program82.js](program82.js)
 83. forEach polyfill. — [program83.js](program83.js)
-84. Implementing Bubble Sort
-85. Implementing Selection Sort
+84. Implementing Bubble Sort.  — [program84.js](program84.js)
+85. Implementing Selection Sort — [program85.js](program85.js)
 86. Check if a Number is Armstrong
 87. Binary Search
 Given an array of integers nums which is sorted in ascending order, and an
@@ -588,6 +588,7 @@ Example 1:
 - Best Time to Buy and Sell Stock III
 - Javascript Currying - Variadic Currying
 - <https://instabyte.io/p/interview-master-100>
+- https://github.com/sanchit0496/reactjs-machine-coding-challenges/tree/main/dnd-items/src
 
 ## Appendix
 
