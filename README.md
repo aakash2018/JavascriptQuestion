@@ -41,10 +41,10 @@
 39. i/p let str = "this tage hash tag"; - o/p #ThisTageHashTag — [program39.js](program39.js)
 40. let str = 'mississippi' find count of i — [program40.js](program40.js)
 41. find the char is upper case or not — [program41.js](program41.js)
-42. string start with arg: checks("hello worlds",'hello') / a.startsWith(b)
+42. string start with arg: checks("hello worlds",'hello') / a.startsWith(b)  — [program42.js](program42.js)
 43. reverse string without using pre defined method — [reverseString.js](reverseString.js)
-44. find mean of given array = [1,2,3,4,5] : o/p 3
-45. fine mean median from given array = [1,2,3,4,5,6] : means add/length , median middle number
+44. find mean of given array = [1,2,3,4,5] : o/p 3  — [program44.js](program44.js)
+45. find mean median from given array = [1,2,3,4,5,6] : means add/length , median middle number  — [program45.js](program45.js)
 46. repeate('abc',5) : o/p 'abcabcabcabcabc' — [program46.js](program46.js)
 47. create random color — [createRandomColor.js](createRandomColor.js)
 48. let arr = [43,12,43,55,78,99,09,88,55,78,43,21,56,21]; :  remove duplicate
@@ -83,8 +83,8 @@
 81. Throttle polyfill  — [program81.js](program81.js)
 82. JSON.stringify polyfill  — [program82.js](program82.js)
 83. forEach polyfill. — [program83.js](program83.js)
-84. Implementing Bubble Sort
-85. Implementing Selection Sort
+84. Implementing Bubble Sort.  — [program84.js](program84.js)
+85. Implementing Selection Sort — [program85.js](program85.js)
 86. Check if a Number is Armstrong
 87. Binary Search
 Given an array of integers nums which is sorted in ascending order, and an
@@ -588,6 +588,7 @@ Example 1:
 - Best Time to Buy and Sell Stock III
 - Javascript Currying - Variadic Currying
 - <https://instabyte.io/p/interview-master-100>
+- https://github.com/sanchit0496/reactjs-machine-coding-challenges/tree/main/dnd-items/src
 
 ## Appendix
 
