@@ -598,3 +598,39 @@
  - How would you implement token-based authentication (e.g., JWT) and handle token expiry?
 
 
+Here are some of the key questions I faced:
+
+🔹 Core JavaScript
+ Explain closures — where do they shine in real apps?
+ How does the event loop & microtask queue (Promises vs setTimeout) work?
+ Difference between call, apply, and bind.
+ What’s the difference between var, let, and const in terms of scope & hoisting?
+
+🔹 Core React
+ How does React Fiber (reconciliation) work?
+ What’s the difference between controlled vs uncontrolled components?
+
+🔹 Hooks & State
+ When would you choose useReducer instead of useState?
+ How do you prevent unnecessary re-renders with hooks?
+
+🔹 Performance
+ When should you use React.memo, useMemo, or useCallback?
+ How do you optimize rendering for large lists (virtualization)?
+
+🔹 Data & Architecture
+ How would you architect data fetching in a large SPA?
+ When do you prefer Context vs Redux vs Zustand?
+
+🔹 Folder Structure & Project Organization
+ How do you organize a large React codebase for scalability?
+ Feature-based vs type-based folder structures — what’s your approach?
+
+🔹 TypeScript & Testing
+ How do you type complex, generic component props in TS?
+ How do you test a component that fetches async data (unit vs integration)?
+
+🔹 Team & Leadership
+ How do you review React code for performance and readability?
+ How do you design a reusable component library for multiple projects?
+
