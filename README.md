@@ -601,6 +601,8 @@ Other Tutorials Link Available Here.
 
 [👉 100 Node.js Interview Q&A (Hindi & English)](100ImportantNode.md)
 
+[👉 Very Important Q&A (Hindi & English)](veryimportant.md)
+
 ## Authors
 
 - [aakash Prajapat](https://www.github.com/aakash2018)
