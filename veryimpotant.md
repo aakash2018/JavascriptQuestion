@@ -948,11 +948,6 @@ console.log(flatten(obj));
 
 ---
 
-👉 Kya main ab **21 se 25 topics** isi detailed Hindi+English+Code style me continue karu?
-Perfect Aakash 👍 ab hum **21–25 topics** ko deep explanation (Hindi + English + Code + Interview Notes) me karte hain.
-
----
-
 # 🔹 21. **Array – Dispatch Event on Push**
 
 ### 📝 Concept
@@ -1161,11 +1156,6 @@ retry(() => {
 
 ---
 
-👉 Bhai, kya mai ab **26–30 topics** ko bhi isi tarah deep explain karu?
-Badiya Aakash 👍 ab hum **26–30 topics** ko deep explanation (Hindi + English + Code + Interview Notes) me karte hain.
-
----
-
 # 🔹 26. **Extended Version of Event Emitter**
 
 ### 📝 Concept
@@ -1355,12 +1345,6 @@ Promise.allSettled([
 
 ---
 
-👉 Kya mai ab **31–34 last topics** ko bhi isi tarah deep explain kar du taaki pura list complete ho jaye?
-
-Perfect 👍 Aakash, ab mai aapko **31 → 34 topics** deep me (English + Hindi + Example + Interview Notes) clear kar deta hoon.
-
----
-
 # 🔹 31. **ClearAllTimeout**
 
 ### 📝 Concept
@@ -1528,12 +1512,180 @@ console.log(groupBy(users, "age"));
 * `groupBy` is very common in data transformations.
 * Works like SQL `GROUP BY`.
 * If interviewer asks → mention Lodash provides ready-made `_.groupBy`.
+---
+# 🔹 35. **Subject (basic publish-subscribe)**
+
+* Subject ek special Observable hai jo ek saath Observable + Observer dono hota hai.
+* Matlab: 
+  * Ye data receive bhi kar sakta hai (next() se).
+  * Ye data emit bhi kar sakta hai subscribers ko.
+* Iska kaam hai ek event bus ki tarah behave karna jaha multiple subscribers ko ek hi source se data milta hai.
+* Kaha use hota hai?
+* Jab aapko ek shared data stream banana ho jo multiple jagah use ho.
+* Example: Chat app, WebSocket, Event sharing.
+
+```
+class Subject {
+  constructor() {
+    this.observers = [];
+  }
+
+  subscribe(callback) {
+    this.observers.push(callback);
+  }
+
+  next(value) {
+    this.observers.forEach(cb => cb(value));
+  }
+}
+
+// Example
+const subject = new Subject();
+
+subject.subscribe(val => console.log("Subscriber 1:", val));
+subject.next(1);
+subject.next(2);
+
+subject.subscribe(val => console.log("Subscriber 2:", val));
+subject.next(3);
+
+Output:
+
+User 1 got: Hello!
+User 2 got: Hello!
+User 1 got: How are you?
+User 2 got: How are you?
+
+```
+Acha 👍 samajh gaya — aap chahte ho ki **RxJS library install kiye bina** khud apne **vanilla JavaScript** me ek chhoti implementation likhni hai, jisme `Subject`, `BehaviorSubject`, `ReplaySubject`, aur `AsyncSubject` ka concept samajh aaye.
+
+Chaliye mai aapko ek simplified version bana ke dikhata hoon:
+
+---
+## 36. BehaviorSubject
+
+* Last value ko store karega.
+* Naye subscriber ko turant last value mil jaayegi.
+* Ye Subject + last value store karta hai.
+* Har naye subscriber ko immediately last value de deta hai.
+* Kaha use hota hai?
+* Jab aapko current state hamesha latest ke saath rakhna ho.
+* Example: User ka current login status, theme setting (dark/light).
+
+```javascript
+class BehaviorSubject extends Subject {
+  constructor(initialValue) {
+    super();
+    this.value = initialValue;
+  }
+
+  subscribe(callback) {
+    callback(this.value); // pehle current value do
+    super.subscribe(callback);
+  }
+
+  next(value) {
+    this.value = value;
+    super.next(value);
+  }
+}
+
+// Example
+const behaviorSubject = new BehaviorSubject(0);
+
+behaviorSubject.subscribe(val => console.log("Subscriber 1:", val));
+behaviorSubject.next(1);
+behaviorSubject.next(2);
+
+behaviorSubject.subscribe(val => console.log("Subscriber 2:", val));
+behaviorSubject.next(3);
+```
 
 ---
 
-✅ Now topics **31 → 34** are fully explained (English + Hindi + Code + Interview Notes).
-Aapka pura **34 topics list** complete ho gaya 🚀
+## 37. ReplaySubject
+
+* History buffer rakhta hai aur naye subscriber ko woh history bhejta hai.
+* Ye past ki values ka buffer rakhta hai.
+* Har naye subscriber ko purani buffered values turant milti hain.
+* Kaha use hota hai?
+* Jab aapko ensure karna ho ki late subscribers bhi purana data na miss karein.
+* Example: Notification system jaha user baad me aaye tab bhi purane 5 notifications dekh sake.
+
+```javascript
+class ReplaySubject extends Subject {
+  constructor(bufferSize = Infinity) {
+    super();
+    this.bufferSize = bufferSize;
+    this.history = [];
+  }
+
+  subscribe(callback) {
+    this.history.forEach(val => callback(val)); // purani values pehle do
+    super.subscribe(callback);
+  }
+
+  next(value) {
+    this.history.push(value);
+    if (this.history.length > this.bufferSize) {
+      this.history.shift(); // extra values hatao
+    }
+    super.next(value);
+  }
+}
+
+// Example
+const replaySubject = new ReplaySubject(2);
+
+replaySubject.next(1);
+replaySubject.next(2);
+replaySubject.next(3);
+
+replaySubject.subscribe(val => console.log("Subscriber 1:", val));
+replaySubject.next(4);
+```
 
 ---
 
-👉 Kya aap chahte ho mai ab **1–34 ka ek final revision cheatsheet (1-liners)** bana du jo interview se pehle quick revision ke liye best hoga?
+## 38. AsyncSubject
+
+* Sirf **last value** emit karega jab `complete()` call karenge.
+
+* AsyncSubject sirf last value ko emit karta hai, wo bhi tab jab complete() call hota hai.
+* Matlab jab tak stream complete nahi hoti, kuch nahi milega.
+* Kaha use hota hai?
+* Jab aapko sirf final result chahiye.
+* Example: HTTP request (aapko sirf last response chahiye, beech ke progress nahi).
+
+```javascript
+class AsyncSubject extends Subject {
+  constructor() {
+    super();
+    this.lastValue = undefined;
+    this.isCompleted = false;
+  }
+
+  next(value) {
+    this.lastValue = value;
+  }
+
+  complete() {
+    this.isCompleted = true;
+    super.next(this.lastValue);
+  }
+}
+
+// Example
+const asyncSubject = new AsyncSubject();
+
+asyncSubject.subscribe(val => console.log("Subscriber 1:", val));
+asyncSubject.next(1);
+asyncSubject.next(2);
+asyncSubject.next(3);
+
+asyncSubject.subscribe(val => console.log("Subscriber 2:", val));
+
+asyncSubject.complete();
+```
+
+---
