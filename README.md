@@ -429,6 +429,7 @@ Example 1:
 232. Rod Cutting
 233. Trie Insertion, Deletion
 234. stale closure — [program234.js](program234.js)
+235. Fill Missing Steps in Array or Gap Filling Algorithm — [program235.js](program235.js)
 ---
 # Link which have to learn
 - <https://instabyte.io/p/interview-master-100>
