@@ -634,3 +634,104 @@ Here are some of the key questions I faced:
  How do you review React code for performance and readability?
  How do you design a reusable component library for multiple projects?
 
+sep 14
+
+ Start Simple (Easy Level)
+1. Build these to get comfortable with UI basics and React syntax.
+2. Basic Todo App
+3. Counter with increment/decrement
+4. Form component with state handling
+5. Modal (open/close logic)
+6. Debounced Search Bar
+7. React Router (basic routing)
+8. Simple Pagination
+9. Login Form with validations
+10. Dropdown Menu component
+11. Theme toggle (Light/Dark)
+Focus on clean structure, reusability, and basic hooks.
+
+Go Deeper (Medium Level)
+Here, the goal is composition + state management + real API usage.
+11. Weather App (API calls)
+12. Basic Chat UI
+13. CRUD App with Firebase
+14. Multi-step Form wizard
+15. Responsive Sidebar
+16. Data Table with Sort/Pagination
+17. Custom Hook for Form Validation
+18. CSS Grid Layout (mobile-first)
+19. Image Carousel
+20. Drag and Drop
+21. Search Filter on List
+22. Movie Search App (OMDB or TMDB API)
+23. Infinite Scroll Component
+24. Global State with Context API
+25. File Upload UI
+26. Mini Cart System
+27. Sticky Header on Scroll
+28. Real-time Chat with WebSockets
+29. Dashboard with Charts (Chart.js / Recharts)
+30. Autocomplete Input
+This is where real LLD questions usually lie. Think logic, not just layout.
+
+Advanced Engineering (Hard Level)
+31. Time to think like a systems designer. These projects will challenge your architecture decisions.
+32. Multi-user Todo App with Auth
+33. Full-stack App (React + Node.js)
+34. Real-time Collaborative Editor
+35. Redux-based Scalable State
+36. Basic Video Streaming UI
+37. Social App UI (Posts, Likes, Comments)
+38. Dashboard with Role-based Access
+39. Server-Side Rendering (Next.js or custom)
+40. Build your own React Router (yes, really)
+41. File Manager App
+42. Custom Data Grid (pagination + filters)
+43. In-app Notification System
+44. Turn React App into a PWA
+45. Auth System with JWT
+46. Payment Integration (Stripe/Razorpay)
+These simulate real-world use cases you'd face in a product team.
+
+
+sep 15
+1. Can you explain how JavaScript handles 0.1 + 0.2 = 0.30000000000000004 internally?
+2. What happens if you delete the __proto__ of an object?
+3. Why does typeof NaN return "number"?
+4. How would you implement a scheduler that limits concurrent async tasks to 3 at a time?
+5. What’s the difference between Object.create(null) and {}?
+6. If JavaScript is single-threaded, how do Web Workers and SharedArrayBuffer allow parallelism?
+7. How would you detect and prevent a memory leak in a large SPA?
+8. How would you polyfill event loop phases (microtasks vs macrotasks) in a mock environment?
+9. Can you explain the difference between Map iteration order vs Object property iteration order?
+10. What are WeakMap and WeakSet? When would you use them?
+11. Can you explain how tree-shaking works in modern bundlers like Webpack?
+
+⚡ HTML
+1. Why does placing `<​script>` in the `<head>` without `defer` or `async` block rendering?
+2. Can you explain how **parsing & tokenization of HTML** works in browsers?
+3. What’s the difference between `<section>`, `<article>`, `<aside>`, and `<div>` beyond semantics?
+4. Why is `<canvas>` considered stateful but `<svg>` declarative?
+5. Can you explain why using `<iframe>` might impact performance & security?
+6. How would you optimize **HTML parsing** for a low-end device?
+7. Why should `<link rel="preload">` sometimes be preferred over `<​script async>`?
+8. Can you explain why `<picture>` with `<source>` matters for responsive images vs just CSS?
+9. What’s the difference between a render-blocking resource and a non-render-blocking one?
+10. Why does the browser sometimes auto-insert `<tbody>` even if you don’t write it?
+
+⚡ CSS
+1. Why does `position: sticky;` sometimes not work as expected?
+2. What’s the difference between `em`, `rem`, `vh`, `vw`, and `%` in layout recalculations?
+3. How does the browser calculate specificity when multiple selectors overlap?
+4. Why do `z-index` bugs often happen inside flex/grid containers?
+5. Can you explain the difference between composite layers vs paint layers in CSS rendering?
+6. How does `contain: content` improve performance?
+7. Why can’t CSS variables (`--var`) be used in `@media` queries?
+8. What’s the difference between `inline-block` and `block + float` historically?
+9. How would you build a CSS-only modal with no JS?
+10. Why does `will-change` sometimes make performance worse instead of better?
+
+
+1. React JS Interview Questions ( Cinema Hall Seat Booking ) - Frontend Machine Coding Interview
+2. RoadsideCoder Project (https://www.youtube.com/watch?v=glAC7d-TYSM)
+3. 

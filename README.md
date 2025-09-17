@@ -448,6 +448,8 @@ Other Tutorials Link Available Here.
 
 [👉 Very Important Q&A (Hindi & English)](veryimpotant.md)
 
+[👉 Very Important One Line Console Q&A](importantOneLineQue.js)
+
 ## Authors
 
 - [aakash Prajapat](https://www.github.com/aakash2018)
