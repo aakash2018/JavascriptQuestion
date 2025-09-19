@@ -824,6 +824,72 @@ call → invoke with arguments individually.
 apply → invoke with arguments as an array.
 bind → returns a new function with fixed this.
 
+
+🔹 Top 30 Node.js Interview Questions
+
+Basics (1–10)
+ 1. What is Node.js and how is it different from traditional web servers?
+ 2. Why is Node.js single-threaded, and how does it handle concurrency?
+ 3. Explain the event loop in Node.js.
+ 4. What are callbacks in Node.js? What problems do they cause?
+ 5. Difference between setImmediate(), process.nextTick(), and setTimeout().
+ 6. What are Streams in Node.js? Types of streams?
+ 7. Explain the concept of middleware in Node.js.
+ 8. Difference between synchronous and asynchronous functions in Node.js.
+ 9. What is require() in Node.js and how does module caching work?
+ 10. Explain CommonJS vs ES Modules in Node.js.
+
+Intermediate (11–20)
+ 11. What are Promises and async/await in Node.js?
+ 12. How do you handle errors in asynchronous code?
+ 13. What are process objects in Node.js?
+ 14. Explain the difference between spawn, exec, and fork in Node.js.
+ 15. What is an EventEmitter in Node.js? Give a real use case.
+ 16. How does clustering work in Node.js?
+ 17. Explain how you can achieve multithreading in Node.js.
+ 18. What is the role of libuv in Node.js?
+ 19. How do you handle uncaught exceptions in Node.js?
+ 20. Explain difference between process.env and dotenv package.
+
+Advanced (21–30)
+ 21. What is JWT and how is it implemented in Node.js?
+ 22. How do you implement authentication and authorization in Node.js?
+ 23. What is rate limiting and how would you implement it in Node.js?
+ 24. How do you secure a Node.js application from SQL Injection & XSS?
+ 25. Explain CORS in Node.js. How to enable it?
+ 26. What are worker threads in Node.js?
+ 27. How does garbage collection work in Node.js?
+ 28. How do you monitor and debug performance issues in Node.js apps?
+ 29. Explain the difference between process.nextTick() and queueMicrotask().
+ 30. If an API is slow in Node.js, how would you debug and optimize it?
+
+⚛️ React Interview Question: What will be the count value here?
+
+function Counter() {
+ const [count, setCount] = useState(0);
+
+ function increment() {
+ setCount(count + 1);
+ setCount(count + 1);
+ }
+
+ return <button onClick​={increment}>{count}</button>;
+}
+
+👉 After clicking once, count = 1, not 2.
+
+✅ Reason:
+React batches state updates.
+Both setCount(count + 1) use the same stale value of count (0).
+Final update = 1.
+
+💡 Use functional updates to fix:
+setCount(c => c + 1);
+setCount(c => c + 1);
+
+Output → 2 🎯
+
+
 1. React JS Interview Questions ( Cinema Hall Seat Booking ) - Frontend Machine Coding Interview
 2. RoadsideCoder Project (https://www.youtube.com/watch?v=glAC7d-TYSM)
 3. Angular important question https://github.com/bittu1040/Learn-with-Bittu/blob/master/README.md
