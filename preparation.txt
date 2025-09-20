@@ -889,6 +889,211 @@ setCount(c => c + 1);
 
 Output → 2 🎯
 
+sep 19 2025 frontend interview
+Frontend Interview Pattern & Frequently Asked Questions 🔥
+
+Most product-based companies typically have 4-5 rounds of frontend interviews:
+ 1️⃣ JavaScript
+ 2️⃣ Machine Coding / React
+ 3️⃣ Data Structures & Algorithms (DSA)
+ 4️⃣ System Design
+ 5️⃣ Managerial Round
+
+ JavaScript Round (45-60 min)
+🍄 Chain Calculator
+🍄 Promises in Sequence
+🍄 Pipe and Compose
+🍄 Array Polyfills (map, filter, reduce, etc.)
+🍄 Prototype and Prototype Inheritance
+🍄 Call, Apply, Bind
+🍄 Flatten Array
+🍄 Basic Debouncing
+🍄 Basic Throttling
+🍄 Event Emitter
+🍄 Debouncing with Leading and Trailing Options
+🍄 MapLimit (Controlling Concurrent Asynchronous Calls)
+🍄 Cancelable Promise
+🍄 Typeahead Search with LRU Cache
+🍄 Document Comparison
+🍄 Currying
+🍄 Execute Tasks in Parallel
+🍄 Sorting an Array 
+🍄 Object Flattening
+🍄 Deep Clone Object
+🍄 JSON.stringify vs Manual Deep Copy
+🍄 React DOM Rendering Process
+🍄 Retry Promises N Times
+🍄 Extended Version of Event Emitter
+🍄 Promise.all
+🍄 Promise.race
+🍄 Promise.any
+🍄 Promise.allSettled
+
+Machine coding (60-90 min)
+🌴 File-folder
+🌴 Google-calender
+🌴 Infinite-scroll-virtulization
+🌴 InteractiveDiagonalGrid
+🌴 NestedCheckbox
+🌴 Tabs
+🌴 Tic-Tac-Toe
+🌴 Todo-list
+🌴 TypeAhead
+🌴 WhatsappChat
+
+React Round (60-120 min)
+👉 Introduction to JSX
+👉 React Component
+👉 Component State and Props
+👉 Adding Style (CSS)
+👉 Functional and Class Components
+👉 React Lifecycle Methods
+👉 Virtual DOM
+👉 React Hooks
+👉 Custom Hooks
+👉 Context API
+👉 Synthetic Events
+👉 Routing
+👉 Data Flow (Redux/Flux)
+👉 Server-Side Rendering
+👉 Unit Testing
+👉 Jest & React Testing Library
+👉 Mocking Data
+👉 Understanding Webpack (Bundler)
+👉 Babel, env, Prettier, Linter
+
+React.js – Must-Know Topics (2025 Edition)
+
+If you are preparing for React.js or want to revise important concepts, here’s a comprehensive checklist of topics you must go through:
+
+✅ Basics & Core Concepts
+
+What is React? Features of React
+Virtual DOM vs Real DOM
+Reconciliation Algorithm & React Fiber
+Difference between Class & Functional Components
+Stateless vs Stateful Components
+
+✅ Components & Rendering
+
+Lifecycle Methods in Class Components
+Controlled vs Uncontrolled Components
+Keys in React & why they are important
+React Portals
+Higher Order Components (HOC)
+Render Props vs HOCs vs Custom Hooks
+
+✅ Hooks (React 16+ & React 18)
+
+useState, useEffect, useContext, useReducer, useRef
+useCallback, useMemo, useImperativeHandle
+Custom Hooks
+React.memo vs PureComponent
+React 18 Hooks → useTransition, useDeferredValue, useId
+
+✅ State Management & Context
+
+Context API vs Redux
+Lifting Up State
+Error Boundaries
+Strict Mode in React
+
+✅ Performance & Optimization
+
+Lazy Loading in React.js
+Code Splitting & Dynamic Imports
+Tree Shaking for bundle size optimization
+Memory Leaks in React and how to avoid them
+Event Delegation in React Synthetic Events
+Difference between useEffect and useLayoutEffect
+
+✅ Advanced Topics
+
+Hydration (SSR + CSR merging)
+React Fiber & how Diffing works internally
+
+1️⃣ Reverse a String (basic foundation)
+2️⃣ Check if a String is a Palindrome (two-pointer / reversal logic)
+3️⃣ Remove Duplicates from a String (set / hashing use)
+4️⃣ Find the First Non-Repeating Character (hashmap pattern)
+5️⃣ Check if Two Strings are Anagrams (sorting / frequency counting)
+6️⃣ Find the Longest Substring Without Repeating Characters (sliding window)
+7️⃣ Replace Spaces with %20 (URL Encoding) (practical interview classic)
+8️⃣ Compress a String – Run-Length Encoding (two-pointer / counting pattern)
+9️⃣ Find the Longest Palindromic Substring (expand around center / DP)
+🔟 Find the Longest Common Prefix (interview classic)
+
+
+🟢 1. React Fundamentals
+1️⃣ What is React?
+ 2️⃣ What are the key features of React?
+ 3️⃣ What is JSX?
+ 4️⃣ What is the DOM?
+ 5️⃣ What is Virtual DOM?
+ 6️⃣ What are props in React?
+ 7️⃣ What is state in ReactJS?
+ 8️⃣ What is the difference between props and state?
+ 9️⃣ What is prop drilling?
+ 🔟 How to avoid prop drilling?
+
+🔵 2. Component System & Lifecycle
+
+1️⃣1️⃣ What is the component lifecycle in React class components?
+ 1️⃣2️⃣ What are Pure components in React?
+ 1️⃣3️⃣ What are fragments in React?
+ 1️⃣4️⃣ What are Refs in React?
+ 1️⃣5️⃣ What is forwardRef?
+ 1️⃣6️⃣ What are Error Boundaries?
+ 1️⃣7️⃣ What are Higher Order Components (HOCs)?
+ 1️⃣8️⃣ What are Portals in React?
+ 1️⃣9️⃣ What is Strict Mode in React?
+
+🟠 3. Hooks Deep Dive
+
+2️⃣0️⃣ What is useState and when to use it?
+ 2️⃣1️⃣ What is useReducer and when to use it over useState?
+ 2️⃣2️⃣ What is useEffect and which class lifecycle methods does it replace?
+ 2️⃣3️⃣ What is useMemo?
+ 2️⃣4️⃣ What is useCallback?
+ 2️⃣5️⃣ Difference between useMemo and useCallback?
+ 2️⃣6️⃣ What are custom hooks?
+ 2️⃣7️⃣ What are the different hooks you’ve used?
+
+🧠 4. Practical Coding & Usage
+
+2️⃣8️⃣ Create a custom hook for increment/decrement counter
+ 2️⃣9️⃣ Practical: Use callback function to send data from child to parent
+ 3️⃣0️⃣ Practical: Send data from child to parent using useRef
+ 3️⃣1️⃣ Practical: Use Context API with a working example
+
+🟣 5. Data Flow, Events & Rendering
+3️⃣2️⃣ What are synthetic events in React?
+ 3️⃣3️⃣ What are controlled vs uncontrolled components?
+ 3️⃣4️⃣ What are keys in React?
+ 3️⃣5️⃣ What is lazy loading in React?
+ 3️⃣6️⃣ What is Suspense in React?
+ 3️⃣7️⃣ What is the purpose of the callback function inside setState()?
+ 3️⃣8️⃣ Different ways to pass data from child to parent component
+
+🟡 6. Context, Redux, and State Management
+
+3️⃣9️⃣ What is Context API in React?
+ 4️⃣0️⃣ Practical: Example usage of Context API
+ 4️⃣1️⃣ Context API vs Redux — when to use what?
+ 4️⃣2️⃣ What are prop types? How to apply validation on props?
+
+🔴 7. Performance & Patterns
+
+4️⃣3️⃣ How do you optimize a React application?
+ 4️⃣4️⃣ How do you consume a RESTful JSON API in ReactJS?
+ 4️⃣5️⃣ What are different design patterns used in React?
+ 4️⃣6️⃣ What are React Mixins?
+ 4️⃣7️⃣ What are render props in React?
+ 4️⃣8️⃣ What is the difference between React.createElement and React.cloneElement?
+ 4️⃣9️⃣ What are the different types of exports and imports in React?
+ 5️⃣0️⃣ What are protected routes in React?
+ 5️⃣1️⃣ Does React Router support context menus?
+
 
 1. React JS Interview Questions ( Cinema Hall Seat Booking ) - Frontend Machine Coding Interview
 2. RoadsideCoder Project (https://www.youtube.com/watch?v=glAC7d-TYSM)

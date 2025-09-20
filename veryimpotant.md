@@ -1,13 +1,13 @@
 # 🔹 1. **Chain Calculator**
 
-### 📝 Concept:
+### 📝 Concept
 
 * **English:** A chain calculator allows method chaining — each method returns the object itself so that we can call another method on it.
 * **Hindi:** Chain calculator ek aisa calculator hai jisme aap methods ko chain karke call kar sakte ho. Har method apna object return karta hai, isliye agla method use kar sakte ho.
 
 ---
 
-### ✅ Code:
+### ✅ Code
 
 ```js
 class Calculator {
@@ -53,7 +53,7 @@ console.log(result); // 6
 
 ---
 
-### 🎯 Interview Notes:
+### 🎯 Interview Notes
 
 * Method chaining is possible if you `return this` from every function.
 * Common in **jQuery**, **Mongoose (MongoDB)**, and **Lodash**.
@@ -63,14 +63,14 @@ console.log(result); // 6
 
 # 🔹 2. **Promises in Sequence**
 
-### 📝 Concept:
+### 📝 Concept
 
 * **English:** Sometimes you don’t want promises to run in parallel. Instead, you want them to run **one after another** (sequentially).
 * **Hindi:** Kabhi kabhi hume chahiye hota hai ki promises ek ke baad ek chale, saath me nahi. Isse hum sequence maintain karte hain.
 
 ---
 
-### ✅ Code:
+### ✅ Code
 
 ```js
 // Example: delay function
@@ -94,7 +94,7 @@ runInSequence();
 
 ---
 
-### 🎯 Interview Notes:
+### 🎯 Interview Notes
 
 * Running in **parallel** → use `Promise.all()`.
 * Running in **sequence** → use `async/await` or `reduce()`.
@@ -113,7 +113,7 @@ tasks.reduce(
 
 # 🔹 3. **Pipe and Compose**
 
-### 📝 Concept:
+### 📝 Concept
 
 * **English:** Both are function combinators.
 
@@ -126,7 +126,7 @@ tasks.reduce(
 
 ---
 
-### ✅ Code:
+### ✅ Code
 
 ```js
 const add5 = (x) => x + 5;
@@ -147,7 +147,7 @@ console.log(compose(add5, multiply2)(10)); // add5(multiply2(10)) = 25
 
 ---
 
-### 🎯 Interview Notes:
+### 🎯 Interview Notes
 
 * **Pipe** = `f(g(h(x)))` but reads left to right.
 * **Compose** = reads right to left.
@@ -157,16 +157,16 @@ console.log(compose(add5, multiply2)(10)); // add5(multiply2(10)) = 25
 
 # 🔹 4. **Array Polyfills**
 
-### 📝 Concept:
+### 📝 Concept
 
 * **English:** Writing your own implementation of built-in methods like `map`, `filter`, `reduce`.
 * **Hindi:** JavaScript ke array ke built-in methods (map, filter, reduce) ko khud implement karna.
 
 ---
 
-### ✅ Code:
+### ✅ Code
 
-#### Map Polyfill:
+#### Map Polyfill
 
 ```js
 Array.prototype.myMap = function(callback) {
@@ -180,7 +180,7 @@ Array.prototype.myMap = function(callback) {
 console.log([1, 2, 3].myMap(x => x * 2)); // [2,4,6]
 ```
 
-#### Filter Polyfill:
+#### Filter Polyfill
 
 ```js
 Array.prototype.myFilter = function(callback) {
@@ -196,7 +196,7 @@ Array.prototype.myFilter = function(callback) {
 console.log([1, 2, 3, 4].myFilter(x => x % 2 === 0)); // [2,4]
 ```
 
-#### Reduce Polyfill:
+#### Reduce Polyfill
 
 ```js
 Array.prototype.myReduce = function(callback, initialValue) {
@@ -212,7 +212,7 @@ console.log([1, 2, 3].myReduce((acc, val) => acc + val, 0)); // 6
 
 ---
 
-### 🎯 Interview Notes:
+### 🎯 Interview Notes
 
 * Polyfills test your **understanding of array iteration**.
 * Very common in **frontend interviews**.
@@ -221,14 +221,14 @@ console.log([1, 2, 3].myReduce((acc, val) => acc + val, 0)); // 6
 
 # 🔹 5. **Prototype and Prototype Inheritance**
 
-### 📝 Concept:
+### 📝 Concept
 
 * **English:** Every object in JS has a hidden property `[[Prototype]]`. Objects can inherit properties and methods from their prototype.
 * **Hindi:** Har JavaScript object ka ek hidden property hota hai `[[Prototype]]`. Ek object apne prototype ke methods/properties use kar sakta hai.
 
 ---
 
-### ✅ Code:
+### ✅ Code
 
 ```js
 // Constructor function
@@ -262,7 +262,7 @@ s1.study();    // Aakash is studying JavaScript
 
 ---
 
-### 🎯 Interview Notes:
+### 🎯 Interview Notes
 
 * `__proto__` links object to its prototype.
 * Prototype chain helps with **inheritance**.
@@ -1512,11 +1512,13 @@ console.log(groupBy(users, "age"));
 * `groupBy` is very common in data transformations.
 * Works like SQL `GROUP BY`.
 * If interviewer asks → mention Lodash provides ready-made `_.groupBy`.
+
 ---
+
 # 🔹 35. **Subject (basic publish-subscribe)**
 
 * Subject ek special Observable hai jo ek saath Observable + Observer dono hota hai.
-* Matlab: 
+* Matlab:
   * Ye data receive bhi kar sakta hai (next() se).
   * Ye data emit bhi kar sakta hai subscribers ko.
 * Iska kaam hai ek event bus ki tarah behave karna jaha multiple subscribers ko ek hi source se data milta hai.
@@ -1557,11 +1559,13 @@ User 1 got: How are you?
 User 2 got: How are you?
 
 ```
+
 Acha 👍 samajh gaya — aap chahte ho ki **RxJS library install kiye bina** khud apne **vanilla JavaScript** me ek chhoti implementation likhni hai, jisme `Subject`, `BehaviorSubject`, `ReplaySubject`, aur `AsyncSubject` ka concept samajh aaye.
 
 Chaliye mai aapko ek simplified version bana ke dikhata hoon:
 
 ---
+
 ## 36. BehaviorSubject
 
 * Last value ko store karega.
@@ -1686,6 +1690,45 @@ asyncSubject.next(3);
 asyncSubject.subscribe(val => console.log("Subscriber 2:", val));
 
 asyncSubject.complete();
+```
+
+---
+
+# 39. create Redux  in javascript
+
+```
+function counterReducer(state={count:0},action){
+  switch(Action.type){
+    case "INCREMENT":
+    return {count:state.count+1};
+    case "DECREMENT::
+    return {count:state.count-1};
+    default:
+    return state;
+  }
+}
+
+function createStore(reducer){
+  let state = reducer(Undefined,[]);
+  let listeners = [];
+  function getState(){
+    return state;
+  }
+  function subscribe(listener){
+    listeners.push(listener);
+  }
+  return {getState,dispatch,subscribe};
+}
+
+const store = createStore(counterReducer);
+store.subscribe(()=>{
+  console.log("state changed:",store.getState());
+});
+
+store.dispatch({type:"INCREMENT"});
+store.dispatch({type:"INCREMENT"});
+store.dispatch({type:"DECREMENT"});
+
 ```
 
 ---
