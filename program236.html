@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Progress Bar</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: #222;
+      color: white;
+      font-family: Arial, sans-serif;
+      flex-direction: column;
+    }
+    .progress-container {
+      width: 80%;
+      background: #555;
+      border-radius: 25px;
+      overflow: hidden;
+      height: 30px;
+      margin: 20px 0;
+    }
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: #00c853;
+      text-align: center;
+      line-height: 30px;
+      color: black;
+      font-weight: bold;
+      transition: width 0.1s linear;
+    }
+  </style>
+</head>
+<body>
+  <h2>Auto Progress Bar</h2>
+
+  <div class="progress-container">
+    <div class="progress-bar" id="progress">0%</div>
+  </div>
+
+  <script>
+    let progress = 0;
+    let interval = setInterval(() => {
+      if (progress >= 100) {
+        clearInterval(interval);
+      } else {
+        progress++;
+        const progressBar = document.getElementById("progress");
+        progressBar.style.width = progress + "%";
+        progressBar.textContent = progress + "%";
+      }
+    }, 100);
+  </script>
+</body>
+</html>
