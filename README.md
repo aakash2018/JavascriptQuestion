@@ -436,6 +436,7 @@ Example 1:
 - <https://instabyte.io/p/interview-master-100>
 - https://github.com/sanchit0496/reactjs-machine-coding-challenges/tree/main/dnd-items/src
 - https://www.notion.so/261c39c88693803dbbbfe605a8954019?v=261c39c8869381919de9000c68d253aa
+- https://namastedev.com/practice?search=&sortBy=default&language=All&difficulty_level=All&status=All&companies=All&tags=reactJs%2CnodeJs&page=1
 
 ## Appendix
 
