@@ -297,7 +297,7 @@ Example 1:
 103. check if two string are isomorphic.
 104. Binary search tree lowest common ancestor.
 105. The Joyeful Robot.
-106. Best Time to Buy and Sell Stock.
+106. Best Time to Buy and Sell Stock.— [program106.js](program106.js)
 107. Implement a chain calculator.
 108. Demonstrate prototype and prototype inheritance.
 109. Implement call, apply, and bind methods, with Polyfills
