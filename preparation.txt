@@ -1192,6 +1192,336 @@ If you’re preparing for interviews, here are some 15 real-world questions that
  - How would you calculate which items should be visible based on scroll position?
  - How would you handle dynamic item heights and implement smooth scrolling?
  
+sep24/2025
+
+I had an interview today with Aspire InfoLabs Pvt Ltd for a hashtag#React.js and hashtag#Next.js developer position. These were the questions asked:
+
+Q1) What is a Custom hook?
+Q2) How do you handle errors?
+Q3) Is there any better way to handle errors?
+Q4) For form validation, what have you used?
+Q5) How have you made dynamic routes in Next.js?
+Q6) Why have you used Redux Toolkit (RTK) over Content API?
+Q7) API given "https://lnkd.in/gKiTVEFW"
+ Fetch the data, display it as a list, and 
+ implement a search. functionality. The search results should be filtered from the displayed list.
+Q8) How can you optimize an application?
+
+
+✔What is React? Explain its purpose as a JavaScript library for building user interfaces.
+✔ What are the key features of React? (e.g., JSX, Virtual DOM, Components, Unidirectional Data Flow)
+✔ What are the advantages and limitations of React?
+✔ Explain JSX. Why do we use it, and how does it work?
+✔ What is the Virtual DOM, and how does it improve performance? 
+✔ What are components in React? Differentiate between functional and class components.
+✔ Explain props. How are they used to pass data between components?
+✔ What is state in React, and how is it used? Differentiate between state and props.
+✔ How do you handle events in React?
+✔ What are keys in React lists, and why are they important?
+
+Advanced Concepts & Hooks
+🔁Explain the React component life cycle. Discuss its different phases and associated methods (for class components) or hooks (for functional components).
+🔁What are React Hooks? Explain the purpose and usage of useState, useEffect, useContext, useRef, useCallback, useMemo, and useReducer.
+🔁What are the rules of Hooks?
+🔁What are Higher-Order Components (HOCs)? Provide an example of their use.
+🔁What are Controlled and Uncontrolled Components?
+🔁Explain Context API. When would you use it, and what are its benefits/pitfalls?
+🔁What is prop drilling, and how can it be avoided?
+🔁What are React Fragments?
+🔁What are Portals in React? When are they useful?
+🔁Explain error boundaries in React.
+🔁How do you optimize the performance of a React application?
+🔄 State Management & Ecosystem
+🔁What is Redux? Explain its core principles and components (actions, reducers, store).
+🔁How does React-Redux facilitate state management?
+🔁What is the difference between Redux and the Context API?
+🔁How do you handle routing in React? (e.g., React Router)
+🔁How do you handle styling in a React application? (e.g., CSS Modules, Styled Components, Tailwind CSS)
+🔁What is the difference between Create React App, Next.js, and Gatsby?
+
+Practical & Problem Solving
+🔧How do you handle form submissions and validation in React?
+🔧How would you implement a specific UI component (e.g., a counter, a modal, a tabbed interface)?
+🔧Describe a time you encountered a performance issue in a React application and how you resolved it.
+🔧How do you test React components? (e.g., Jest, React Testing Library)
+🔧Explain server-side rendering (SSR) in React.
+
+
+Execution Context & Call Stack –> how JS runs your code line by line.
+Hoisting –>what gets lifted and what doesn’t.
+Closures –> lexical scope + hidden power.
+Event Loop & Concurrency Model –> microtasks vs macrotasks.
+Promises & async/await –> chaining, error handling, pitfalls.
+this keyword –> implicit, explicit, arrow functions.
+Prototypes & Inheritance –> how objects really share behavior.
+Scope (var, let, const) –> function, block, temporal dead zone.
+Functions as First-Class Citizens –> callbacks, higher-order functions.
+Currying & Partial Application –> real-world use in React handlers.
+Debounce & Throttle –> critical for performance in UI apps.
+Modules (CommonJS vs ESM) –> imports/exports, tree shaking.
+Type Coercion & Equality –> == vs ===, truthy/falsy traps.
+Array & Object Methods –> map, filter, reduce, destructuring.
+Spread & Rest Operators –> flexibility in params and objects.
+Error Handling –> try/catch, custom errors, async pitfalls.
+DOM & Event Delegation –> real interview classic.
+Garbage Collection & Memory Leaks –> weak references, closures.
+ES6+ Features –> default params, optional chaining, nullish coalescing.
+Performance & Big-O Basics –> why O(n²) in rendering kills apps.
+Event Propagation (Capture vs Bubble) –> subtle but critical.
+Shallow vs Deep Copy –> structuredClone, JSON tricks, pitfalls.
+Object.defineProperty & Property Descriptors –> helpful during coding questions.
+Generators & Iterators –> custom iteration logic.
+Symbols & Well-Known Symbols –> how JS handles unique identifiers.
+Set, Map, WeakSet, WeakMap –> and when to use them.
+Optional Chaining & Nullish Coalescing –> ?. vs ??.
+Immutability & Object.freeze/seal –> functional JS mindset.
+Polyfills & Transpilation –> Babel, core-js, how older browsers cope.
+Security in JS –> XSS, CSP, sanitizing inputs (often overlooked!).
+
+
+sep26/2025
+
+After being rejected by many companies, I’ve finally secured a Software Development role.
+
+This journey taught me consistency and the value of learning from every 𝗥𝗲𝗷𝗲𝗰𝘁𝗶𝗼𝗻.
+
+In my interviews, 𝗮𝗹𝗺𝗼𝘀𝘁 90% of the 𝗱𝗶𝘀𝗰𝘂𝘀𝘀𝗶𝗼𝗻𝘀 revolved around 𝗖𝗼𝗿𝗲 𝗝𝗮𝘃𝗮𝗦𝗰𝗿𝗶𝗽𝘁 𝗳𝘂𝗻𝗱𝗮𝗺𝗲𝗻𝘁𝗮𝗹𝘀. Once I got clarity on them, things started to click.
+
+Here are some of the 𝗠𝗼𝘀𝘁 𝗖𝗼𝗺𝗺𝗼𝗻 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻𝘀 I prepared for:
+1. What is the MERN stack and why is it popular?
+2. Difference between SQL and NoSQL databases.
+3. Explain the role of MongoDB in MERN.
+4. Difference between find() and findOne() in MongoDB.
+5. What are indexes in MongoDB and why are they important?
+6. Difference between populate() and aggregate() in Mongoose.
+7. What is Express.js and why do we use it?
+8. How do middleware functions work in Express?
+9. How do you handle authentication and authorization in Express?
+10. Explain JWT (JSON Web Token).
+11. What is CORS and how do you handle it in Express?
+12. Difference between REST API and GraphQL.
+13. What are React components? Difference between functional and class components.
+14. Explain the concept of Virtual DOM in React.
+15. What are React hooks? Explain useState and useEffect.
+16. What is Context API and how is it different from Redux?
+17. Difference between controlled and uncontrolled components in React.
+18. What is React reconciliation?
+19. Explain React lifecycle methods.
+20. Difference between useMemo and useCallback.
+21. How does Redux work? Explain its core principles.
+22. Difference between Redux and Context API.
+23. What are reducers and actions in Redux?
+24. Explain middleware in Redux (like Thunk or Saga).
+25. What is Node.js and why is it used?
+26. How does Node handle asynchronous operations?
+27. Difference between synchronous and asynchronous programming.
+28. What are streams in Node.js?
+29. How do you scale a Node.js application?
+30. What is Callback hell in JavaScript?
+
+I’ll keep sharing insights, If you’re preparing for 𝗙𝗿𝗼𝗻𝘁𝗲𝗻𝗱 or 𝗠𝗘𝗥𝗡 𝗦𝘁𝗮𝗰𝗸 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄𝘀, I hope this list gives you a strong starting point.
+
+My friend got a 30+ LPA Job Offer from Morgan Stanley
+Position: Data Engineer
+Application Method: Referral.
+
+𝗣𝗿𝗲𝗹𝗶𝗺𝗶𝗻𝗮𝗿𝘆 𝗥𝗼𝘂𝗻𝗱 (𝗢𝗻𝗹𝗶𝗻𝗲 𝗧𝗲𝘀𝘁)
+ ㆍ SQL Coding (Window functions, joins, subqueries)
+ ㆍ Python & SQL MCQs (medium to hard)
+ ㆍ Data Structure Coding (arrays, strings – medium level)
+ ㆍ DBMS, Unix, and OS-based MCQs
+
+𝟭𝘀𝘁 𝗥𝗼𝘂𝗻𝗱 (𝗧𝗲𝗰𝗵𝗻𝗶𝗰𝗮𝗹 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝟭)
+SQL
+ ㆍ Given Tables A & B with column ‘id’ → Explain output count for inner, left, right, and full outer joins
+ ㆍ Find employee with highest salary per department using DENSE_RANK()
+ ㆍ Explain why DENSE_RANK() was used instead of RANK()
+ ㆍ Discuss use cases of LEAD, LAG, and NTILE window functions
+Hive & Sqoop:
+ ㆍ Difference between Managed vs External tables, Hive partitioning vs bucketing
+Big Data Concepts:
+ ㆍ HDFS Rack Awareness, Spark Job Submission Flow
+ ㆍ Spark: Narrow vs Wide Transformations, coalesce() vs repartition()
+ ㆍ Scheduling Spark Jobs in Databricks
+Cloud Computing:
+ ㆍ AWS EC2, IAM Roles/Policies, S3 Storage
+ ㆍ Code to upload CSV to S3 using Boto3 (pseudo-code accepted)
+
+𝟮𝗻𝗱 𝗥𝗼𝘂𝗻𝗱 (𝗧𝗲𝗰𝗵𝗻𝗶𝗰𝗮𝗹 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝟮 – 𝗩𝗶𝗰𝗲 𝗣𝗿𝗲𝘀𝗶𝗱𝗲𝗻𝘁)
+Data Modeling:
+ ㆍ Created normalized and denormalized models for a relational schema
+Databricks Lakehouse Architecture:
+ ㆍ Detailed explanation of ingestion, transformation flow
+ ㆍ Used AWS Glue + Redshift for ETL pipeline explanation
+Scenario-Based ETL Design:
+ ㆍ Preliminary checks while building an ETL
+ ㆍ Role of staging layer in pipeline
+Batch vs Stream Processing:
+ ㆍ Spark structured streaming concepts
+Unit Testing:
+ ㆍ How to create unit tests for SQL and PySpark code
+Pseudo Code:
+ ㆍ Build ETL pipeline using Python and Pandas to clean, transform, and save CSV
+Spark Monitoring & Optimization:
+ ㆍ Explained tuning techniques and monitoring tools used
+
+𝗧𝗲𝗰𝗵𝗻𝗼 𝗠𝗮𝗻𝗮𝗴𝗲𝗿𝗶𝗮𝗹 𝗥𝗼𝘂𝗻𝗱
+Resume walkthrough: Projects, internship at ZS Associates, research papers 
+Leadership & Situational Questions:
+ ㆍ Handling team challenges, ownership, and leadership experience
+ ㆍ Alignment with Morgan Stanley core principles
+Technical Discussions:
+ ㆍ Delta Lake and Parquet format advantages
+ ㆍ Delta Table use cases
+ ㆍ Spark Cluster configuration – memory, cores, workers, executors
+ ㆍ AWS Glue fetching metadata from S3 (CSV/Parquet)
+ ㆍ Redshift and relational database experience
+ ㆍ Internal workings of Hadoop
+
+𝗛𝗥 𝗥𝗼𝘂𝗻𝗱
+ ㆍ Big Data project overview
+ ㆍ Strengths, weaknesses, hobbies
+ ㆍ Career goals and motivation for joining Morgan Stanley
+ ㆍ Salary discussion and confirmation
+
+These were the questions asked to me:
+
+🔹 JavaScript (Core)
+Q1) What are Concat and Primitive types?
+ Q2) What are Shift and unshift?
+ Q3) What is WeakSet?
+ Q4) What is optional chaining in an object?
+ Q5) What is a chaining function?
+ Q6) What is a Currying function? 
+ Q7) Write an example of Currying.
+ Q8) How do you throw errors in JavaScript?
+ Q9) Event loop question on Macrotask and Microtask
+ Q10) Move all zeros to the end of the problem. Given an array, move all the Zeros to the end without changing the order of the other elements.
+ Example: Input: [0,1,0,3,12] Output:[1,3,12,0,0] 
+ Q11) What is Callback? Differences between Promise.all, allSettled, any, race?
+Q12) What will be the output of this code?
+console.log("Start of Program");
+setTimeout(() => {
+ console.log("setTimeout - After 0 ms");
+}, 0);
+Promise.resolve().then(() => {
+ console.log("Promise resolved");
+});
+Promise.resolve().then(() => {
+ console.log("Another Promise resolved");
+});
+setTimeout(() => {
+ console.log("setTimeout - After 0 ms again");
+}, 0);
+console.log("End of Program");
+
+🔹 Node.js
+Q13) How do you handle errors in Node.js?
+ Q14) What is Stream API?
+ Q15) What is Buffer in Node.js?
+ Q16) What is the Event loop in Node.js?
+ Q17) What is Service deployment?
+ Q18) What is Semantic in Node.js?
+
+🔹 MongoDB / Backend
+Q19) In MongoDB, if you want to find someone’s name, ID, and age, how will you do it?
+
+🔹 React
+Q20) What is HOC (Higher Order Component)?
+ Q21) Class component and functional component similarities
+ Q22) What is Prop drilling?
+ Q23) What is Context API?
+ Q24) What middleware have you used for state management?
+ Q25) RTK Query basics
+ Q26) RTK Query → memory & cache related
+
+
+🔹 CSS
+Q27) CSS Object Model
+ Q28) Repaint and reflow in the browser
+ Q29) Pre and post-processors in CSS
+ Q30) Pseudo-classes and elements use
+ Q31) Name the display property in CSS
+
+🔹 TypeScript
+Q32) Generic in TypeScript
+ Q33) Write a generic function, and what is T in that function?
+
+
+🔹 Web Security
+Q34) Web security
+
+🔹 REST & API
+Q35) What is REST API? → PUT & PATCH difference?
+
+🔹 Git / DevOps
+Q36) How do you review your code (code reviews in dev)
+ Q37) Git cherry-pick → Question on with or without merging.
+ Q38) CI/CD →  Which parts are manual and which are automatic?
+
+🔹 System Design / Performance
+Q39) How do you identify a memory leak?
+ Q40) How do you optimize your application?
+
+
+--sep28/2025
+𝗛𝗧𝗠𝗟
+1. What is the difference between `id` and `class` attributes?
+2. How does the `doctype` declaration affect a webpage?
+3. Explain semantic HTML and its importance.
+4. What are `meta` tags, and why are they used?
+5. What is the difference between `span` and `div` tags?
+6. How does the `defer` attribute in a script tag work?
+7. What is the difference between inline, block, and inline-block elements?
+8. How do you optimize images for web performance in HTML?
+9. What are custom data attributes, and how are they used?
+10. How would you create an accessible custom tooltip using only HTML?
+
+𝗝𝗔𝗩𝗔𝗦𝗖𝗥𝗜𝗣𝗧
+1. What are closures, and how are they used?
+2. Explain the difference between `var`, `let`, and `const`.
+3. What is the event loop in JavaScript?
+4. How does prototypal inheritance work?
+5. What are promises, and how do they compare to async/await?
+6. What is the difference between `==` and `===`?
+7. Explain the concept of "hoisting" in JavaScript.
+8. How do you handle errors in JavaScript?
+9. What is debouncing and throttling in JavaScript?
+10. How would you implement a deep clone of an object without using libraries?
+
+𝗥𝗘𝗔𝗖𝗧
+1. What is the virtual DOM, and how does it work?
+2. How do React functional components differ from class components?
+3. What are React hooks, and why are they used?
+4. Explain the concept of lifting state up in React.
+5. What is the purpose of `useEffect` and how is it used?
+6. How does context API work in React?
+7. What is the difference between controlled and uncontrolled components?
+8. How do you optimize a React application’s performance?
+9. What are React portals, and how are they useful?
+10. How would you implement a custom hook to debounce user input in a React application?
+
+𝗔𝗰𝗰𝗲𝘀𝘀𝗶𝗯𝗶𝗹𝗶𝘁𝘆 (𝗔𝟭𝟭𝗬)
+1. What is ARIA, and why is it important?
+2. How would you ensure a form is accessible?
+3. What are some common accessibility issues in web development?
+4. How do you make images accessible?
+5. What is a screen reader, and how does it work?
+6. How would you create an accessible navigation menu?
+7. What is the difference between `role="button"` and a `<button>` element?
+8. How do you test a webpage for accessibility?
+
+𝗢𝗽𝘁𝗶𝗺𝗶𝘇𝗮𝘁𝗶𝗼𝗻
+1. What is lazy loading, and how do you implement it?
+2. How do you reduce the size of a JavaScript bundle?
+3. What are the benefits of using a Content Delivery Network (CDN)?
+4. How do you optimize CSS delivery?
+5. What is caching, and how does it improve performance?
+6. What are critical rendering paths?
+7. How do you optimize for Time to First Byte (TTFB)?
+8. How do service workers improve web performance?
+
+
 1. React JS Interview Questions ( Cinema Hall Seat Booking ) - Frontend Machine Coding Interview
 2. RoadsideCoder Project (https://www.youtube.com/watch?v=glAC7d-TYSM)
 3. Angular important question https://github.com/bittu1040/Learn-with-Bittu/blob/master/README.md
@@ -1203,3 +1533,43 @@ If you’re preparing for interviews, here are some 15 real-world questions that
 9. https://www.youtube.com/watch?v=xdICgllv34M&list=PL9XvIvvVL50FnksxIrR9VstHtbboZLQjA
 10. https://github.com/sanchit0496/reactjs-machine-coding-challenges?tab=readme-ov-file#project-list
 11. https://namastedev.com/practice?search=&sortBy=default&language=All&difficulty_level=All&status=All&companies=All&tags=reactJs%2CnodeJs&page=1
+12. https://www.youtube.com/playlist?list=PLlasXeu85E9cciv04MYWscodnbRFqACsH
+13. https://www.youtube.com/watch?v=uwfrEETtONM&list=PLnNsQf3QlMxXD9Vnd4SeIsO0WszaZoEg9
+
+17 Best Github repos to help you pass Front-end, coding & system design interviews:
+
+Front-end 
+–https://lnkd.in/gX5piWUG
+–https://lnkd.in/gyEBbNJs
+–https://lnkd.in/gbbu3-Ny
+–https://lnkd.in/g7-Yg3fd
+
+Coding interviews:
+–https://lnkd.in/gzbVUXgr
+– https://lnkd.in/g_RNjwMP
+–https://lnkd.in/grs7XjVy
+–https://lnkd.in/g9DgwB2e
+–https://lnkd.in/gj4JhKgW
+–https://lnkd.in/gtXfsXEB
+–https://lnkd.in/gzbVUXgr
+
+System design:
+–https://lnkd.in/gxFNTQdQ
+–https://lnkd.in/gWcjY9Xt
+–https://lnkd.in/gVDwQVct
+–https://lnkd.in/g4NkHXFD
+–https://lnkd.in/gDJnXKaj
+–https://lnkd.in/gm-gQFCd
+
+These repositories are incredibly valuable for interview preparation, offering comprehensive resources that range from mastering JavaScript algorithms to grasping key system design concepts.
+
+Follow Alpna P. for more related content!
+
+🤔 Having Doubts in technical journey?
+
+🚀 Book 1:1 session with me : https://lnkd.in/gQfXYuQm
+🚀 Subscribe and stay up to date: https://lnkd.in/dGE5gxTy
+🚀 Get Complete React JS Interview Q&A Here: https://lnkd.in/d5Y2ku23
+🚀 Get Complete JavaScript Interview Q&A Here: https://lnkd.in/d8umA-53
+
+hashtag#interview hashtag#frontend hashtag#systemdesign hashtag#gitrepo hashtag#freshers hashtag#javascript hashtag#learnandgrow

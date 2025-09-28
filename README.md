@@ -326,7 +326,7 @@ Example 1:
 131. Climbing Stairs
 132. Fibonacci Number
 133. Min Cost Climbing Stairs
-134. Kadane's Algorithm
+134. Kadane's Algorithm    — [program134.js](program134.js)
 135. Maximum Subarray
 136. Maximum Sum Circular Subarray
 137. Maximum Product Subarray
