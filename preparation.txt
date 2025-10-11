@@ -1521,6 +1521,42 @@ Q39) How do you identify a memory leak?
 7. How do you optimize for Time to First Byte (TTFB)?
 8. How do service workers improve web performance?
 
+29 sep 2025
+🚀 React Performance Optimization — Top 10 Must-Know Techniques
+
+As React applications grow, performance can become a challenge.
+Here are 10 proven techniques every frontend developer should know 👇
+
+🔹 1. Use React.memo to prevent unnecessary re-renders
+🔹 2. Use useCallback & useMemo for expensive functions
+🔹 3. Lazy load components with React.lazy + Suspense
+🔹 4. Code splitting using dynamic imports
+🔹 5. Optimize lists using virtualization (e.g., react-window)
+🔹 6. Avoid inline functions in render when possible
+🔹 7. Use proper keys in lists for efficient reconciliation
+🔹 8. Minimize unnecessary state (keep only what’s required)
+🔹 9. Debounce & throttle expensive events (scroll, resize, input)
+🔹 10. Use Profiler API & Lighthouse to measure performance
+
+✨ These are common interview questions too:
+
+How do you optimize React performance?
+
+Difference between useMemo & React.memo?
+
+What is React.lazy and how does it improve performance?
+
+
+16. Write a query to find the second highest salary in a table without using TOP or LIMIT.
+
+17. Difference between Index Scan vs Index Seek — which one is faster?
+
+18. Explain ACID properties with real examples.
+
+19. How do you debug deadlocks in DB queries?
+
+20. Write a query to find duplicate emails in a user table.
+
 
 1. React JS Interview Questions ( Cinema Hall Seat Booking ) - Frontend Machine Coding Interview
 2. RoadsideCoder Project (https://www.youtube.com/watch?v=glAC7d-TYSM)

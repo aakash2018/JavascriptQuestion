@@ -431,6 +431,8 @@ Example 1:
 234. stale closure — [program234.js](program234.js)
 235. Fill Missing Steps in Array or Gap Filling Algorithm — [program235.js](program235.js)
 236. Progress bar using html,css and javascript — [program236.html](program236.html)
+237. Input output program 3 — [program237.js](program237.js)
+238. Missing value in array with n numbers. — [program238.js](program238.js)
 ---
 # Link which have to learn
 - <https://instabyte.io/p/interview-master-100>
@@ -438,6 +440,10 @@ Example 1:
 - https://www.notion.so/261c39c88693803dbbbfe605a8954019?v=261c39c8869381919de9000c68d253aa
 - https://namastedev.com/practice?search=&sortBy=default&language=All&difficulty_level=All&status=All&companies=All&tags=reactJs%2CnodeJs&page=1
 
+## System Design link 
+- https://github.com/systemdesign42/system-design
+- https://github.com/ashishps1/awesome-system-design-resources?tab=readme-ov-file
+- https://blog.bytebytego.com/
 ## Appendix
 
 Other Tutorials Link Available Here.
