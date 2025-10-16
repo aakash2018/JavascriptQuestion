@@ -444,6 +444,8 @@ Example 1:
 - https://github.com/systemdesign42/system-design
 - https://github.com/ashishps1/awesome-system-design-resources?tab=readme-ov-file
 - https://blog.bytebytego.com/
+- https://www.educative.io/newsletter/system-design
+
 ## Appendix
 
 Other Tutorials Link Available Here.
