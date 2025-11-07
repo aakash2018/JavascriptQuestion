@@ -435,6 +435,7 @@ Example 1:
 238. Missing value in array with n numbers. — [program238.js](program238.js)
 239. star pattern using repeat.  — [program239.js](program239.js)
 240. Inverted star pattern using repeat.  — [program240.js](program240.js)
+241. Score Rank of players.   — [program241.js](program241.js)
 ---
 # Link which have to learn
 - <https://instabyte.io/p/interview-master-100>
