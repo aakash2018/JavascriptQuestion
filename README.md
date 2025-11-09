@@ -56,7 +56,7 @@
 54. Binary search array with target value — [program54.js](program54.js)
 55. Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses. — [program56.js](program56.js)
 56. Generate parentheses in an Expression. — [program56.js](program56.js)
-57. You’ve given an array which contains some 0, your to write a function which moves all 0s to the right of the array.
+57. You’ve given an array which contains some 0, your to write a function which moves all 0s to the right of the array  [1, 0, 3, 0, 5, 0, 2]. 
 58. You’ve an array in which each adjacent number is either +1 or -1, write a function to find the given number. Focus on efficiency.
 59. Example: [4,5,6,7,6,5,4] // Find index of 7 (from starting)
 60. Write a function to shuffle an array.
@@ -436,6 +436,7 @@ Example 1:
 239. star pattern using repeat.  — [program239.js](program239.js)
 240. Inverted star pattern using repeat.  — [program240.js](program240.js)
 241. Score Rank of players.   — [program241.js](program241.js)
+242. Program Circular Array Rotation. — [program242.js](program242.js)
 ---
 # Link which have to learn
 - <https://instabyte.io/p/interview-master-100>
