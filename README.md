@@ -437,6 +437,7 @@ Example 1:
 240. Inverted star pattern using repeat.  — [program240.js](program240.js)
 241. Score Rank of players.   — [program241.js](program241.js)
 242. Program Circular Array Rotation. — [program242.js](program242.js)
+243. Remove Duplicate string Input and output JIT Inspire Indore.  — [program243.js](program243.js)
 ---
 # Link which have to learn
 - <https://instabyte.io/p/interview-master-100>
