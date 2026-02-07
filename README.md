@@ -59,9 +59,9 @@
 57. You’ve given an array which contains some 0, your to write a function which moves all 0s to the right of the array  [1, 0, 3, 0, 5, 0, 2].  — [program57.js](program57.js)
 58. You’ve an array in which each adjacent number is either +1 or -1, write a function to find the given number. Focus on efficiency.
 59. Example: [4,5,6,7,6,5,4] // Find index of 7 (from starting) — [program58.js](program58.js)
-60. Write a function to shuffle an array.
+60. Write a function to shuffle an array.  — [program60.js](program60.js)
 61. Write a function which gives us a fibonacci sequence of a given number. — [program61.js](program61.js)
-62. You have an array, which contains some bad numbers, bad  numbers are denoted with -1, write a function to remove all bad numbers from the array.
+62. You have an array, which contains some bad numbers, bad  numbers are denoted with -1, write a function to remove all bad numbers from the array. — [program62.js](program62.js)
 63. Write a function to flatten a given array.  — [program63.js](program63.js)
 64. Write a function which merges to given array.
 65. Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing.
